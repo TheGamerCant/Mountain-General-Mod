@@ -1,0 +1,1253 @@
+debug_decisions = {
+	SLO_load_main_focus = { 
+		priority = 202
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = SLO
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+			load_focus_tree = slovakian_main_focus
+		}
+	}
+	
+	SLO_add_military_ideas = { 
+		priority = 201
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = SLO
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+
+		complete_effect = {
+			add_ideas = SLO_army_logistics_focus_4
+			add_ideas = SLO_technological_supremecy_idea_4
+			add_ideas = SLO_army_artillery_focus_4
+		}
+	}
+}
+
+
+
+SLO_captain_hindsight_decisions = {
+	SLO_inspection_in_the_aircraft_industry = { 
+		priority = 1
+
+		icon = eng_trade_unions_support
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			NOT = {
+				has_country_flag = {
+					flag = SLO_doing_ch_decision
+				}
+			}
+		}
+
+
+		days_remove = 180
+		
+		
+		fire_only_once = yes
+
+		cost = 50
+
+		modifier = {
+
+		}
+		
+		complete_effect = {
+			set_country_flag = SLO_doing_ch_decision
+		}
+
+		remove_effect = {
+			clr_country_flag = SLO_doing_ch_decision
+			add_to_variable = { SLO_ch_air_accidents_factor  = -0.4 }
+			add_to_variable = { SLO_ch_aircraft_manufacturer_cost_factor  = -0.25 }
+			custom_effect_tooltip = SLO_inspection_in_the_aircraft_industry_tt
+			add_tech_bonus = {
+				name = SLO_inspection_in_the_aircraft_industry
+				bonus = 1.0
+				uses = 2
+				category = air_equipment
+			}
+		}
+	}
+
+	SLO_meet_with_scientists = { 
+		priority = 1
+
+		icon = eng_trade_unions_support
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			NOT = {
+				has_country_flag = {
+					flag = SLO_doing_ch_decision
+				}
+			}
+		}
+
+
+		days_remove = 360
+		
+		
+		fire_only_once = yes
+
+		cost = 50
+
+		modifier = {
+
+		}
+		
+		complete_effect = {
+			set_country_flag = SLO_doing_ch_decision
+		}
+
+		remove_effect = {
+			clr_country_flag = SLO_doing_ch_decision
+			add_to_variable = { SLO_ch_research_speed_factor = 0.1 }
+			add_to_variable = { SLO_ec_consumer_goods_factor = 0.01 }
+			custom_effect_tooltip = SLO_meet_with_scientists_tt
+		}
+	}
+
+
+	SLO_guide_the_intelligence_agency = { 
+		priority = 1
+
+		icon = eng_trade_unions_support
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			has_intelligence_agency = yes
+			NOT = {
+				has_country_flag = {
+					flag = SLO_doing_ch_decision
+				}
+			}
+		}
+
+
+		days_remove = 360
+		
+		
+		fire_only_once = yes
+
+		cost = 50
+
+		modifier = {
+
+		}
+		
+		complete_effect = {
+			set_country_flag = SLO_doing_ch_decision
+		}
+
+		remove_effect = {
+			clr_country_flag = SLO_doing_ch_decision
+			add_to_variable = { SLO_ch_agency_upgrade_time = -0.25 }
+			add_to_variable = { SLO_ch_intel_network_gain_factor = 0.1 }
+			add_to_variable = { SLO_ch_operative_slot = 1 }
+			custom_effect_tooltip = SLO_guide_the_intelligence_agency_tt
+		}
+	}
+	
+	SLO_study_foreign_generals = { 
+		priority = 1
+
+		icon = eng_trade_unions_support
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			NOT = {
+				has_country_flag = {
+					flag = SLO_doing_ch_decision
+				}
+			}
+		}
+
+
+		days_remove = 180
+		
+		
+		fire_only_once = yes
+
+		cost = 50
+
+		modifier = {
+
+		}
+		
+		complete_effect = {
+			set_country_flag = SLO_doing_ch_decision
+		}
+
+		remove_effect = {
+			clr_country_flag = SLO_doing_ch_decision
+			add_to_variable = { SLO_ch_max_planning = 0.25 }
+			add_to_variable = { SLO_ch_planning_speed = 0.25 }
+			custom_effect_tooltip = SLO_study_foreign_generals_tt
+		}
+	}
+	
+	SLO_stock_market_investments = { 
+		priority = 1
+
+		icon = eng_trade_unions_support
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			NOT = {
+				has_country_flag = {
+					flag = SLO_doing_ch_decision
+				}
+			}
+		}
+
+
+		days_remove = 240
+		
+		
+		fire_only_once = yes
+
+		cost = 50
+
+		modifier = {
+
+		}
+		
+		complete_effect = {
+			set_country_flag = SLO_doing_ch_decision
+		}
+
+		remove_effect = {
+			clr_country_flag = SLO_doing_ch_decision
+			add_to_variable = { SLO_ec_consumer_goods_factor = -0.02 }
+			custom_effect_tooltip = SLO_stock_market_investments_tt
+		}
+	}
+	
+	SLO_doctrinal_advancements = { 
+		priority = 1
+
+		icon = eng_trade_unions_support
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			NOT = {
+				has_country_flag = {
+					flag = SLO_doing_ch_decision
+				}
+			}
+		}
+
+
+		days_remove = 180
+		
+		
+		fire_only_once = yes
+
+		cost = 50
+
+		modifier = {
+
+		}
+		
+		complete_effect = {
+			set_country_flag = SLO_doing_ch_decision
+		}
+
+		remove_effect = {
+			clr_country_flag = SLO_doing_ch_decision
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.4
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	SLO_political_manuevering = { 
+		priority = 1
+
+		icon = eng_trade_unions_support
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			NOT = {
+				has_country_flag = {
+					flag = SLO_doing_ch_decision
+				}
+			}
+		}
+
+
+		days_remove = 180
+		days_re_enable = 1
+		
+		fire_only_once = no
+
+		cost = 0
+
+		modifier = {
+			political_power_factor = 0.1
+		}
+		
+		complete_effect = {
+			set_country_flag = SLO_doing_ch_decision
+		}
+
+		remove_effect = {
+			clr_country_flag = SLO_doing_ch_decision
+		}
+	}
+}
+
+SLO_the_final_solution_decisions = {
+	SLO_force_the_hungarians_into_ghettos = { 
+		priority = 1
+
+		icon = eng_trade_unions_support
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+		}
+
+
+		days_remove = 120
+		
+		
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 999 }
+		}
+		custom_cost_text = decision_cost_ie_1000
+
+		modifier = {
+			weekly_manpower = -100
+			political_power_factor = -0.05
+		}
+		
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = HUN
+					not = { is_core_of = SLO } 
+					is_owned_and_controlled_by = SLO
+				}
+				add_resistance = 5
+			}
+			hidden_effect={
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -1000
+				}
+			}
+		}
+
+		remove_effect = {
+			set_country_flag = SLO_HUN_in_ghettos
+			every_state = {
+				limit = {
+					is_core_of = HUN
+					not = { is_core_of = SLO }
+					is_owned_and_controlled_by = SLO
+				}
+				add_manpower = -50000
+				add_resistance = -20
+				add_compliance = 5
+				
+				add_dynamic_modifier = { modifier = depopulated_1 }
+			}
+		}
+	}
+	
+	SLO_force_them_to_work = { 
+		priority = 1
+
+		icon = generic_police_action
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+			
+		}
+		
+		available = {
+			has_country_flag = {
+				flag = SLO_HUN_in_ghettos
+			}
+			not = { has_completed_focus = SLO_kill_them_all }
+		}
+
+		visible={
+			not = { has_completed_focus = SLO_kill_them_all }
+		}
+
+		days_remove = 730
+		
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		modifier = {
+			consumer_goods_factor = -0.02
+			industrial_capacity_factory = 0.1
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			every_state = {
+				limit = {
+					is_core_of = HUN
+					not = { is_core_of = SLO }
+					is_owned_and_controlled_by = SLO
+				}
+				add_manpower = -1000
+				add_resistance = 5
+			}
+		}
+	}
+	
+	SLO_forced_labour = { 
+		priority = 1
+
+		icon = generic_factory
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+			
+		}
+		
+		available = {
+			has_country_flag = {
+				flag = SLO_HUN_in_ghettos
+			}
+			not = { has_completed_focus = SLO_kill_them_all }
+		}
+		
+		visible={
+			not = { has_completed_focus = SLO_kill_them_all }
+		}
+
+
+		days_remove = 180
+		days_re_enable = 60
+		
+		
+		fire_only_once = no
+
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+
+		modifier = {
+			production_speed_buildings_factor = 0.15
+			industry_repair_factor = 0.10
+		}
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				add_political_power = -50
+			}
+		}
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = { is_core_of = SLO }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = HUN
+					not = { is_core_of = SLO }
+					is_owned_and_controlled_by = SLO
+				}
+				add_manpower = -500
+				add_resistance = 5
+			}
+		}
+	}
+	
+	SLO_encourage_slavic_migration_to_hungary = { 
+		priority = 1
+
+		icon = generic_political_discourse
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			has_country_flag = {
+				flag = SLO_HUN_in_ghettos
+			}
+			any_controlled_state={
+				or={
+					has_dynamic_modifier = { modifier = depopulated_1 }
+					has_dynamic_modifier = { modifier = depopulated_2 }
+					has_dynamic_modifier = { modifier = depopulated_3 }
+					has_dynamic_modifier = { modifier = depopulated_4 }
+					has_dynamic_modifier = { modifier = depopulated_5 }
+				}
+			}
+		}
+
+
+		days_remove = 180
+		days_re_enable = 180
+		
+		
+		fire_only_once = no
+
+		cost = 100
+
+		modifier = {
+			political_power_factor = -0.05
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			every_state = {
+				limit = {
+					is_core_of = HUN
+					not = { is_core_of = SLO }
+					is_owned_and_controlled_by = SLO
+				}
+				add_manpower = 300000
+				add_compliance = 5
+				
+				SLO_reduce_depopulation = yes
+			}
+		}
+	}
+	
+	SLO_build_the_camps = { 
+		priority = 1
+
+		icon = generic_factory
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			has_country_flag = {
+				flag = SLO_HUN_in_ghettos
+			}
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+
+		days_remove = 365
+		
+		
+		fire_only_once = yes
+
+		cost = 50
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			set_country_flag = SLO_built_camps	
+		}
+	}
+}
+
+SLO_to_liberate_europe_decisions={
+	SLO_decolonisation = {
+
+		icon = generic_form_nation
+
+		available = {
+			NOT = { has_completed_focus = SLO_to_liberate_europe }
+		}
+
+		days_mission_timeout = 180
+
+		activation = {
+			has_completed_focus = SLO_to_liberate_europe
+		}
+
+		visible = {
+			
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			every_country={
+				limit={
+					OR={
+						tag = SLO
+						is_in_faction_with = SLO
+					}
+				}
+				set_variable = { SLO.faction_member = THIS }
+				SLO_release_country = yes
+				clear_variable = SLO.faction_member
+			}
+			every_country={
+				limit={
+					is_subject = yes
+					OR={
+						is_in_faction_with = SLO
+						is_subject_of = SLO
+					}
+				}
+				add_autonomy_score = {
+					value = 200
+					localization = SLO_decolonisation
+				}
+				add_political_power = 25
+			}
+		}
+	}
+
+	SLO_emergency_powers = { 
+		priority = 1
+
+		icon = generic_civil_support
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			has_war = yes
+			NOT = {
+				has_country_flag = {
+					flag = SLO_focus_on_the_war_flag
+				}
+			}
+		}
+
+
+		days_remove = 180
+		days_re_enable = 180
+		
+		
+		fire_only_once = no
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = 0.5
+			stability_weekly = -0.004
+		}
+		
+		complete_effect = {
+			add_stability = -0.05
+			set_country_flag = SLO_emergency_powers_flag
+		}
+
+		remove_effect = {
+			clr_country_flag = SLO_emergency_powers_flag
+		}
+	}
+	
+	SLO_focus_on_the_war = { 
+		priority = 1
+
+		icon = generic_operation
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			has_war = yes
+			NOT = {
+				has_country_flag = {
+					flag = SLO_emergency_powers_flag
+				}
+			}
+		}
+
+
+		days_remove = 180
+		days_re_enable = 180
+		
+		
+		fire_only_once = no
+
+		cost = 25
+
+		modifier = {
+			political_power_factor = -0.1
+			command_power_gain = 0.5
+			army_attack_factor = 0.05
+			army_defence_factor = 0.05
+			army_org_factor = 0.1
+		}
+		
+		complete_effect = {
+			set_country_flag = SLO_focus_on_the_war_flag
+		}
+
+		remove_effect = {
+			clr_country_flag = SLO_focus_on_the_war_flag
+		}
+	}
+	
+	SLO_strategic_fortifications = { 
+		priority = 1
+
+		icon = generic_mountain_fortification
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		visible={
+			has_completed_focus = SLO_preparation_for_german_aggression
+			not = { has_country_flag = { flag = SLO_fortified_the_border } }
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			not = { is_in_faction_with = GER }
+			not = { has_country_flag = { flag = SLO_fortified_the_border } }
+		}
+		
+		days_remove = 30
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+
+		modifier = {
+			civilian_factory_use = 8
+		}
+		
+		complete_effect={
+			set_country_flag = SLO_fortified_strategic_postitions
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = SLO_strategic_fortifications_tt
+			hidden_effect={
+				add_command_power = -25
+				add_political_power = -50
+				if={
+					limit = { 
+						43 = {
+							OWNER = {
+								OR = {
+									tag = SLO
+									is_in_faction_with = SLO
+								}
+							}
+						}
+					}
+					43={
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9690
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 9660
+							instant_build = yes
+						}
+					}
+				}
+				
+				if={
+					limit = { 
+						154 = {
+							OWNER = {
+								OR = {
+									tag = SLO
+									is_in_faction_with = SLO
+								}
+							}
+						}
+					}
+					154={
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11625
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6670
+							instant_build = yes
+						}
+					}
+				}
+				
+				if={
+					limit = { 
+						72 = {
+							OWNER = {
+								OR = {
+									tag = SLO
+									is_in_faction_with = SLO
+								}
+							}
+						}
+					}
+					72={
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 9567
+							instant_build = yes
+						}
+					}
+				}
+				
+				if={
+					limit = { 
+						909 = {
+							OWNER = {
+								OR = {
+									tag = SLO
+									is_in_faction_with = SLO
+								}
+							}
+						}
+					}
+					909	={
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 9692
+							instant_build = yes
+						}
+					}
+				}
+				
+				if={
+					limit = { 
+						664 = {
+							OWNER = {
+								OR = {
+									tag = SLO
+									is_in_faction_with = SLO
+								}
+							}
+						}
+					}
+					664	={
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3716
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11679
+							instant_build = yes
+						}
+					}
+				}
+				
+				if={
+					limit = { 
+						762 = {
+							OWNER = {
+								OR = {
+									tag = SLO
+									is_in_faction_with = SLO
+								}
+							}
+						}
+					}
+					762	={
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6464
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 506
+							instant_build = yes
+						}
+					}
+				}
+				
+				if={
+					limit = { 
+						90 = {
+							OWNER = {
+								OR = {
+									tag = SLO
+									is_in_faction_with = SLO
+								}
+							}
+						}
+					}
+					90	={
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3586
+							instant_build = yes
+						}
+					}
+				}
+				
+				if={
+					limit = { 
+						87 = {
+							OWNER = {
+								OR = {
+									tag = SLO
+									is_in_faction_with = SLO
+								}
+							}
+						}
+					}
+					87	={
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11428
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 493
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11515
+							instant_build = yes
+						}
+					}
+				}
+				
+				if={
+					limit = { 
+						98 = {
+							OWNER = {
+								OR = {
+									tag = SLO
+									is_in_faction_with = SLO
+								}
+							}
+						}
+					}
+					98	={
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6401
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 548
+							instant_build = yes
+						}
+					}
+				}
+				
+				if={
+					limit = { 
+						10 = {
+							OWNER = {
+								OR = {
+									tag = SLO
+									is_in_faction_with = SLO
+								}
+							}
+						}
+					}
+					10	={
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11492
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 3544
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 524
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 402
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+	SLO_fortify_the_border_with_germany = { 
+		priority = 1
+
+		icon = generic_mountain_fortification
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		visible={
+			has_completed_focus = SLO_preparation_for_german_aggression
+			not = { has_country_flag = { flag = SLO_fortified_strategic_postitions } }
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			not = { is_in_faction_with = GER }
+			not = { has_country_flag = { flag = SLO_fortified_strategic_postitions } }
+			any_state = {
+				OWNER = {
+					OR = {
+						tag = SLO
+						is_subject_of = SLO
+						is_in_faction_with = SLO
+					}
+				}	
+				any_neighbor_state = {
+					is_owned_by = GER
+				}
+			}
+			num_of_civilian_factories_available_for_projects > 7
+		}
+		
+		days_remove = 30
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+
+		modifier = {
+			civilian_factory_use = 8
+		}
+		
+		complete_effect={
+			set_country_flag = SLO_fortified_the_border
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = SLO_fortify_the_border_with_germany_tt
+			hidden_effect={
+				add_command_power = -25
+				add_political_power = -50
+				every_country={
+					limit={
+						OR={
+							tag = SLO
+							is_in_faction_with = SLO
+						}
+					}
+					every_owned_state = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							instant_build = yes
+							province = {
+								all_provinces = yes
+								limit_to_border_country = GER
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	SLO_compensation_for_poland = { 
+		priority = 1
+
+		icon = generic_form_nation
+
+		ai_will_do = {
+			base = 10
+		}
+		
+		allowed = { 
+			original_tag = SLO
+		}
+		
+		available = {
+			is_in_faction_with = POL
+			is_in_faction_with = GER
+		}
+		
+		
+		fire_only_once = yes
+
+		cost = 0
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+			country_event = { id = slovakia.38 }
+		}
+	}
+}

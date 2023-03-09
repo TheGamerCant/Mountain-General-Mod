@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_cat_picture_SLO_anti_hungarian_propaganda"
+		texturefile = "gfx/interface/decisions/SLO_anti_hungarian_propaganda.png"
+	}	
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_SLO_death_of_a_fascist_bastard"
+		texturefile = "gfx/interface/decisions/SLO_death_of_a_fascist_bastard.png"
+	}		
+}

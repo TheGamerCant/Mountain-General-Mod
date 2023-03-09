@@ -1,0 +1,283 @@
+SLO_reduce_depopulation={
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = depopulated_1 }
+		}
+		remove_dynamic_modifier = {
+			modifier = depopulated_1
+		}
+		add_dynamic_modifier = {
+			modifier = depopulated_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_dynamic_modifier = { modifier = depopulated_2 }
+		}
+		remove_dynamic_modifier = {
+			modifier = depopulated_2
+		}
+		add_dynamic_modifier = {
+			modifier = depopulated_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_dynamic_modifier = { modifier = depopulated_3 }
+		}
+		remove_dynamic_modifier = {
+			modifier = depopulated_3
+		}
+		add_dynamic_modifier = {
+			modifier = depopulated_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_dynamic_modifier = { modifier = depopulated_4 }
+		}
+		remove_dynamic_modifier = {
+			modifier = depopulated_4
+		}
+		add_dynamic_modifier = {
+			modifier = depopulated_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_dynamic_modifier = { modifier = depopulated_5 }
+		}
+		remove_dynamic_modifier = {
+			modifier = depopulated_5
+		}
+	}
+}
+
+SLO_clear_portrait_flags={
+	if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_normal
+		}
+		clr_country_flag = SLO_mg_portrait_normal
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_anime
+		}
+		clr_country_flag = SLO_mg_portrait_anime
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_confederate
+		}
+		clr_country_flag = SLO_mg_portrait_confederate
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_wojak
+		}
+		clr_country_flag = SLO_mg_portrait_wojak
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_history_matters
+		}
+		clr_country_flag = SLO_mg_portrait_history_matters
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_gone
+		}
+		clr_country_flag = SLO_mg_portrait_gone
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_n_word
+		}
+		clr_country_flag = SLO_mg_portrait_n_word
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_cat
+		}
+		clr_country_flag = SLO_mg_portrait_cat
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_anime_2
+		}
+		clr_country_flag = SLO_mg_portrait_anime_2
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_hentai
+		}
+		clr_country_flag = SLO_mg_portrait_hentai
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_tno
+		}
+		clr_country_flag = SLO_mg_portrait_tno
+	}
+}
+
+SLO_update_leader_portrait={	#Used for when you change ideologies
+	if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_normal
+		}
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/SLO/SLO_mountain_general.png"
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_anime
+		}
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/SLO/SLO_mountain_general_anime.png"
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_confederate
+		}
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/SLO/SLO_mountain_general_confederate.png"
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_wojak
+		}
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/SLO/SLO_mountain_general_wojak.png"
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_history_matters
+		}
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/SLO/SLO_mountain_general_history_matters.png"
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_gone
+		}
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/SLO/SLO_mountain_general_gone.png"
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_n_word
+		}
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/SLO/SLO_mountain_general_with_n_word.png"
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_cat
+		}
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/SLO/SLO_mountain_general_cat.png"
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_anime_2
+		}
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/SLO/SLO_mountain_general_anime_2.png"
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_hentai
+		}
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/SLO/SLO_mountain_general_hentai.png"
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_tno
+		}
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/SLO/SLO_mountain_general_goes_mad.png"
+		}
+	}
+}
+
+SLO_release_country={
+	every_occupied_country = {
+		if = {
+			limit = {
+				exists = yes
+				NOT = { has_war_with = SLO }
+			}
+			create_dynamic_country = {
+				original_tag = THIS
+				set_variable = { SLO.create_puppet = THIS }
+				var:SLO.faction_member = {
+					every_controlled_state = {
+						limit = {
+							is_core_of = PREV.PREV
+							is_fully_controlled_by = var:SLO.faction_member
+						}
+						var:SLO.create_puppet = {
+							transfer_state = PREV
+						}
+					}
+				}
+				set_popularities = {
+					democratic = SLO.party_popularity_100@democratic
+					neutrality = SLO.party_popularity_100@neutrality
+					fascism = SLO.party_popularity_100@fascism
+					communism = SLO.party_popularity_100@communism
+				}
+				set_politics = {
+					ruling_party = var:SLO.faction_member
+				}
+			}
+			var:SLO.faction_member = {
+				puppet = SLO.create_puppet
+			}
+			clear_variable = SLO.create_puppet
+		}
+		else = {
+			var:SLO.faction_member = { release_puppet_on_controlled = PREV }
+		}
+	}
+}
+
+SLO_increase_war_with_germany_idea={
+	if={
+		limit = { has_idea = SLO_war_with_germany_1 }
+		swap_ideas = {
+			remove_idea = SLO_war_with_germany_1
+			add_idea = SLO_war_with_germany_2
+		}
+	}
+	else_if={
+		limit = { has_idea = SLO_war_with_germany_0 }
+		swap_ideas = {
+			remove_idea = SLO_war_with_germany_0
+			add_idea = SLO_war_with_germany_1
+		}
+	}
+	else_if={
+		limit = { has_idea = SLO_preparation_for_german_aggression_idea }
+		swap_ideas = {
+			remove_idea = SLO_preparation_for_german_aggression_idea
+			add_idea = SLO_war_with_germany_0
+		}
+	}
+	else={
+		add_ideas = SLO_war_with_germany_0
+	}
+}

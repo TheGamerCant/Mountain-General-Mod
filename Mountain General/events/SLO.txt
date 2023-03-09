@@ -1,0 +1,1436 @@
+add_namespace = slovakia
+
+#Peace with Czechsolvakia
+country_event = {
+	id = slovakia.1
+	title = slovakia.1.t
+	desc = slovakia.1.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_hitler_parade
+
+	option = { 
+		name = slovakia.1.a
+		ai_chance = {
+			base = 10
+		}
+		if = {
+			limit = {
+				has_idea = SLO_bratislavan_uprising
+			}
+			remove_ideas = SLO_bratislavan_uprising
+		}
+		ROOT = {
+			white_peace = CZE
+		}	
+		ROOT = { transfer_state = 70 }
+		ROOT = { transfer_state = 71 }
+		ROOT = { transfer_state = 664 }
+		ROOT = { transfer_state = 73 }
+		add_ideas = limited_conscription
+		add_timed_idea={
+			idea = SLO_demobilisation
+			days = 4
+		}
+		CZE = { 
+			remove_state_core = 70
+			remove_state_core = 71
+			remove_state_core = 664
+			remove_state_core = 73
+			remove_state_core = 909
+		}
+	}
+}
+
+#What Czechoslvakia gets
+country_event = {
+	id = slovakia.2
+	title = slovakia.2.t
+	desc = slovakia.2.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_hitler_parade
+
+	option = { 
+		name = slovakia.2.a
+		ai_chance = {
+			base = 10
+		}
+		SLO = {
+			country_event = { id = slovakia.1 hours = 4 }
+		}
+		SLO = {
+			country_event = { id = slovakia.5 days = 2 }
+		}
+		SLO = {
+			country_event = { id = slovakia.4 days = 25 }
+		}
+		if = {
+			limit = {
+				original_tag = CZE
+			}
+			set_cosmetic_tag = CZE_ONLY
+		}
+		if = {
+			limit = {
+				has_idea = CZE_divided_nation
+			}
+			remove_ideas = CZE_divided_nation
+		}
+	}
+}
+
+#More Divisions
+country_event = {
+	id = slovakia.3
+	title = slovakia.3.t
+	desc = slovakia.3.desc
+	is_triggered_only = yes
+
+	picture = GFX_report_event_vienna_award_hungary
+
+	option = { 
+		name = slovakia.3.a
+		ai_chance = {
+			base = 10
+		}
+		909 = {
+			create_unit = {
+				division = "name = \"4.Pesi Divize\"division_template = \"Pesi Divize\" start_experience_factor = 0.06 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ROOT
+				allow_spawning_on_enemy_provs = no 	
+				count = 1
+			}
+			create_unit = {
+				division = "name = \"5.Pesi Divize\"division_template = \"Pesi Divize\" start_experience_factor = 0.06 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ROOT
+				allow_spawning_on_enemy_provs = no 	
+				count = 1
+			}
+			create_unit = {
+				division = "name = \"2.Mobilná Skupina\"division_template = \"Mobilná Skupina\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ROOT
+				allow_spawning_on_enemy_provs = no 	
+				count = 1
+			}
+
+		}
+		add_manpower = 38000
+		add_equipment_to_stockpile = { 
+			type = infantry_equipment_1
+			amount = 2000
+			producer = CZE
+		}
+		add_equipment_to_stockpile = { 
+			type = support_equipment
+			amount = 500
+			producer = CZE
+		}
+		add_equipment_to_stockpile = { 
+			type = artillery_equipment_1
+			amount = 200
+			producer = CZE
+		}
+	}
+}
+
+#Pick ideology
+country_event = {
+	id = slovakia.4
+	title = slovakia.4.t
+	desc = slovakia.4.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_generic_sign_treaty3
+
+	option = { 
+		name = slovakia.4.a
+		ai_chance = {
+			base = 10
+		}
+		complete_national_focus = SLO_a_based_slovakia
+
+	}
+	
+	option = { 
+		name = slovakia.4.b
+		ai_chance = {
+			base = 10
+		}
+		complete_national_focus = SLO_a_free_slovakia
+
+	}
+
+}
+
+#Get Czech debts
+country_event = {
+	id = slovakia.5
+	title = slovakia.5.t
+	desc = slovakia.5.desc
+	is_triggered_only = yes
+
+	option = { 
+		name = slovakia.5.a
+		ai_chance = {
+			base = 10
+		}
+		add_to_variable = { SLO_ec_consumer_goods_factor = 0.25 }
+		custom_effect_tooltip = slovakia.5.tt
+	}
+}
+
+#Pay off debts
+country_event = {
+	id = slovakia.6
+	title = slovakia.6.t
+	desc = slovakia.6.desc
+	is_triggered_only = yes
+
+	option = { 
+		name = slovakia.6.a#military
+		ai_chance = {
+			base = 10
+		}
+		add_to_variable = { SLO_ec_consumer_goods_factor = -0.2 }
+		add_war_support = -0.1
+		add_timed_idea = {
+			idea = SLO_mil_debt_repayment
+			days = 730
+		}
+	}
+	
+	option = { 
+		name = slovakia.6.b#civilian
+		ai_chance = {
+			base = 10
+		}
+		add_to_variable = { SLO_ec_consumer_goods_factor = -0.2 }
+		add_stability = -0.2
+		add_timed_idea = {
+			idea = SLO_civ_debt_repayment
+			days = 730
+		}
+	}
+}
+
+#Denounce Hungary Fascist
+country_event = {
+	id = slovakia.7
+	title = slovakia.7.t
+	desc = slovakia.7.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_communist_leader
+
+	option = { 
+		name = slovakia.7.a
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = 50
+		HUN = { add_opinion_modifier = { target = ROOT modifier = hostile_status } }
+	}
+}
+
+#Denounce Germany Fascist
+country_event = {
+	id = slovakia.8
+	title = slovakia.8.t
+	desc = slovakia.8.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_communist_leader
+
+	option = { 
+		name = slovakia.8.a
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = 50
+		GER = { add_opinion_modifier = { target = ROOT modifier = hostile_status } }
+	}
+}
+
+#Anti Hungarian racial laws
+country_event = {
+	id = slovakia.9
+	title = slovakia.9.t
+	desc = slovakia.9.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_dead_soldiers
+
+	option = { 
+		name = slovakia.9.a
+		ai_chance = {
+			base = 10
+		}
+		add_stability = -0.02
+		664={
+			add_manpower = -835
+		}
+	}
+}
+
+#Deal with Ruthenia Fascist
+country_event = {
+	id = slovakia.10
+	title = slovakia.10.t
+	desc = slovakia.10.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_cze_divided_nation
+
+	option = { 
+		name = slovakia.10.a	#Autonomous
+		ai_chance = {
+			base = 10
+		}
+		add_stability = 0.05
+		add_political_power = 50
+		add_state_core = 73
+		73={
+			add_dynamic_modifier = { modifier = autonomous_state }
+		}
+		set_country_flag = SLO_gave_ruthenia_autonomy
+	}
+	
+	option = { 
+		name = slovakia.10.b	#Fuckem'
+		ai_chance = {
+			base = 10
+		}
+		add_stability = -0.06
+		add_political_power = 20
+		add_state_core = 73
+		custom_effect_tooltip = slovakia.10.tt
+
+	}
+}
+
+#Economic benefits of roads
+country_event = {
+	id = slovakia.11
+	title = slovakia.11.t
+	desc = slovakia.11.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_generic_factory
+
+	option = { 
+		name = slovakia.11.a
+		ai_chance = {
+			base = 10
+		}
+		add_to_variable = { SLO_ec_consumer_goods_factor = -0.05 }
+		add_to_variable = { SLO_ec_line_change_production_efficiency_factor = 0.25 }
+		custom_effect_tooltip = slovakia.11.tt
+		set_country_flag = SLO_benefits_from_roads
+	}
+}
+
+#GER gets Sudetenland
+country_event = {
+	id = slovakia.12
+	title = slovakia.12.t
+	desc = slovakia.12.desc
+	is_triggered_only = yes
+
+	option = { 
+		name = slovakia.12.a
+		ai_chance = {
+			base = 10
+		}
+		GER = { 
+			transfer_state = 69
+			transfer_state = 74
+			add_state_core = 69
+			add_state_core = 74
+		}
+		POL = {
+			transfer_state = 72
+			add_state_core = 72
+		}	
+		SLO = {
+			country_event = { id = slovakia.13 hours = 7 }
+		}
+	}
+}
+
+#SLO gets leftovers
+country_event = {
+	id = slovakia.13
+	title = slovakia.13.t
+	desc = slovakia.13.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_german_inspect_troops
+
+	option = { 
+		name = slovakia.13.a
+		ai_chance = {
+			base = 10
+		}
+		annex_country = { target = CZE transfer_troops = yes }
+		CZE = {
+			every_unit_leader = {
+				set_nationality = SLO
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 8 id = news.500 }
+		}
+	}
+}
+
+#SLO gets bohemia-moravia
+country_event = {
+	id = slovakia.14
+	title = slovakia.14.t
+	desc = slovakia.14.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_german_inspect_troops
+
+	option = { 
+		name = slovakia.14.a
+		ai_chance = {
+			base = 10
+		}
+		annex_country = { target = CZE transfer_troops = yes }
+		CZE = {
+			every_unit_leader = {
+				set_nationality = SLO
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 8 id = news.501 }
+		}
+	}
+}
+
+#SLO gets bohemia-moravia - for czechia
+country_event = {
+	id = slovakia.15
+	title = slovakia.15.t
+	desc = slovakia.15.desc
+	is_triggered_only = yes
+
+	option = { 
+		name = slovakia.15.a
+		ai_chance = {
+			base = 10
+		}
+		SLO = {
+			country_event = { id = slovakia.14 hours = 7 }
+		}
+	}
+}
+
+#Booming arms industry
+country_event = {
+	id = slovakia.16
+	title = slovakia.16.t
+	desc = slovakia.16.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_generic_factory
+
+	option = { 
+		name = slovakia.16.a
+		ai_chance = {
+			base = 10
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		
+		add_to_variable = { SLO_ec_consumer_goods_factor = -0.05 }
+		add_to_variable = { SLO_dc_industrial_capacity_factory = 0.1 } 
+		custom_effect_tooltip = slovakia.16.tt
+	}
+}
+
+#SLO and CZE guarentees
+country_event = {
+	id = slovakia.17
+	title = slovakia.17.t
+	desc = slovakia.17.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_saf_coup
+
+	option = { 
+		name = slovakia.17.a
+		ai_chance = {
+			base = 10
+		}
+		CZE = { 
+			give_guarantee = SLO
+			add_political_power = 50
+		}
+		give_guarantee = CZE
+		add_political_power = 50
+	}
+}
+
+#SLO and CZE guarentees - for czechia
+country_event = {
+	id = slovakia.18
+	title = slovakia.18.t
+	desc = slovakia.18.desc
+	is_triggered_only = yes
+
+	option = { 
+		name = slovakia.18.a
+		ai_chance = {
+			base = 10
+		}
+		SLO = {
+			country_event = { id = slovakia.17 hours = 12 }
+		}
+	}
+}
+
+#Set up infrastructue for election
+country_event = {
+	id = slovakia.19
+	title = slovakia.19.t
+	desc = slovakia.19.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_SWI_assembly_hall
+
+	option = { 
+		name = slovakia.19.a
+		ai_chance = {
+			base = 10
+		}
+		add_timed_idea={
+			idea = SLO_election_infrastructure
+			days = 60
+		}	
+		hidden_effect={
+			country_event = { id = slovakia.20 days = 61 }
+		}
+	}
+}
+
+#Election
+country_event = {
+	id = slovakia.20
+	title = slovakia.20.t
+	desc = slovakia.20.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_SWI_parliament_members
+
+	option = { 
+		name = slovakia.20.a
+		ai_chance = {
+			base = 10
+		}		
+		hidden_effect = {
+			country_event = { id = slovakia.21 hours = 12 }
+			country_event = { id = slovakia.22 days = 1461 }
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			SLO_update_leader_portrait = yes
+		}
+		add_timed_idea={
+			idea = SLO_conservative_policy
+			days = 1460
+		}
+	}
+	option = { 
+		name = slovakia.20.b
+		ai_chance = {
+			base = 10
+		}
+		hidden_effect = {
+			country_event = { id = slovakia.21 hours = 12 }
+			country_event = { id = slovakia.22 days = 1461 }
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			SLO_update_leader_portrait = yes
+		}
+		add_timed_idea={
+			idea = SLO_liberal_policy
+			days = 1460
+		}
+	}
+	option = { 
+		name = slovakia.20.c
+		ai_chance = {
+			base = 10
+		}
+		hidden_effect = {
+			country_event = { id = slovakia.21 hours = 12 }
+			country_event = { id = slovakia.22 days = 1461 }
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			SLO_update_leader_portrait = yes
+		}
+		add_timed_idea={
+			idea = SLO_soc_dem_policy
+			days = 1460
+		}
+
+	}
+}
+
+#Mg still leader tho
+country_event = {
+	id = slovakia.21
+	title = slovakia.21.t
+	desc = slovakia.21.desc
+	is_triggered_only = yes
+
+	option = { 
+		name = slovakia.21.a
+		ai_chance = {
+			base = 10
+		}
+		swap_ruler_traits = {
+			remove = warmonger
+			add = protector_of_slovak_democracy
+		}
+		set_country_flag = SLO_election_is_over
+	}
+}
+
+#Election without mg event
+country_event = {
+	id = slovakia.22
+	title = slovakia.22.t
+	desc = slovakia.22.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_SWI_parliament_members
+
+	option = { 
+		name = slovakia.22.a
+		ai_chance = {
+			base = 10
+		}		
+		hidden_effect = {
+			country_event = { id = slovakia.22 days = 1461 }
+		}
+		add_timed_idea={
+			idea = SLO_conservative_policy
+			days = 1460
+		}
+	}
+	option = { 
+		name = slovakia.22.b
+		ai_chance = {
+			base = 10
+		}
+		hidden_effect = {
+			country_event = { id = slovakia.22 days = 1461 }
+		}
+		add_timed_idea={
+			idea = SLO_liberal_policy
+			days = 1460
+		}
+	}
+	option = { 
+		name = slovakia.22.c
+		ai_chance = {
+			base = 10
+		}
+		hidden_effect = {
+			country_event = { id = slovakia.22 days = 1461 }
+		}
+		add_timed_idea={
+			idea = SLO_soc_dem_policy
+			days = 1460
+		}
+
+	}
+}
+
+#Kill the Hungarians
+country_event = {
+	id = slovakia.23
+	title = slovakia.23.t
+	desc = slovakia.23.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_german_inspect_troops
+
+	option = { 
+		name = slovakia.23.a
+		ai_chance = {
+			base = 10
+		}		
+	}
+}
+
+#Final solution over
+country_event = {
+	id = slovakia.24
+	title = slovakia.24.t
+	desc = slovakia.24.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_german_inspect_troops
+
+	option = { 
+		name = slovakia.24.a
+		ai_chance = {
+			base = 10
+		}	
+		hidden_effect = {
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = death_camps }
+				}
+				remove_dynamic_modifier = {
+					modifier = death_camps
+				}
+			}
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = death_camps_large }
+				}
+				remove_dynamic_modifier = {
+					modifier = death_camps_large
+				}
+			}
+		}
+		43 = { set_state_name = "Southern Danubia" }
+		set_province_name = {
+			id = 9660
+			name = "Mountain Generalgrad"
+		}
+		every_state = {
+			limit = {
+				is_core_of = HUN
+				is_owned_and_controlled_by = SLO
+			}
+			add_core_of = SLO
+		}
+		every_state = {
+			limit = {
+				is_core_of = HUN
+			}
+			HUN={
+				remove_state_core = PREV
+			}
+		}
+	}
+}
+
+#Initial support the sanation left event
+country_event = {
+	id = slovakia.25
+	title = slovakia.25.t
+	desc = slovakia.25.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_sanation_left_victory
+
+	option = { 
+		name = slovakia.25.a
+		ai_chance = {
+			base = 10
+		}		
+	}
+}
+
+#Meet with Slawek
+country_event = {
+	id = slovakia.26
+	title = slovakia.26.t
+	desc = slovakia.26.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_romania_poland_visit
+
+	option = { 
+		name = slovakia.26.a
+		ai_chance = {
+			base = 10
+		}		
+		add_political_power = 5
+	}
+}
+
+#Fund the coup
+country_event = {
+	id = slovakia.27
+	title = slovakia.27.t
+	desc = slovakia.27.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_romania_poland_visit
+
+	option = { 
+		name = slovakia.27.a
+		ai_chance = {
+			base = 10
+		}		
+		add_political_power = -100
+		add_equipment_to_stockpile = { 
+			type = infantry_equipment_1
+			amount = -1800
+			producer = SLO
+		}
+	}
+}
+
+#Coup succeeds :)
+country_event = {
+	id = slovakia.28
+	title = slovakia.28.t
+	desc = slovakia.28.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_romania_poland_visit
+
+	option = { 
+		name = slovakia.28.a
+		ai_chance = {
+			base = 10
+		}		
+		add_political_power = 150
+		POL = { give_guarantee = SLO }
+		give_guarantee = POL
+	}
+}
+
+#Issues of the great war - Ukraine
+country_event = {
+	id = slovakia.29
+	title = slovakia.29.t
+	desc = slovakia.29.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_baltic_entente_one
+
+	option = { #Release Ukraine in CR and EG
+		trigger = {
+			73 = { is_owned_and_controlled_by = SLO }
+			SLO={
+				is_in_faction_with = POL
+			}
+		}
+		name = slovakia.29.a
+		ai_chance = {
+			base = 10
+		}		
+		SLO={ release = UKR }
+		if={
+			limit= { 89 = { is_owned_and_controlled_by = POL } }
+			UKR = { transfer_state = 89 }
+			
+		}
+		if={
+			limit= { 91 = { is_owned_and_controlled_by = POL } }
+			UKR = { transfer_state = 91 }
+			
+		}
+		hidden_effect={
+			set_province_name = {
+				id = 11479
+				name = "Lviv"
+			}
+			91 = { set_state_name = "Lviv" }
+			set_province_name = {
+				id = 6557
+				name = "Rivne"
+			}
+			93 = { set_state_name = "Rivne" }
+		}
+		UKR = {
+			hidden_effect = {
+				set_politics = {
+					ruling_party = democratic
+					last_election = "1935.11.14"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				set_popularities = {
+					democratic = 80
+					fascism = 6
+					communism = 2
+					neutrality = 12
+				}
+			}
+		}
+		SLO= { add_to_faction = UKR }
+		add_political_power = -50
+		if={
+			limit={
+				SLO={
+					is_in_faction_with = CZE
+					is_in_faction_with = POL
+				}
+				72 = { is_owned_and_controlled_by = CZE }
+			}
+			country_event = { id = slovakia.30 }
+		}
+	}
+	option = { #Release Ukraine in CR and all of EG
+		trigger = {
+			73 = { is_owned_and_controlled_by = SLO }
+			SLO={
+				is_in_faction_with = POL
+			}
+		}
+		name = slovakia.29.b
+		ai_chance = {
+			base = 10
+		}	
+		SLO={ release = UKR }
+		if={
+			limit= { 89 = { is_owned_and_controlled_by = POL } }
+			UKR = { transfer_state = 89 }
+			
+		}
+		if={
+			limit= { 91 = { is_owned_and_controlled_by = POL } }
+			UKR = { transfer_state = 91 }
+			
+		}
+		if={
+			limit= { 93 = { is_owned_and_controlled_by = POL } }
+			UKR = { transfer_state = 93 }
+			
+		}
+		hidden_effect={
+			set_province_name = {
+				id = 11479
+				name = "Lviv"
+			}
+			91 = { set_state_name = "Lviv" }
+			set_province_name = {
+				id = 6557
+				name = "Rivne"
+			}
+			93 = { set_state_name = "Rivne" }
+		}
+		UKR = {
+			hidden_effect = {
+				set_politics = {
+					ruling_party = democratic
+					last_election = "1935.11.14"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				set_popularities = {
+					democratic = 80
+					fascism = 6
+					communism = 2
+					neutrality = 12
+				}
+			}
+		}
+		SLO= { add_to_faction = UKR }
+		add_political_power = -100
+		add_stability = 0.05
+		if={
+			limit={
+				SLO={
+					is_in_faction_with = CZE
+					is_in_faction_with = POL
+				}
+				72 = { is_owned_and_controlled_by = CZE }
+			}
+			country_event = { id = slovakia.30 }
+		}
+	}
+	option = { #Release Ukraine in CR
+		trigger = {
+			73 = { is_owned_and_controlled_by = SLO }
+			SLO={
+				not = { is_in_faction_with = POL } 
+			}
+		}
+		name = slovakia.29.c
+		ai_chance = {
+			base = 10
+		}	
+		SLO={ release = UKR }
+		UKR = {
+			hidden_effect = {
+				set_politics = {
+					ruling_party = democratic
+					last_election = "1935.11.14"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				set_popularities = {
+					democratic = 80
+					fascism = 6
+					communism = 2
+					neutrality = 12
+				}
+			}
+		}
+		SLO= { add_to_faction = UKR }
+		add_political_power = 50
+	}
+	
+	option = { #Release Ukraine in EG
+		trigger = {
+			not={ 73 = { is_owned_and_controlled_by = SLO } } 
+			SLO={
+				is_in_faction_with = POL
+			}
+		}
+		name = slovakia.29.a
+		ai_chance = {
+			base = 10
+		}		
+		if={
+			limit= { 89 = { is_owned_and_controlled_by = POL } }
+			UKR = { transfer_state = 89 }
+			
+		}
+		if={
+			limit= { 91 = { is_owned_and_controlled_by = POL } }
+			UKR = { transfer_state = 91 }
+			
+		}
+		hidden_effect={
+			set_province_name = {
+				id = 11479
+				name = "Lviv"
+			}
+			91 = { set_state_name = "Lviv" }
+			set_province_name = {
+				id = 6557
+				name = "Rivne"
+			}
+			93 = { set_state_name = "Rivne" }
+		}
+		UKR = {
+			hidden_effect = {
+				set_politics = {
+					ruling_party = democratic
+					last_election = "1935.11.14"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				set_popularities = {
+					democratic = 80
+					fascism = 6
+					communism = 2
+					neutrality = 12
+				}
+			}
+		}
+		SLO= { add_to_faction = UKR }
+		add_political_power = -45
+		if={
+			limit={
+				SLO={
+					is_in_faction_with = CZE
+					is_in_faction_with = POL
+				}
+				72 = { is_owned_and_controlled_by = CZE }
+			}
+			country_event = { id = slovakia.30 }
+		}
+	}
+	option = { #Release Ukraine in all of EG
+		trigger = {
+			not={ 73 = { is_owned_and_controlled_by = SLO } }
+			SLO={
+				is_in_faction_with = POL
+			}
+		}
+		name = slovakia.29.e
+		ai_chance = {
+			base = 10
+		}	
+		if={
+			limit= { 89 = { is_owned_and_controlled_by = POL } }
+			UKR = { transfer_state = 89 }
+			
+		}
+		if={
+			limit= { 91 = { is_owned_and_controlled_by = POL } }
+			UKR = { transfer_state = 91 }
+			
+		}
+		if={
+			limit= { 93 = { is_owned_and_controlled_by = POL } }
+			UKR = { transfer_state = 93 }
+			
+		}
+		hidden_effect={
+			set_province_name = {
+				id = 11479
+				name = "Lviv"
+			}
+			91 = { set_state_name = "Lviv" }
+			set_province_name = {
+				id = 6557
+				name = "Rivne"
+			}
+			93 = { set_state_name = "Rivne" }
+		}
+		UKR = {
+			hidden_effect = {
+				set_politics = {
+					ruling_party = democratic
+					last_election = "1935.11.14"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				set_popularities = {
+					democratic = 80
+					fascism = 6
+					communism = 2
+					neutrality = 12
+				}
+			}
+		}
+		SLO= { add_to_faction = UKR }
+		add_political_power = -90
+		add_stability = 0.04
+		if={
+			limit={
+				SLO={
+					is_in_faction_with = CZE
+					is_in_faction_with = POL
+				}
+				72 = { is_owned_and_controlled_by = CZE }
+			}
+			country_event = { id = slovakia.30 }
+		}
+	}
+}
+
+#Issues of the great war- Zaolzie
+country_event = {
+	id = slovakia.30
+	title = slovakia.30.t
+	desc = slovakia.30.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_baltic_entente_one
+
+	option = { #Give it to POL
+		name = slovakia.30.a
+		ai_chance = {
+			base = 10
+		}		
+		POL = { 
+			transfer_state = 72 
+			add_state_core = 72
+		}
+		add_political_power = -80
+	}
+	
+	option = { #Give resource rights to POL
+		name = slovakia.30.b
+		ai_chance = {
+			base = 10
+		}		
+		CZE = {
+			give_resource_rights = { receiver = POL state = 72 }		#Sharing is caring ☭☭☭
+			add_offsite_building = { type = industrial_complex level = 2 } 
+		}
+	}
+	
+	option = { #nada
+		name = slovakia.30.c
+		ai_chance = {
+			base = 10
+		}	
+		add_political_power = -10
+	}
+}
+
+#Destroy Ustasa
+country_event = {
+	id = slovakia.31
+	title = slovakia.31.t
+	desc = slovakia.31.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_lithuania_army
+
+	option = { 
+		name = slovakia.31.a
+		ai_chance = {
+			base = 10
+		}		
+	
+		add_political_power = -50
+		add_equipment_to_stockpile = { 
+			type = infantry_equipment_1
+			amount = -1250
+			producer = SLO
+		}
+		add_manpower = -23
+		add_stability = -0.001
+		103={
+			add_manpower = -6120
+		}
+		109={
+			add_manpower = -7518
+		}
+	}
+}
+
+#Find Pavelic
+country_event = {
+	id = slovakia.32
+	title = slovakia.32.t
+	desc = slovakia.32.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_military_planning
+
+	option = { 
+		name = slovakia.32.a
+		ai_chance = {
+			base = 10
+		}		
+	
+		add_political_power = -10
+		add_stability = -0.002
+	}
+}
+
+#Found him! :)
+country_event = {
+	id = slovakia.33
+	title = slovakia.33.t
+	desc = slovakia.33.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_SLO_pavelic_dead
+
+	option = { 
+		name = slovakia.33.a
+		ai_chance = {
+			base = 10
+		}		
+		hidden_effect={
+			if={
+				limit = {
+					CRO={ not = { has_government = fascism } }
+				}
+				CRO={
+					set_politics = {
+						ruling_party = fascism
+						elections_allowed = no
+					}
+				}
+			}
+			CRO={
+				retire_country_leader = yes		#Remove the fascist leader of CRO
+			}
+			if={
+				limit = {
+					CRO={ not = { has_government = democratic } }
+				}
+				CRO={
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+			}
+		}
+		add_political_power = 100
+		add_stability = 0.005
+		custom_effect_tooltip = slovakia.33.tt
+		103 = {
+			controller = {
+				add_manpower = -1	#RIP BOZO 	Packwatch 	You won't be missed
+			}
+		}
+	}
+}
+
+#Frick Germany - for ENG
+country_event = {
+	id = slovakia.34
+	title = slovakia.34.t
+	desc = slovakia.34.desc
+	is_triggered_only = yes
+
+	option = { 
+		name = slovakia.34.a
+		ai_chance = {
+			base = 10
+		}		
+		SLO = { country_event = { id = slovakia.35 days = 2 } }
+	}
+}
+
+#Frick Germany - for SLO
+country_event = {
+	id = slovakia.35
+	title = slovakia.35.t
+	desc = slovakia.35.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_degaulle_churchill
+
+	option = { 
+		name = slovakia.35.a
+		ai_chance = {
+			base = 10
+		}	
+		every_country={
+			limit = {
+				not = { original_tag = SLO } 
+				is_in_faction_with = SLO
+			}
+			ENG = { give_guarantee = PREV }
+		}
+		GER = { country_event = { id = slovakia.36 } }
+		hidden_effect = {
+			country_event = { id = slovakia.37 days = 3 }
+		}
+	}
+}
+
+#No Sudetenland for you mister Hitler!
+country_event = {
+	id = slovakia.36
+	title = slovakia.36.t
+	desc = slovakia.36.desc
+	is_triggered_only = yes
+	
+
+	option = { 
+		name = slovakia.36.a
+		ai_chance = {
+			base = 10
+		}	
+	}
+}
+
+#Yay we won?
+country_event = {
+	id = slovakia.37
+	title = slovakia.37.t
+	desc = slovakia.37.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_vienna_award_hungary
+
+	option = { 
+		name = slovakia.37.a
+		ai_chance = {
+			base = 10
+		}
+		add_stability = 0.001
+	}
+	option = { 
+		name = slovakia.37.b
+		ai_chance = {
+			base = 10
+		}
+		add_war_support = 0.001
+	}
+}
+
+#Compensation for Poland
+country_event = {
+	id = slovakia.38
+	title = slovakia.38.t
+	desc = slovakia.38.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_vienna_award_hungary
+
+	option = { #Ermland-Masuren
+		trigger={
+			5 = { is_owned_and_controlled_by = GER }
+		}
+		name = slovakia.38.a
+		ai_chance = {
+			base = 10
+		}
+		5 = { add_core_of = POL }
+		POL = { transfer_state = 5 }
+	}
+	option = { #Upper silesia
+		trigger={
+			5 = { is_owned_and_controlled_by = GER }
+			67 = { is_owned_and_controlled_by = GER }
+		}
+		name = slovakia.38.b
+		ai_chance = {
+			base = 10
+		}
+		5 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+		POL = { 
+			transfer_state = 5 
+			transfer_state = 67
+		}
+		
+	}
+	option = { #Ober-Neisse line
+		trigger={
+			5 = { is_owned_and_controlled_by = GER }
+			63 = { is_owned_and_controlled_by = GER }
+			66 = { is_owned_and_controlled_by = GER }
+			67 = { is_owned_and_controlled_by = GER }
+			68 = { is_owned_and_controlled_by = GER }
+		}
+		name = slovakia.38.c
+		ai_chance = {
+			base = 10
+		}
+		5 = { add_core_of = POL }
+		63 = { add_core_of = POL }
+		66 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+		68 = { add_core_of = POL }
+		POL = { 
+			transfer_state = 5
+			transfer_state = 63
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 68
+		}
+		
+	}
+	option = { #Konigsberg
+		trigger={
+			5 = { is_owned_and_controlled_by = GER }
+			63 = { is_owned_and_controlled_by = GER }
+			66 = { is_owned_and_controlled_by = GER }
+			67 = { is_owned_and_controlled_by = GER }
+			68 = { is_owned_and_controlled_by = GER }
+			763 = { is_owned_and_controlled_by = GER }
+		}
+		name = slovakia.38.d
+		ai_chance = {
+			base = 10
+		}
+		5 = { add_core_of = POL }
+		63 = { add_core_of = POL }
+		66 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+		68 = { add_core_of = POL }
+		763 = { add_core_of = POL }
+		POL = { 
+			transfer_state = 5
+			transfer_state = 63
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 68
+			transfer_state = 763
+		}
+		
+	}
+}
+
+
+
+
+
+

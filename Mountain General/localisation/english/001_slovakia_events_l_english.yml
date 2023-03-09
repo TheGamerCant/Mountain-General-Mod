@@ -1,0 +1,181 @@
+﻿l_english:
+ news.500.t:0 "The Partition of Czechia"
+ news.500.desc:0 "Earlier today, a secret pact between [GER.GetLeader] and [SLO.GetLeader] came into effect, where they submitted an ultimatium to the Czech government, demanding the surrender of it's territory.\n\n[CZE.GetLeader] backed down, and the Czech state is no more."
+ news.500.a:0 "Slovakia is truely a new European power"
+ news.500.b:0 "Oh God"
+ news.501.t:0 "Slovak troops march into Prague!"
+ news.501.desc:0 "After Germany's seizure of the Sudetenland, it was widely believed that Germany would gobble up the rest of the rump Czech state. However, it would seem that it was Slovakian leader [SLO.GetLeader] who took the initative and crossed the Czech border.\n\nSlovakia has expanded her borders, and the world wonders where she will look to next..."
+ news.501.a:0 "Good riddance"
+ news.501.b:0 "We should prepare for futher conflict"
+
+ slovakia.1.t:0 "Prague accepts peace!"
+ slovakia.1.desc:0 "Shock. Disbelief. Anger.\n\nThese were but some of the feelings felt by those in Prague today, as one mysterious man undid the nation-building project they had been working on for decades. Czhechsolvakia was to be no more, and there was nothing they could do about it."
+ slovakia.1.a:0 "Sláva Horskému Generálovi!"
+
+ slovakia.2.t:0 "[SLO.GetLeader] demands peace"
+ slovakia.3.t:0 "Slovak soldiers join our cause"
+ slovakia.3.desc:0 "In face of our overwhelming victories and [SLO.GetLeader]'s brilliant genius, thousands of our Slovak bretheren have refused their orders from Prague and have mutinied to our cause!"
+ slovakia.3.a:0 "Our victory is inevitable."
+
+ slovakia.4.t:0 "What IS Mountain Generalism?"
+ slovakia.4.desc:0 "Mountain General was approached in his Bratislava office by Josef Tiso.\n'My leader, you have lead all of Slovakia to never before seen heights, but there is one pressing matter - ideology.'\nMountain General snapped back - 'What about ideology!'\n'So far all you've said in terms of your ideological standing is repeatedly calling Hungary 'gay' and 'cringe', and while undoubtedly true, one cannot lead a state on just these beliefs alone.'\n\n Mountain General responded,"
+ slovakia.4.a:0 "My goal is to exterminate Hungary, and make Slovakia great while doing so."
+ slovakia.4.b:0 "I'm only an ironic Fascist..."
+ slovakia.4.c:0 "...I'm actually an Anarcho-Communist."
+
+ slovakia.5.t:0 "The matter of national debt"
+ slovakia.5.desc:0 "As part of our agreement with Czechia, we have inherited a part of their national debt equal to our economic size within the prior union.\n\nWhile not exactly a massive sum of money, the fact that we have been saddled with it so soon after our newfound independence makes it quite the economic challenge."
+ slovakia.5.a:0 "Great. More financial troubles."
+ slovakia.5.tt:0 "Modify §YEconomic chaos§! by \nConsumer Goods Factories: §Y+25.0%§!"
+
+ slovakia.6.t:0 "The hard choice"
+ slovakia.6.desc:0 "In order to maintain a budgetary surplus, we must decide what are the least important benificiaries of our government's expenditure."
+ slovakia.6.a:0 "The military, obviously."
+ slovakia.6.b:0 "The people can go hungry, the army cannot go without guns."
+
+ slovakia.7.t:0 "Mountain General denounces Hungary"
+ slovakia.7.desc:0 "'...and we must root out the Hungarian sympathisers among us. Those who claim that we should treat the southern curs with empathy either do not understand the true gravity of the situation, or are outright aiding the enemy! They speak of their so called 'human rights', but how can one reasonably argue that those inbred, Mongolian heathens, even qualify as such! We must deal to the Hungarian race a killing blow, so that...'\n\nMountain General rambled on for hours. His words captivated many Slovaks, but needless to say, the Hungarians didn't much like them."
+ slovakia.7.a:0 "Glory to Slovakia! Glory to Mountain General! Death to Hungary!"
+
+ slovakia.8.t:0 "Mountain General denounces Germany"
+ slovakia.8.desc:0 "'...They claim to be 'aryans', and yet thier people hold no resemblence to the true Aryans. The true Aryans migrated a millenia ago from the European steppes, and are today known as the Slavs! Never forget this my fellow Slovaks, that it is we, the descendents of the first peoples, who are the true Aryans!'"
+ slovakia.8.a:0 "Glory to Slovakia! Glory to Mountain General! Death to the false Aryans!"
+
+ slovakia.9.t:0 "Ethnic violence in southern Slovakia"
+ slovakia.9.desc:0 "As a result of our new anti-Hungarian racial laws, violence and chaos has erupted in southern Slovakia. There have been large scale protests in many cities by their local Hungarian populations, and even more disatrous, some of the more radical Slovaks claim we are being too soft on the Hungarians, and have 'taken matters into their own hands'. These men have formed improvised militias, and have initiaded pogrom-like cleansings against the Hungarians."
+ slovakia.9.a:0 "I fail to see why this is a bad thing..."
+
+ slovakia.10.t:0 "Autonomy for Ruthenia?"
+ slovakia.10.desc:0 "The local population in Ruthenia has enjoyed autonomy within the Czechoslovak state after our peaceful merger following the great war. Now the question arises, do we allow them to retain their autonomy, or should they bend to the will of Mountain General, as all other members of the Slovak nation must?"
+ slovakia.10.a:0 "We shall never oppress fellow Slavs"
+ slovakia.10.b:0 "Boo fucking hoo, they're not special"
+ slovakia.10.tt:0 "§R\nTaking this decision will prevent you from forming the Holy Slavic Empire!§!"
+
+ slovakia.11.t:0 "Economic benefits from infrastructre"
+ slovakia.11.desc:0 "Our investments in the country's infrastructure has allowed parts of our industry to become better integrated, allowing for smoother production of goods and specialisation in certain industries."
+ slovakia.11.a:0 "Excellent!"
+ slovakia.11.tt:0 "Modify §YEconomic chaos§! by \nConsumer Goods Factories: §Y-5.0%§!\nProduction Efficiency Retention:  §G+25.00%§!"
+
+ slovakia.12.t:0 "[SLO.GetLeader] offers to split Czechia"
+ slovakia.12.desc:0 ""
+ slovakia.12.a:0 ""
+
+ slovakia.13.t:0 "[CZE.GetLeader] backs down!"
+ slovakia.13.desc:0 "[GER.GetLeader] has accepted our offer to split Czechia, and together we have issued a joint ultimatium to the Czech government, each pressing our own claims Czech lands.\n\n[CZE.GetLeader] has backed down, and German troops have already marched into the Sudentenland. Poland has already seized the opportunity to take the towns surrounding Zaolzie, which were disputed since the end of the great war. Now all that is left is for us to march into Prague, and take our rightful place as a great power in Europe."
+ slovakia.13.a:0 "So ends the Czech state, and may it be gone to the history books."
+
+ slovakia.14.t:0 "[CZE.GetLeader] backs down!"
+ slovakia.14.desc:0 "With the German occupation of the Sudetenland, the government of [CZE.GetLeader] has been left diplomatically isolated and weak. Knowing that they could not put up much of a fight against our mighty army, they have given in, and allowed our occupation."
+ slovakia.14.a:0 "So ends the Czech state, and may it be gone to the history books."
+
+ slovakia.15.t:0 "[SLO.GetLeader]'s troops cross the border!"
+ slovakia.15.desc:0 ""
+ slovakia.15.a:0 ""
+
+ slovakia.16.t:0 "Booming Arms Industry"
+ slovakia.16.desc:0 "Our liberal polices on private gun ownership have caused our domestic arms industry, already quite substantial from the old union, to explode in size.\n\nSlovakia is home to cutting edge military research and our factories churn out more guns day by day."
+ slovakia.16.a:0 "Excellent"
+ slovakia.16.tt:0 "Modify §YEconomic chaos§! by \nConsumer Goods Factories: §Y-5.0%§!\n\nModify §YDemocratic constitution§! by\nFactory output:  §G+10.00%§!"
+
+ slovakia.17.t:0 "[CZE.GetLeader] accepts co-operation!"
+ slovakia.17.desc:0 "Despite our troubled beggining, it would seem that [CZE.GetLeader] was convinced of our adherance to democratic values, and has agreed that we shall put our past grievences behind us, and go forward stronger together."
+ slovakia.17.a:0 "Let the world know, Democracies stick together!"
+
+ slovakia.18.t:0 "Reconcilliation?"
+ slovakia.18.desc:0 ""
+ slovakia.18.a:0 ""
+
+ slovakia.19.t:0 "Preparation for the election"
+ slovakia.19.desc:0 "Mountain General's proclamation of elections has brought joy to many Slovakians, but a certain few - the bureaucrats - it could not be more of a nightmare.\n\nFor the next few months, they will be working night and day to ensure secure ballot counting, privacy, and creating the infrastructure for Slovakia's first election!"
+ slovakia.19.a:0 "Exciting times!"
+
+ slovakia.20.t:0 "Election day results!"
+ slovakia.20.desc:0 "After heading to the polls, the Slovak people's voice shall be heard! This was a close election, between three main contenders - the conservatives, the liberals, and the social democrats - who shall win?"
+ slovakia.20.a:0 "The Conservatives!"
+ slovakia.20.b:0 "The Liberals!"
+ slovakia.20.c:0 "The Social Democrats!"
+
+ slovakia.21.t:0 "The founder of Slovak Democracy"
+ slovakia.21.desc:0 "Mountain General is an extremely powerful and beloved figure in Slovakia, but even he knows that it would be undemocratic for him to rule Slovakia forever.\n\nHe has been given a lot of power over foreign affairs and the protection of Slovakia, but much of the day-to-day ruling will be done by local governments."
+ slovakia.21.a:0 "As it should be"
+
+ slovakia.22.t:0 "Election day results!"
+ slovakia.22.desc:0 "After heading to the polls, the Slovak people's voice shall be heard! This was a close election, between three main contenders - the conservatives, the liberals, and the social democrats - who shall win?"
+ slovakia.22.a:0 "The Conservatives!"
+ slovakia.22.b:0 "The Liberals!"
+ slovakia.22.c:0 "The Social Democrats!"
+
+ slovakia.23.t:0 "The beginning of the final solution"
+ slovakia.23.desc:0 "So long had he waited.\n\n He had gone through time, overthrown governments and sacrificed much to get here, but Mountain General was finally happy. The end of the Hungarian state, culture and people were about to begin, and he could not contain his excitement."
+ slovakia.23.a:0 "So it begins..."
+
+ slovakia.24.t:0 "The end of Hungary"
+ slovakia.24.desc:0 "It has been approximately two years after the start of our de-Hungarifacation campaign, and it is safe to say it has been a smashing success. The streets of our southern cities, once occupied by filthy subhumans, are new safely walked by our pure and loyal subjects.\n\nNo traces of Hungarian culture remain, and Mountain General sits satisfied in Bratislava, knowing that he has saved to Slovak nation, and quite possibly the world, from the Hungarians."
+ slovakia.24.a:0 "A smile on his face, he shed a single tear"
+
+ slovakia.25.t:0 "The situation in Poland"
+ slovakia.25.desc:0 "After Józef Piłsudski's death in May of 1935, Ignacy Mościcki's centrist clique, the castle, has succeeded in their takeover of the country. However, their position on power is very unstable, and can easily be exploited by us to extablish a truely democratic Poland.\n\nOur first course of action is to meet with the figurehead of the Polish democratic reformist group, Walery Sławek, in private, and discuss our support for his leadership."
+ slovakia.25.a:0 "Let's find somewhere nice to meet, shall we?"
+
+ slovakia.26.t:0 "The meeting"
+ slovakia.26.desc:0 "Mountain General's meeting with Sławek has gone simmingly and the two seem to get along quite well, but there is one major problem. Sławek is unsure of the possibility of dethroning Mościcki via political manuevering, and wants our financial and military aid to overthrow Mościcki."
+ slovakia.26.a:0 "No price is too great for democracy"
+
+ slovakia.27.t:0 "The price of democracy"
+ slovakia.27.desc:0 "Under the cover of night-time on [?global.date.GetDateStringNoHourLong], undercover Slovakian soldiers smuggled hundreds of arms across the Polish border. Bribes were given to indifferent officials and the Sanation left stands ready to overthrow [POL.GetLeader], eagerly wating for Walery Sławek's word to do so."
+ slovakia.27.a:0 "Poland will be free once more!"
+
+ slovakia.28.t:0 "The coup succeeds!"
+ slovakia.28.desc:0 "Earlier today, soldiers loyal to Sławek stormed Warsaw castle and arrested Ignacy Mościcki. After a couple of hours and minor skirmishes, it would seem as though Walery Sławek has succeeded in his efforts to establish a democratic Poland."
+ slovakia.28.a:0 "Sic Semper Tyrannis"
+
+ slovakia.29.t:0 "The issue of Ukraine"
+ slovakia.29.desc:0 "Ukraine was promised an indepenant state following the war, but it's partition by the Soviets and the Poles put an end to this. We must rebirth ithe Ukrainian nation if we are to achieve peace in Europe."
+ slovakia.29.a:0 "Give Ukraine Ruthenia and East Galicia"
+ slovakia.29.b:0 "And the areas around Rivne"
+ slovakia.29.c:0 "A Ukraine in Ruthenia is better that no Ukraine at all!"
+ slovakia.29.d:0 "Give Ukraine East Galicia"
+ slovakia.29.e:0 "And the areas around Rivne"
+
+ slovakia.30.t:0 "The issue of Zaolzie"
+ slovakia.30.desc:0 "Zaolzie is a majority Czech region that is claimed by Poland due to it's abundant natural resources, and has already flared up into conflict before. We must create a lasting settlement to prevent any future fighting over the region."
+ slovakia.30.a:0 "Give it all to Poland"
+ slovakia.30.b:0 "Give Poland and Czechia equal resource rights in Zaolzie"
+ slovakia.30.c:0 "The status quo is fine as is"
+
+ slovakia.31.t:0 "Raids on the Ustasa"
+ slovakia.31.desc:0 "All over the Croatian countryside, our brave officers have been rounding up members of the Ustasa for conspiracy to commit genocide and crimes against humanity, and have effectively crippled the orgranisations ability to function.\n\nHowever, many did not go down without a fight, and some of our officers have been killed in the resulting shootouts."
+ slovakia.31.a:0 "There is nowhere for the Fascists to hide!"
+
+ slovakia.32.t:0 "The hunt for Pavelic"
+ slovakia.32.desc:0 "It would seem the Ante Pavelic caught wind of our incoming crackdowns on his organisation, and quickly fled the scene. A nationwide manhunt has commenced to find the bastard as soon as possible."
+ slovakia.32.a:0 "Maybe there is somewhere for the Fascists to hide..."
+
+ slovakia.33.t:0 "The fate of Ante Pavelic"
+ slovakia.33.desc:0 "After just over a week of searching, Ante Pavelic was found taking refuge in a small Croatian village near the Italian border, presumably en route to flee to the country. Luckily, a member of the village informed the local police, who swooped in to arrest him after finding him sheltering in an abandoned building on the outskirts of the village.\n\nHowever, we were unable to take him into custody, as Pavelic took his own life via gunshot after fleeing into the local woods.\n\nAlthough an unfortunate outcome, his death is still welcome nonetheless as a sign of the fascist's cowardice and refusal to face justice."
+ slovakia.33.a:0 "Ante Pavelic died like bitch"
+ slovakia.33.tt:0 "§YAnte Pavelic§! dies."
+
+ slovakia.34.t:0 "Slovakia requests assisstance"
+ slovakia.34.desc:0 ""
+ slovakia.34.a:0 ""
+
+ slovakia.35.t:0 "The United Kingdom agrees!"
+ slovakia.35.desc:0 "We have successfully managed to convince the British government to stand by our cause of defending democracy, and as such they have issued territorial guarantees for our allies!"
+ slovakia.35.a:0 "Now we await the German response..."
+
+ slovakia.36.t:0 "The Sudeten crisis"
+ slovakia.36.desc:0 ""
+ slovakia.36.a:0 ""
+
+ slovakia.37.t:0 "[GER.GetLeader] backs down!"
+ slovakia.37.desc:0 "Despite all of his jingoistic rhetoric, even [GER.GetLeader] has realised the precarius situation he is in. Surrounded by enemies on all sides, he is unwilling to press the Sudeten issue further."
+ slovakia.37.a:0 "Peace for our time!"
+ slovakia.37.b:0 "He'll be back, and we must be ready."
+
+ slovakia.38.t:0 "The Polish-German border"
+ slovakia.38.desc:0 "As part of the post-war settlement, Poland's western border is to be withdrawn. Where should it be?"
+ slovakia.38.a:0 "Give them Ermland-Masuren"
+ slovakia.38.b:0 "And Upper Silesia"
+ slovakia.38.c:0 "Push the border to the Oder-Neisse line"
+ slovakia.38.d:0 "And give them Königsberg"

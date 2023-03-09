@@ -1,0 +1,96 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Pesi Divize"					# Infantry Division
+	division_names_group = SLO_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+}
+division_template = {
+	name = "Mobilná Skupina" 				# Mobile Group
+	division_names_group = SLO_CAV_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }   
+	}
+}
+
+
+units = {
+	division = {
+		location = 541
+		division_template = "Pesi Divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1
+	}
+	division = {
+		location = 541
+		division_template = "Pesi Divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		location = 9692
+		division_template = "Pesi Divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 1
+	}
+	division = {
+		location = 3716
+		division_template = "Pesi Divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1
+	}
+	division = {
+		location = 9692
+		division_template = "Mobilná Skupina" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+		start_manpower_factor = 1
+	}
+}
+
+### Starting Production ###	
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SLO"
+		}
+		requested_factories = 1
+		progress = 0.37
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SLO"
+		}
+		requested_factories = 1
+		progress = 0.69
+		efficiency = 100
+	}
+}

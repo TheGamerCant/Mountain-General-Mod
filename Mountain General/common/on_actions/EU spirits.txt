@@ -1,0 +1,123 @@
+on_actions={
+	on_monthly={		#Don't want too much lag now do we?
+		effect={
+			if={
+				limit = { 
+					SLO = { 
+						has_completed_focus = SLO_towards_a_united_europe 
+						not = { has_completed_focus = SLO_joint_excersises }
+						not = { has_completed_focus = SLO_free_movement_of_people_and_goods }
+					} 
+				}
+				every_country={
+					limit={
+						capital_scope = { is_on_continent = europe }
+						is_in_faction_with = SLO
+						not = { original_tag = SLO }
+					}
+					if={
+						limit = {
+							not= { 
+								has_idea = SLO_eu_idea_1
+							}
+						}
+						add_ideas = SLO_eu_idea_1
+					}
+				}
+			}
+			else_if={
+				limit = { 
+					SLO = { 
+						has_completed_focus = SLO_joint_excersises 
+						not = { has_completed_focus = SLO_free_movement_of_people_and_goods }
+					} 
+				}
+				every_country={
+					limit={
+						capital_scope = { is_on_continent = europe }
+						is_in_faction_with = SLO
+						not = { original_tag = SLO }
+					}
+					if={
+						limit = { 
+							has_idea = SLO_eu_idea_1
+						}
+						remove_ideas = SLO_eu_idea_1
+					}
+					if={
+						limit = {
+							not= { 
+								has_idea = SLO_eu_idea_1_0
+							}
+						}
+						add_ideas = SLO_eu_idea_1_0
+					}
+				}
+			}
+			else_if={
+				limit = { 
+					SLO = { 
+						has_completed_focus = SLO_free_movement_of_people_and_goods 
+						not = { has_completed_focus = SLO_joint_excersises }
+					} 
+				}
+				every_country={
+					limit={
+						capital_scope = { is_on_continent = europe }
+						is_in_faction_with = SLO
+						not = { original_tag = SLO }
+					}
+					if={
+						limit = { 
+							has_idea = SLO_eu_idea_1
+						}
+						remove_ideas = SLO_eu_idea_1
+					}
+					if={
+						limit = {
+							not= { 
+								has_idea = SLO_eu_idea_1_1
+							}
+						}
+						add_ideas = SLO_eu_idea_1_1
+					}
+				}
+			}
+			else_if={
+				limit = { 
+					SLO = { 
+						has_completed_focus = SLO_free_movement_of_people_and_goods 
+						has_completed_focus = SLO_joint_excersises
+					} 
+				}
+				every_country={
+					limit={
+						capital_scope = { is_on_continent = europe }
+						is_in_faction_with = SLO
+						not = { original_tag = SLO }
+					}
+					if={
+						limit = { 
+							has_idea = SLO_eu_idea_1_0
+						}
+						remove_ideas = SLO_eu_idea_1_0
+					}
+					if={
+						limit = { 
+							has_idea = SLO_eu_idea_1_1
+						}
+						remove_ideas = SLO_eu_idea_1_1
+					}
+					if={
+						limit = {
+							not= { 
+								has_idea = SLO_eu_idea_2
+							}
+						}
+						add_ideas = SLO_eu_idea_2
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+
+
+political_actions = {
+	SLO_portrait_picker = {
+		icon = generic_civil_support
+		allowed = { tag = SLO }
+		visible = {
+			NOT = {
+			}
+			has_country_leader = {
+				name = "Mountain General"
+				ruling_only = yes
+			}
+			is_ai = no
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 1
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			country_event = portrait_picker.1
+		}
+	}
+}
+

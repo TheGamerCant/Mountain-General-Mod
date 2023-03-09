@@ -1,0 +1,18 @@
+on_actions={
+	on_weekly={
+		effect={
+			every_state={
+				limit = {
+					has_dynamic_modifier = { modifier = death_camps }
+				}
+				add_manpower = -120
+			}
+			every_state={
+				limit = {
+					has_dynamic_modifier = { modifier = death_camps_large }
+				}
+				add_manpower = -250
+			}
+		}
+	}
+}

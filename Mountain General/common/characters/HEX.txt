@@ -1,0 +1,16 @@
+characters={
+	HEX_nuke={
+		name="The Hungarian wastes"
+		portraits={
+			civilian={
+				large="gfx/leaders/HUN/all_gone.png"
+			}
+		}
+		country_leader={
+			traits={ all_gone }
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

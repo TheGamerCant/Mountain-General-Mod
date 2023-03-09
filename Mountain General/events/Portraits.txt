@@ -1,0 +1,246 @@
+﻿
+add_namespace = portrait
+add_namespace = portrait_picker
+add_namespace = portrait_changer
+
+country_event = { 
+	id = portrait_picker.1
+	title = portrait_picker.1.t 
+	desc = portrait_picker.1.desc
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portrait_picker.1.a
+		ai_chance = {
+			factor = 20
+		}
+		if = {	
+			limit = { has_country_leader = { name = "Mountain General" ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SLO/SLO_mountain_general.png"
+			}
+			hidden_effect={
+				SLO_clear_portrait_flags = yes
+				set_country_flag = SLO_mg_portrait_normal
+				every_unit_leader = {
+					limit = { has_id = 69420 }
+					set_leader_portrait = GFX_portrait_mg_normal		
+				}
+			}
+		}
+	}
+	option = {
+		name = portrait_picker.1.b
+		ai_chance = {
+			factor = 20
+		}
+		if = {	
+			limit = { has_country_leader = { name = "Mountain General" ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SLO/SLO_mountain_general_anime.png"
+			}
+			hidden_effect={
+				SLO_clear_portrait_flags = yes
+				set_country_flag = SLO_mg_portrait_anime
+				every_unit_leader = {
+					limit = { has_id = 69420 }
+					set_leader_portrait = GFX_portrait_mg_anime		
+				}
+			}
+		}
+	}
+	option = {
+		name = portrait_picker.1.c
+		ai_chance = {
+			factor = 20
+		}
+		if = {	
+			limit = { has_country_leader = { name = "Mountain General" ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SLO/SLO_mountain_general_confederate.png"
+			}
+			hidden_effect={
+			SLO_clear_portrait_flags = yes
+				set_country_flag = SLO_mg_portrait_confederate
+				every_unit_leader = {
+					limit = { has_id = 69420 }
+					set_leader_portrait = GFX_portrait_mg_confederate		
+				}
+			}
+		}
+	}
+	option = {
+		name = portrait_picker.1.d
+		ai_chance = {
+			factor = 20
+		}
+		country_event = { id = portrait_picker.2 }
+	}
+}
+
+country_event = { 
+	id = portrait_picker.2
+	title = portrait_picker.2.t 
+	desc = portrait_picker.2.desc
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portrait_picker.2.a
+		ai_chance = {
+			factor = 20
+		}
+		if = {	
+			limit = { has_country_leader = { name = "Mountain General" ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SLO/SLO_mountain_general_wojak.png"
+			}
+			hidden_effect={
+				SLO_clear_portrait_flags = yes
+				set_country_flag = SLO_mg_portrait_wojak
+				every_unit_leader = {
+					limit = { has_id = 69420 }
+					set_leader_portrait = GFX_portrait_mg_wojak		
+				}
+			}
+		}
+	}
+	option = {
+		name = portrait_picker.2.b
+		ai_chance = {
+			factor = 20
+		}
+		if = {	
+			limit = { has_country_leader = { name = "Mountain General" ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SLO/SLO_mountain_general_history_matters.png"
+			}
+			hidden_effect={
+				SLO_clear_portrait_flags = yes
+				set_country_flag = SLO_mg_portrait_history_matters
+				every_unit_leader = {
+					limit = { has_id = 69420 }
+					set_leader_portrait = GFX_portrait_mg_history_matters		
+				}
+			}
+		}
+	}
+	option = {
+		name = portrait_picker.2.c
+		ai_chance = {
+			factor = 20
+		}
+		if = {	
+			limit = { has_country_leader = { name = "Mountain General" ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SLO/SLO_mountain_general_gone.png"
+			}
+			hidden_effect={
+				SLO_clear_portrait_flags = yes
+				set_country_flag = SLO_mg_portrait_gone
+				every_unit_leader = {
+					limit = { has_id = 69420 }
+					set_leader_portrait = GFX_portrait_mg_gone		
+				}
+			}
+		}
+	}
+	option = {
+		name = portrait_picker.2.d
+		ai_chance = {
+			factor = 20
+		}
+		country_event = { id = portrait_picker.3 }
+	}
+}
+
+country_event = { 
+	id = portrait_picker.3
+	title = portrait_picker.3.t 
+	desc = portrait_picker.3.desc
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portrait_picker.3.a
+		ai_chance = {
+			factor = 20
+		}
+		if = {	
+			limit = { has_country_leader = { name = "Mountain General" ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SLO/SLO_mountain_general_with_n_word.png"
+			}
+			hidden_effect={
+				SLO_clear_portrait_flags = yes
+				set_country_flag = SLO_mg_portrait_n_word	#Lmao this looks so shitty, but i don't want to break naming convention
+				every_unit_leader = {
+					limit = { has_id = 69420 }
+					set_leader_portrait = GFX_portrait_mg_with_n_word
+				}
+			}
+		}
+	}
+	option = {
+		name = portrait_picker.3.b
+		ai_chance = {
+			factor = 20
+		}
+		if = {	
+			limit = { has_country_leader = { name = "Mountain General" ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SLO/SLO_mountain_general_cat.png"
+			}
+			hidden_effect={
+				SLO_clear_portrait_flags = yes
+				set_country_flag = SLO_mg_portrait_cat
+				every_unit_leader = {
+					limit = { has_id = 69420 }
+					set_leader_portrait = GFX_portrait_mg_cat		
+				}
+			}
+		}
+	}
+	option = {
+		name = portrait_picker.3.c
+		ai_chance = {
+			factor = 20
+		}
+		if = {	
+			limit = { has_country_leader = { name = "Mountain General" ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SLO/SLO_mountain_general_anime_2.png"
+			}
+			hidden_effect={
+				SLO_clear_portrait_flags = yes
+				set_country_flag = SLO_mg_portrait_anime_2
+				every_unit_leader = {
+					limit = { has_id = 69420 }
+					set_leader_portrait = GFX_portrait_mg_anime_2		
+				}
+			}
+		}
+	}
+	option = {
+		name = portrait_picker.3.d
+		ai_chance = {
+			factor = 20
+		}
+		if = {	
+			limit = { has_country_leader = { name = "Mountain General" ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SLO/SLO_mountain_general_hentai.png"
+			}
+			custom_effect_tooltip = MG_hentai_tt
+			hidden_effect={
+				SLO_clear_portrait_flags = yes
+				set_country_flag = SLO_mg_portrait_hentai
+				every_unit_leader = {
+					limit = { has_id = 69420 }
+					set_leader_portrait = GFX_portrait_mg_hentai	
+				}
+			}
+		}
+	}
+}

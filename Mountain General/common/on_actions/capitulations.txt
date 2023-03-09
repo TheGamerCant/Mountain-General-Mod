@@ -1,0 +1,308 @@
+on_actions={
+	on_puppet={
+		effect={
+			if={
+				limit={
+					FROM = { tag = SLO }
+					ROOT = { 
+						OR={
+							tag = LIT 
+							tag = LAT 
+							tag = EST 
+						}
+					}
+					SLO = { has_completed_focus = SLO_liberator_of_the_slavs }
+				}
+				if={
+					limit = { ROOT =  { tag = LIT } } 
+					LIT = { set_cosmetic_tag = LIT_slovak_protect }
+				}
+				if={
+					limit = { ROOT =  { tag = LAT } } 
+					LAT = { set_cosmetic_tag = LAT_slovak_protect }
+				}
+				if={
+					limit = { ROOT =  { tag = EST } } 
+					EST = { set_cosmetic_tag = EST_slovak_protect }
+				}
+			}
+		}
+	}
+
+
+
+
+
+	on_state_control_changed={
+		effect={
+			if = {	#SLO invades POL, HSE path
+                limit = { 
+					AND={
+						tag = SLO
+						SLO = { has_completed_focus = SLO_liberator_of_the_slavs }
+						SLO = { has_completed_focus = SLO_polish_intervention }
+						not = { SLO = { has_country_flag = SLO_done_poland_path_fash } }
+						FROM = { tag = POL }
+						FROM.FROM = {
+							state = 10
+						}
+					}
+                }
+				SLO={
+					white_peace = POL
+					puppet = POL
+					set_autonomy = {
+						target = POL
+						autonomy_state = autonomy_reichskommissariat
+					}
+				}
+				every_state={
+					limit={ 	
+						is_core_of = UKR
+						is_owned_by = POL
+					}
+					UKR = { transfer_state = PREV }
+				}
+				every_state={
+					limit={ 	
+						is_core_of = BLR
+						is_owned_by = POL
+					}
+					SLO = { transfer_state = PREV }
+				}
+				SLO={
+					release_autonomy = {
+						target = BLR
+						autonomy_state = autonomy_puppet
+						freedom_level = 0.5
+					}
+				}
+				BLR={ 
+					set_cosmetic_tag = BLR_slovak_protect
+					IF={
+						limit={ POL = { owns_state = 784 } }
+						transfer_state = 784
+						add_state_core = 784
+					}
+				}
+				POL={
+					set_cosmetic_tag = POL_slovak_protect
+				}
+				SLO = { set_country_flag = SLO_done_poland_path_fash }
+            }
+			
+			if = {	#SLO invades HUN, democratic path to avoid them joining axis
+                limit = { 
+					AND={
+						tag = SLO
+						SLO = { has_completed_focus = SLO_attack_hungary }
+						not = { SLO = { has_country_flag = SLO_done_hungary_path_dem } }
+						FROM = { tag = HUN }
+						FROM.FROM = {
+							state = 43
+						}
+					}
+                }
+				HUN = {
+					white_peace = SLO
+					hidden_effect = {
+						set_politics = {
+							ruling_party = democratic
+							elections_allowed = yes
+						}
+						load_focus_tree = generic_focus
+					}
+				}
+				SLO = { 
+					set_country_flag = SLO_done_hungary_path_dem
+					add_to_faction = HUN
+				}
+            }
+		}
+	}
+
+	on_daily_SOV={
+		effect={
+			if={ 	#SLO invades SOV, HSE path
+				limit = { 
+					SOV = { surrender_progress > 0.649 } 
+					SLO = { 
+						has_completed_focus = SLO_liberator_of_the_slavs
+						has_completed_focus = SLO_destroy_the_athiests
+					}
+					not = { SLO = { has_country_flag = SLO_sov_has_capitulated_fash } }
+				} 
+				
+				SLO={
+					white_peace = SOV
+					puppet = SOV
+					set_autonomy = {
+						target = SOV
+						autonomy_state = autonomy_reichskommissariat
+					}
+				}
+				
+				SOV={
+					set_cosmetic_tag = SOV_slovak_protect
+					remove_ideas = SOV_christian_resistance
+				}
+				if={
+					limit = { TAN = { has_government = communism } }
+					
+					SOV = { annex_country = { target = TAN }  }
+				}
+				if={
+					limit = { MON = { has_government = communism } }
+					SOV = { annex_country = { target = MON }  }
+				}
+				every_state={
+					limit={ 	
+						is_core_of = UKR
+						is_owned_by = SOV
+					}
+					UKR = { transfer_state = PREV }
+				}
+				every_state={
+					limit={ 	
+						is_core_of = BLR
+						is_owned_by = SOV
+					}
+					BLR = { transfer_state = PREV }
+				}
+				
+				SLO = { 
+					set_country_flag = SLO_sov_has_capitulated_fash
+				}
+			}
+		}
+	}
+
+
+	on_capitulation={
+		effect={
+			if={#SLO Invades HUN, fascism path
+				limit={
+					AND={
+						FROM={
+							original_tag = SLO
+						}
+						ROOT={
+							original_tag = HUN
+						}
+						not = { SLO = { has_country_flag = SLO_hun_has_capitulated_fash } }
+						SLO = { has_completed_focus = SLO_a_based_slovakia }
+					}
+				}
+				SLO = { 
+					annex_country = { target = HUN } 
+					set_country_flag = SLO_hun_has_capitulated_fash
+				}
+				news_event = { id = country_capitulated.0 days = 0 }
+			}
+			
+			if={#SLO democratic path, not yet EU
+				limit={
+					AND={
+						FROM={
+							OR={
+								original_tag = SLO
+								is_in_faction_with = SLO
+							}
+						}
+						SLO = { 
+							has_completed_focus = SLO_a_free_slovakia 
+							not = { has_completed_focus = SLO_a_united_europe }
+						}
+					}
+				}
+				news_event = { id = country_capitulated.0 days = 0 }
+				ROOT = {
+					white_peace = SLO
+					hidden_effect = {
+						set_politics = {
+							ruling_party = democratic
+							elections_allowed = yes
+						}
+						load_focus_tree = generic_focus
+					}
+				}
+				SLO = { 
+					add_to_faction = ROOT 
+				}
+				if={
+					limit={
+						ROOT={ original_tag = SOV }
+						UKR={
+							exists = yes
+							is_in_faction_with = SLO
+						}
+					}
+					every_state={
+						limit={ 	
+							is_core_of = UKR
+							is_owned_by = SOV
+						}
+						UKR = { transfer_state = PREV }
+					}
+				}
+			}
+
+			if={#SLO democratic path, has formed EU
+				limit={
+					AND={
+						FROM={
+							OR={
+								original_tag = SLO
+								is_in_faction_with = SLO
+							}
+						}
+						SLO = { 
+							has_completed_focus = SLO_a_free_slovakia 
+							has_completed_focus = SLO_a_united_europe
+						}
+					}
+				}
+				news_event = { id = country_capitulated.0 days = 0 }
+				ROOT = {
+				
+					if={
+						limit = { ROOT = { capital_scope = { is_on_continent = europe } } }
+						every_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_core_of = SLO
+						}
+						every_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							ROOT={
+								remove_state_core = PREV
+							}
+						}
+						SLO={ annex_country = { target = ROOT transfer_troops = yes } }
+						ROOT = {
+							every_unit_leader = {
+								set_nationality = SLO
+							}
+						}			
+					}
+					else={
+						white_peace = SLO
+						hidden_effect = {
+							set_politics = {
+								ruling_party = democratic
+								elections_allowed = yes
+							}
+							load_focus_tree = generic_focus
+						}
+					}
+					SLO = { 
+						add_to_faction = ROOT 
+					}
+				}
+			}			
+		}
+	}
+}

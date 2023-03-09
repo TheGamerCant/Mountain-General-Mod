@@ -1,0 +1,36 @@
+ideas ={
+	country = {
+		HUN_the_apocalypse = {
+			removal_cost = -1
+
+			picture = chi_army_corruption
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				research_speed_factor = -9999999
+				consumer_goods_factor = 1
+				production_speed_industrial_complex_factor = -100
+				production_speed_arms_factory_factor = -99999999
+				production_speed_dockyard_factor = -99999999
+				political_power_factor = -2
+				war_support_factor = -2
+				stability_factor = -2
+				conscription = -1
+				fascism_acceptance = -99999999
+				fascism_drift = -1
+				democratic_acceptance = -99999999
+				democratic_drift = -1
+				communism_acceptance = -99999999
+				communism_drift = -1
+				neutrality_acceptance = -99999999
+				enemy_justify_war_goal_time = 999999999
+			}
+		}
+	}
+}

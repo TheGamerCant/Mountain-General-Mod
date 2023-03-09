@@ -1,0 +1,453 @@
+SLO_can_take_radio_equipment_focus = {
+	count_triggers = {
+		amount > 3
+		has_completed_focus = SLO_counter_insurgency_tactics
+		has_completed_focus = SLO_backroom_deals
+		has_completed_focus = SLO_troop_cycling
+		has_completed_focus = SLO_political_correctness
+	}
+}
+
+SLO_can_form_eu_1 = {
+	count_triggers = {
+		amount > 9
+		909 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		219 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		110 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		141 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		37 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		48 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		43 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		4 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		9 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		6 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		47 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		812 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		111 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		16 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		202 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		64 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		7 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		2 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		11 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		808 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		126 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		10 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		112 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		46 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		41 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		3 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		107 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+	}
+}	
+
+SLO_can_form_eu_2 = {
+	count_triggers = {
+		amount > 14
+		909 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		219 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		110 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		141 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		37 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		48 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		43 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		4 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		9 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		6 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		47 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		812 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		111 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		16 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		202 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		64 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		7 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		2 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		11 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		808 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		126 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		10 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		112 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		46 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		41 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		3 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+		107 = {
+			OWNER = {
+				OR = {
+					tag = SLO
+					is_in_faction_with = SLO
+				}
+			}
+		}
+	}
+}	

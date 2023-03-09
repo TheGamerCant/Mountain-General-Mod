@@ -1,0 +1,157 @@
+SLO_economic_chaos_dynamic_modifier = { #National spirit
+	enable = { always = yes }
+
+	icon = GFX_idea_SPA_recovering_from_the_civil_war
+
+	production_factory_efficiency_gain_factor = SLO_ec_production_factory_efficiency_gain_factor 
+	production_factory_max_efficiency_factor = SLO_ec_production_factory_max_efficiency_factor
+	consumer_goods_factor = SLO_ec_consumer_goods_factor
+	production_speed_industrial_complex_factor = SLO_ec_production_speed_industrial_complex_factor 
+	line_change_production_efficiency_factor = SLO_ec_line_change_production_efficiency_factor
+	industrial_capacity_factory  = SLO_ec_industrial_capacity_factory 
+	industrial_capacity_dockyard  = SLO_ec_industrial_capacity_dockyard 
+	production_speed_infrastructure_factor = SLO_ec_production_speed_infrastructure_factor
+	production_speed_rail_way_factor = SLO_ec_production_speed_rail_way_factor
+	production_speed_buildings_factor = SLO_ec_production_speed_buildings_factor 
+	local_resources_factor = SLO_ec_local_resources_factor
+	min_export = SLO_ec_min_export
+	research_speed_factor = SLO_ec_research_speed_factor
+}
+
+SLO_economic_miracle_dynamic_modifier = { #Replaces above modifier through focus
+	enable = { always = yes }
+
+	icon = GFX_idea_tur_balkan_central_bank_wealthy_greece
+
+	production_factory_efficiency_gain_factor = SLO_ec_production_factory_efficiency_gain_factor 
+	production_factory_max_efficiency_factor = SLO_ec_production_factory_max_efficiency_factor
+	consumer_goods_factor = SLO_ec_consumer_goods_factor
+	production_speed_industrial_complex_factor = SLO_ec_production_speed_industrial_complex_factor 
+	line_change_production_efficiency_factor = SLO_ec_line_change_production_efficiency_factor
+	industrial_capacity_factory  = SLO_ec_industrial_capacity_factory 
+	industrial_capacity_dockyard  = SLO_ec_industrial_capacity_dockyard 
+	production_speed_infrastructure_factor = SLO_ec_production_speed_infrastructure_factor
+	production_speed_rail_way_factor = SLO_ec_production_speed_rail_way_factor
+	production_speed_buildings_factor = SLO_ec_production_speed_buildings_factor 
+	local_resources_factor = SLO_ec_local_resources_factor
+	min_export = SLO_ec_min_export
+	research_speed_factor = SLO_ec_research_speed_factor
+}
+
+SLO_captain_hindsight_dynamic_modifier = { #National spirit
+	enable = { always = yes }
+
+	icon = GFX_idea_SLO_captain_hindisght
+
+	research_speed_factor = SLO_ch_research_speed_factor
+	operative_slot = SLO_ch_operative_slot
+	agency_upgrade_time = SLO_ch_agency_upgrade_time
+	intel_network_gain_factor = SLO_ch_intel_network_gain_factor
+	planning_speed = SLO_ch_planning_speed
+	max_planning = SLO_ch_max_planning
+	air_accidents_factor = SLO_ch_air_accidents_factor 
+	aircraft_manufacturer_cost_factor = SLO_ch_aircraft_manufacturer_cost_factor 
+}
+
+SLO_democratic_constitution_dynamic_modifier = { #Democratic path
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_constitutional_guarantees
+
+	research_speed_factor = SLO_dc_research_speed_factor
+	democratic_drift = SLO_dc_democratic_drift
+	political_power_factor = SLO_dc_political_power_factor
+	army_core_attack_factor = SLO_dc_army_core_attack_factor
+	army_core_defence_factor = SLO_dc_army_core_defence_factor
+	stability_weekly = SLO_dc_stability_weekly
+	industrial_capacity_factory = SLO_dc_industrial_capacity_factory
+	weekly_manpower = SLO_dc_weekly_manpower
+	compliance_gain = SLO_dc_compliance_gain
+}
+
+SLO_the_great_crusade_dynamic_modifier = { #Democratic path
+	enable = { always = yes }
+
+	icon = GFX_idea_bastion_of_free_people
+
+	political_power_factor = SLO_tgc_political_power_factor
+	org_loss_at_low_org_factor = SLO_tgc_org_loss_at_low_org_factor
+	compliance_gain = SLO_tgc_compliance_gain
+	justify_war_goal_time = SLO_tgc_justify_war_goal_time
+	generate_wargoal_tension = SLO_tgc_generate_wargoal_tension
+	fascism_drift = SLO_tgc_fascism_drift
+	communism_drift = SLO_tgc_communism_drift
+	neutrality_drift = SLO_tgc_neutrality_drift
+	
+}
+
+depopulated_1 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.5
+	state_production_speed_buildings_factor = -0.25
+}
+
+depopulated_2 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.4
+	local_building_slots_factor = -0.2
+	state_resources_factor = -0.4
+	state_production_speed_buildings_factor = -0.2
+}
+
+depopulated_3 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.3
+	local_building_slots_factor = -0.15
+	state_resources_factor = -0.3
+	state_production_speed_buildings_factor = -0.15
+}
+
+depopulated_4 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.2
+	local_building_slots_factor = -0.1
+	state_resources_factor = -0.2
+	state_production_speed_buildings_factor = -0.1
+}
+
+depopulated_5 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.1
+	local_building_slots_factor = -0.05
+	state_resources_factor = -0.1
+	state_production_speed_buildings_factor = -0.05
+}
+
+death_camps = {
+	enable = { always = yes }
+
+	icon = GFX_idea_saf_history_of_segregation_2
+	custom_modifier_tooltip = death_camps_tt	#Doesn't work as a dynamic modifier, check the 'on_actions' folder to see how it works
+	
+}
+
+death_camps_large = {
+	enable = { always = yes }
+
+	icon = GFX_idea_saf_history_of_segregation_2
+	custom_modifier_tooltip = death_camps_large_tt
+	
+}

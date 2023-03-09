@@ -1,0 +1,196 @@
+﻿capital = 909
+
+set_research_slots = 3
+
+### STOCKPILE ###
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 5000
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 200
+}
+add_equipment_to_stockpile = {
+	type = gw_armored_car_equipment
+	amount = 150
+}
+add_equipment_to_stockpile = {
+	type = light_tank_chassis_0
+	amount = 150
+}
+
+
+set_technology = {
+	basic_train = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	support_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	tech_engineers = 1
+}
+
+
+set_oob = "SLO_1936"
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+}
+
+set_country_flag = SLO_mg_portrait_normal
+
+recruit_character = SLO_mountain_general
+recruit_character = SLO_mountain_general_commie
+recruit_character = SLO_mountain_general_fash
+recruit_character = SLO_mountain_general_dem
+recruit_character = SLO_mountain_general_anarchy
+recruit_character = SLO_jozef_tiso
+recruit_character = SLO_josef_nemisla
+recruit_character = SLO_jozef_turanec
+recruit_character = SLO_augustin_malar
+recruit_character = SLO_ferdinand_catlos
+recruit_character = SLO_anton_pulanich
+recruit_character = SLO_rudolf_viest
+recruit_character = SLO_julius_trnka
+recruit_character = SLO_generic_slovak_admiral
+recruit_character = SLO_mikulas_markus
+recruit_character = SLO_juraj_puskar
+recruit_character = SLO_cyril_kuchta
+recruit_character = SLO_viliam_talsky
+recruit_character = SLO_rudolf_pilfousek
+recruit_character = SLO_jan_golian
+recruit_character = SLO_jozef_lettrich
+recruit_character = SLO_karol_smidke
+recruit_character = SLO_alexander_mach
+recruit_character = SLO_vavro_srobar
+recruit_character = SLO_ivan_derer
+recruit_character = SLO_jan_osoha
+recruit_character = SLO_ludovit_benada
+recruit_character = SLO_frano_kral
+recruit_character = SLO_karol_sidor
+recruit_character = SLO_vojtech_tuka
+recruit_character = SLO_fritz_gejza
+recruit_character = SLO_ferdinand_durcansky
+recruit_character = SLO_jozef_sivak
+
+
+
+create_field_marshal = {
+	name = "Mountain General"
+	desc = ""
+	portrait_path = "gfx/leaders/SLO/SLO_mountain_general.png"
+	traits = {
+		politically_connected
+		media_personality
+		harsh_leader
+		trait_mountaineer
+	}
+	skill = 5
+	attack_skill = 6
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+	id = 69420
+}
+
+
+add_ideas = {
+	SLO_bratislavan_uprising
+	SLO_jozef_tiso
+
+	limited_exports
+	service_by_requirement
+	partial_economic_mobilisation
+
+}
+
+
+country_event = { id = slovakia.3 days = 28 } #More Troops :)
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 5
+	fascism = 33
+	communism = 5
+	neutrality = 57
+}
+
+
+
+#Economic Chaos
+set_variable = { SLO_ec_production_factory_efficiency_gain_factor = -0.15 }
+set_variable = { SLO_ec_production_factory_max_efficiency_factor = -0.15 }
+set_variable = { SLO_ec_consumer_goods_factor = 0.15 }
+set_variable = { SLO_ec_line_change_production_efficiency_factor = -0.2 } 
+set_variable = { SLO_ec_industrial_capacity_factory = -0.25 } 
+set_variable = { SLO_ec_industrial_capacity_dockyard = -0.25 } 
+set_variable = { SLO_ec_production_speed_infrastructure_factor = -0.1 }
+set_variable = { SLO_ec_production_speed_rail_way_factor = -0.1 }
+set_variable = { SLO_ec_production_speed_buildings_factor = -0.2 }
+set_variable = { SLO_ec_local_resources_factor = 0 }
+set_variable = { SLO_ec_min_export = -0.1 }
+set_variable = { SLO_ec_research_speed_factor = -0.1 }
+
+add_dynamic_modifier = { modifier = SLO_economic_chaos_dynamic_modifier }
+
+
+
+#Captain Hindsight
+set_variable = { SLO_ch_research_speed_factor = 0.05 }
+set_variable = { SLO_ch_operative_slot = 0 }
+set_variable = { SLO_ch_agency_upgrade_time = 0 }
+set_variable = { SLO_ch_intel_network_gain_factor = 0 } 
+set_variable = { SLO_ch_planning_speed = 0.25 }
+set_variable = { SLO_ch_max_planning = 0.05 }
+set_variable = { SLO_ch_air_accidents_factor = 0}
+set_variable = { SLO_ch_aircraft_manufacturer_cost_factor = 0}
+
+
+add_dynamic_modifier = { modifier = SLO_captain_hindsight_dynamic_modifier }
+
+#Democratic constitution
+set_variable = { SLO_dc_research_speed_factor = 0.02 }
+set_variable = { SLO_dc_democratic_drift = 0.1 }
+set_variable = { SLO_dc_political_power_factor = -0.05 }
+set_variable = { SLO_dc_army_core_attack_factor = 0 } 
+set_variable = { SLO_dc_army_core_defence_factor = 0 }
+set_variable = { SLO_dc_stability_weekly = 0.001 }
+set_variable = { SLO_dc_industrial_capacity_factory = 0 } 
+set_variable = { SLO_dc_weekly_manpower = 0 } 
+set_variable = { SLO_dc_compliance_gain = 0 } 
+
+#The Great Crusade
+set_variable = { SLO_tgc_political_power_factor = 0.05 }
+set_variable = { SLO_tgc_generate_wargoal_tension = -0.9 }
+set_variable = { SLO_tgc_org_loss_at_low_org_factor = -0.2 }
+set_variable = { SLO_tgc_compliance_gain = 0.05 }
+set_variable = { SLO_tgc_justify_war_goal_time = -0.25 }
+set_variable = { SLO_tgc_fascism_drift = 0 }
+set_variable = { SLO_tgc_communism_drift = 0 }
+set_variable = { SLO_tgc_neutrality_drift = 0 }

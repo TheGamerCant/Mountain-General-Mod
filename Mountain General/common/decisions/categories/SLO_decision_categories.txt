@@ -1,0 +1,25 @@
+SLO_captain_hindsight_decisions = {
+	priority = 99
+	visible = {
+		has_completed_focus = SLO_expand_bratislava_university
+	}
+	icon = generic
+}
+
+SLO_the_final_solution_decisions = {
+	priority = 100
+	visible = {
+		has_completed_focus = SLO_the_final_solution
+	}
+	picture = GFX_decision_cat_picture_SLO_anti_hungarian_propaganda
+	icon = eng_organize_the_blackshirts
+}
+
+SLO_to_liberate_europe_decisions = {
+	priority = 100
+	visible = {
+		has_completed_focus = SLO_to_liberate_europe
+	}
+	picture = GFX_decision_cat_picture_SLO_death_of_a_fascist_bastard
+	icon = saf_anti_colonialist_crusade
+}

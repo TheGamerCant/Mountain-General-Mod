@@ -1,0 +1,215 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_goal_speak_to_the_nation"
+	texturefile = "gfx/interface/goals/SLO_speak_to_the_nation.png"			
+	}	
+
+	SpriteType = {
+	name = "GFX_goal_mobilise_bratislava"
+	texturefile = "gfx/interface/goals/r56_goal_SLO_slovak_freedom.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_free_territory"
+	texturefile = "gfx/interface/goals/SLO_the_free_territory.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_army_is_ready"
+	texturefile = "gfx/interface/goals/focus_army_is_ready.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_mg_nuke"
+	texturefile = "gfx/interface/goals/SLO_mg_nuke.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_deport_hungarians"
+	texturefile = "gfx/interface/goals/SLO_deport_hungarians.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_hlinka"
+	texturefile = "gfx/interface/goals/r56_goal_SLO_hlinka_mladez.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_christian_fascism"
+	texturefile = "gfx/interface/goals/SLO_christian_fascism.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_gods_representative"
+	texturefile = "gfx/interface/goals/SLO_gods_representative.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_invade_hungary"
+	texturefile = "gfx/interface/goals/SLO_invade_hungary.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_protect_czechia"
+	texturefile = "gfx/interface/goals/SLO_Czechoslovak_Ideals.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_befriend_czechia"
+	texturefile = "gfx/interface/goals/SLO_Czech_Brotherhood.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_airforce"
+	texturefile = "gfx/interface/goals/r56_goal_SLO_air_force.png"			
+	}
+	
+
+	SpriteType = {
+	name = "GFX_goal_SLO_slovakian_spring"
+	texturefile = "gfx/interface/goals/SLO_Slovakian_Spring.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_healthcare"
+	texturefile = "gfx/interface/goals/r56_goal_generic_medicine.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_attack_poland"
+	texturefile = "gfx/interface/goals/r56_goal_generic_attack_poland.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_cleanse_the_non_believers"
+	texturefile = "gfx/interface/goals/SLO_cleanse_the_non_believers.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_holy_slavic_empire"
+	texturefile = "gfx/interface/goals/SLO_holy_slavic_empire.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_slovak_army"
+	texturefile = "gfx/interface/goals/SLO_Conservative_President.png"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SLO_all_are_welcome"
+	texturefile = "gfx/interface/goals/SLO_all_are_welcome.png"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_focus_draw_line"
+	texturefile = "gfx/interface/goals/focus_draw_line.png"			
+	}
+	
+	
+	SpriteType = {
+	name = "GFX_goal_SLO_election"
+	texturefile = "gfx/interface/goals/SLO_Election.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_nationalism"
+	texturefile = "gfx/interface/goals/SLO_Nationalism.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_shells"
+	texturefile = "gfx/interface/goals/GENERIC_Shells.png"			
+	}
+	
+	
+	SpriteType = {
+	name = "GFX_goal_SLO_radio"
+	texturefile = "gfx/interface/goals/radio.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_military_march"
+	texturefile = "gfx/interface/goals/SLO_military_march.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_mongolia"
+	texturefile = "gfx/interface/goals/SLO_mongolia.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_liberate_europe"
+	texturefile = "gfx/interface/goals/SLO_liberate_europe.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_death_to_communism"
+	texturefile = "gfx/interface/goals/SLO_death_to_communism.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_attack_baltics"
+	texturefile = "gfx/interface/goals/SLO_attack_baltics.png"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SLO_attack_yugoslavia"
+	texturefile = "gfx/interface/goals/SLO_attack_yugoslavia.png"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SLO_destroy_the_ustasa"
+	texturefile = "gfx/interface/goals/SLO_destroy_the_ustasa.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_the_red_imperialists"
+	texturefile = "gfx/interface/goals/SLO_the_red_imperialists.png"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SLO_death_to_oligarchy"
+	texturefile = "gfx/interface/goals/SLO_death_to_oligarchy.png"			
+	}
+	
+
+	SpriteType = {
+	name = "GFX_goal_SLO_death_to_monarchy"
+	texturefile = "gfx/interface/goals/SLO_death_to_monarchy.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_form_eu"
+	texturefile = "gfx/interface/goals/SLO_form_eu.png"			
+	}
+	
+	
+	SpriteType = {
+	name = "GFX_goal_SLO_who_was_in_berlin"
+	texturefile = "gfx/interface/goals/SLO_who_was_in_berlin.png"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SLO_shovels_only"
+	texturefile = "gfx/interface/goals/SLO_shovels_only.png"			
+	}
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,26 @@
+﻿capital = 43
+
+
+set_research_slots = 0
+
+
+set_technology = {
+
+}
+
+
+add_ideas = {
+	closed_economy
+}
+
+recruit_character = HEX_nuke
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
