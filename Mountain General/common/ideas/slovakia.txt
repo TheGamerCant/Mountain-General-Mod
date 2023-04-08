@@ -36,6 +36,32 @@ ideas ={
 
 
 	country = {
+		SOV_christian_resistance = {
+			removal_cost = -1
+
+			picture = MEX_church_power_5
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				surrender_limit = 1.0
+				custom_modifier_tooltip = SOV_christian_resistance_tt
+			}
+			targeted_modifier = {
+				tag = SLO
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+		}
+	
+	
 		SLO_slovakian_river_fleet_idea_1 = {
 			removal_cost = -1
 
@@ -1530,6 +1556,126 @@ ideas ={
 				conscription_factor = 0.2
 				production_lack_of_resource_penalty_factor = -0.1
 				
+			}
+		}
+		
+		SLO_the_most_based_state = {
+			removal_cost = -1
+
+			picture = SLO_black_sun_idea
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.15
+				research_speed_factor = -0.1
+				fascism_drift = 0.25
+				consumer_goods_factor = -0.05
+				conscription_factor = 0.25
+				production_lack_of_resource_penalty_factor = -0.1
+				
+			}
+		}
+		
+		SLO_the_most_based_state_0_1 = {
+			removal_cost = -1
+
+			picture = SLO_black_sun_idea
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.2
+				research_speed_factor = -0.15
+				fascism_drift = 0.25
+				consumer_goods_factor = -0.075
+				conscription_factor = 0.25
+				production_lack_of_resource_penalty_factor = -0.1
+				
+			}
+		}
+		
+		SLO_the_most_based_state_1_0 = {
+			removal_cost = -1
+
+			picture = SLO_black_sun_idea
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.15
+				research_speed_factor = -0.1
+				fascism_drift = 0.25
+				consumer_goods_factor = -0.05
+				conscription_factor = 0.3
+				production_lack_of_resource_penalty_factor = -0.1
+				resistance_damage_to_garrison = -0.25
+				
+			}
+		}
+		
+		SLO_the_most_based_state_1 = {
+			removal_cost = -1
+
+			picture = SLO_black_sun_idea
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.2
+				research_speed_factor = -0.15
+				fascism_drift = 0.25
+				consumer_goods_factor = -0.075
+				conscription_factor = 0.3
+				production_lack_of_resource_penalty_factor = -0.1
+				resistance_damage_to_garrison = -0.25
+				
+			}
+		}
+		
+		SLO_the_most_based_state_2 = {
+			removal_cost = -1
+
+			picture = SLO_black_sun_idea
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.2
+				research_speed_factor = -0.15
+				fascism_drift = 0.4
+				consumer_goods_factor = -0.075
+				conscription_factor = 0.3
+				production_lack_of_resource_penalty_factor = -0.1
+				resistance_damage_to_garrison = -0.25
+				war_support_weekly = 0.002
+				stability_weekly = 0.002
+				army_speed_factor = 0.1
 			}
 		}
 		

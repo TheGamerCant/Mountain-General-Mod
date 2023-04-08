@@ -1429,8 +1429,36 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = slovakia.39
+	title = slovakia.39.t
+	desc = slovakia.39.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_SOV_young_builders_of_communism
 
+	option = { 
+		name = slovakia.39.a
+		ai_chance = {
+			base = 10
+		}
+		hidden_effect={
+			country_event = { id = slovakia.40 days = 12 }
+		}
+	}
+}
 
+country_event = {
+	id = slovakia.40
+	title = slovakia.40.t
+	desc = slovakia.40.desc
+	is_triggered_only = yes
 
-
-
+	option = { 
+		name = slovakia.40.a
+		ai_chance = {
+			base = 10
+		}
+		909={ add_manpower = -2 }
+	}
+}

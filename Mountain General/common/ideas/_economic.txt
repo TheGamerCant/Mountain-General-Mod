@@ -80,7 +80,7 @@ ideas = {
 						original_tag = SLO
 
 					}
-					NOT = { has_completed_focus = SLO_the_slovakian_free_territory }
+					NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 				}
 			}
 
@@ -111,7 +111,7 @@ ideas = {
 						original_tag = SLO
 
 					}
-					NOT = { has_completed_focus = SLO_the_slovakian_free_territory }
+					NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 				}
 				if = {
 					limit = {
@@ -196,7 +196,7 @@ ideas = {
 						original_tag = SLO
 
 					}
-					NOT = { has_completed_focus = SLO_the_slovakian_free_territory }
+					NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 				}
 
 				if = {
@@ -291,7 +291,7 @@ ideas = {
 						original_tag = SLO
 
 					}
-					NOT = { has_completed_focus = SLO_the_slovakian_free_territory }
+					NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 				}
 
 				if = {
@@ -397,7 +397,7 @@ ideas = {
 						original_tag = SLO
 
 					}
-					NOT = { has_completed_focus = SLO_the_slovakian_free_territory }
+					NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 				}
 				
 				if = {
@@ -637,7 +637,7 @@ ideas = {
 						original_tag = SLO
 
 					}
-					NOT = { has_completed_focus = SLO_the_slovakian_free_territory }
+					NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 				}
 				if = {
 					limit = {
@@ -701,7 +701,7 @@ ideas = {
 						original_tag = SLO
 
 					}
-					NOT = { has_completed_focus = SLO_the_slovakian_free_territory }
+					NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 				}
 				
 				if = {
@@ -808,7 +808,7 @@ ideas = {
 						original_tag = SLO
 
 					}
-					NOT = { has_completed_focus = SLO_the_slovakian_free_territory }
+					NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 				}
 			}
 

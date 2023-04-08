@@ -73,7 +73,7 @@ focus_tree = {
 		
 
 		available = {
-			NOT = { has_completed_focus = SLO_the_slovakian_free_territory }
+			NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 		}
 		
 		prerequisite = {
@@ -119,6 +119,54 @@ focus_tree = {
 			add_timed_idea={
 				idea = GRE_paying_off_debt_small
 				days = 90
+			}
+		}
+	}
+	
+	focus = {	
+		id = SLO_hire_foreign_experts
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = SLO_expand_bratislava_university
+		}
+		prerequisite = {
+			focus = SLO_pay_off_our_debts
+		}
+		relative_position_id = SLO_expand_bratislava_university
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = SLO_hire_foreign_experts
+				bonus = 0.8
+				uses = 4
+				category = industry
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {	
+		id = SLO_invest_in_the_future
+		icon = GFX_goal_SLO_radio
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = SLO_hire_foreign_experts
+		}
+		relative_position_id = SLO_hire_foreign_experts
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = SLO_invest_in_the_future
+				bonus =1.25
+				uses = 2
+				category = electronics
 			}
 		}
 	}
@@ -424,7 +472,7 @@ focus_tree = {
 		available = {
 			SLO = { has_full_control_of_state = 909 }
 			has_tech = atomic_research
-			NOT = { has_completed_focus = SLO_the_slovakian_free_territory }
+			NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 		}
 		
 		bypass={
@@ -462,7 +510,7 @@ focus_tree = {
 		cost = 6
 		
 		available = {
-			NOT = { has_completed_focus = SLO_the_slovakian_free_territory }
+			NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 			not = { has_idea = GRE_paying_off_debt_small }
 		}
 		
@@ -1939,7 +1987,7 @@ focus_tree = {
 		y = 0
 		cost = 6
 		
-		mutually_exclusive = { focus = SLO_a_free_slovakia focus = SLO_the_slovakian_free_territory }
+		mutually_exclusive = { focus = SLO_a_free_slovakia focus = SLO_a_revolutionary_slovakia }
 
 		available = {
 			always = no
@@ -1962,7 +2010,7 @@ focus_tree = {
 	
 	focus = {
 		id = SLO_trust_in_mountain_general
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_goal_SLO_cult_of_personality
 		x = 5
 		y = 1
 		relative_position_id = SLO_a_based_slovakia
@@ -2527,13 +2575,64 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_named_threat = { threat = 100 name = SLO_gamer_moment }
+				if={
+					limit = { HUN = { controls_state = 43 } }
+					add_victory_points = {
+						province = 9660
+						value = -20
+					}
+				}
+				if={
+					limit = { HUN = { controls_state = 45 } }
+					add_victory_points = {
+						province = 619
+						value = -3
+					}
+				}
+				if={
+					limit = { HUN = { controls_state = 76 } }
+					add_victory_points = {
+						province = 6711
+						value = -5
+					}
+				}
+				if={
+					limit = { HUN = { controls_state = 154 } }
+					add_victory_points = {
+						province = 11659
+						value = -1
+					}
+				}
+				if={
+					limit = { HUN = { controls_state = 155 } }
+					add_victory_points = {
+						province = 11610
+						value = -5
+					}
+				}
 				HEX = { 
 					annex_country = { target = HUN } 
 					add_ideas = HUN_the_apocalypse
 					load_focus_tree = HEX_focus
 				}
-				HUN={
-					remove_state_core = every_state
+				every_state = {
+					limit = {
+						is_core_of = HUN
+					}
+					HUN={
+						remove_state_core = PREV
+					}
+				}
+				every_state={
+					limit = { is_owned_by = HEX }
+					while_loop_effect = {
+						limit = { state_population > 40000 }
+						add_manpower = -20000
+					}
+					while_loop_effect = {
+						limit = { state_population > 1000 }
+						add_manpower = -1000
+					}
 				}
 			}
 		}
@@ -3837,6 +3936,327 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = SLO_the_basedest_of_all_states
+		icon = GFX_goal_SLO_black_sun
+		x = 2
+		y = 2
+		relative_position_id = SLO_the_holy_slavic_empire
+		cost = 6
+		prerequisite = {
+			focus = SLO_the_holy_slavic_empire
+			focus = SLO_the_fourth_rome
+			focus = SLO_our_aryan_brothers
+		}
+
+		available = {
+		}
+		
+
+		completion_reward = {
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = SLO_christian_fascism_idea_3
+				add_idea = SLO_the_most_based_state
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_destruction_of_inferior_cultures
+		icon = GFX_focus_generic_spread_fascism
+		x = 2
+		y = 1
+		relative_position_id = SLO_the_basedest_of_all_states
+		cost = 6
+		prerequisite = {
+			focus = SLO_the_basedest_of_all_states
+		}
+
+		available = {
+		}
+		
+
+		completion_reward = {
+			if={
+				limit = { has_completed_focus = SLO_a_based_curricula }
+				swap_ideas = {
+					remove_idea = SLO_the_most_based_state_0_1
+					add_idea = SLO_the_most_based_state_1
+				}
+			}
+			else={
+				swap_ideas = {
+					remove_idea = SLO_the_most_based_state
+					add_idea = SLO_the_most_based_state_1_0
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_a_based_curricula
+		icon = GFX_goal_SLO_based_education
+		x = 0
+		y = 1
+		relative_position_id = SLO_the_basedest_of_all_states
+		cost = 6
+		prerequisite = {
+			focus = SLO_the_basedest_of_all_states
+		}
+
+		available = {
+		}
+		
+
+		completion_reward = {
+			hidden_effect={
+				country_event = { id = slovakia.39 days = 30 }
+			}
+			if={
+				limit = { has_completed_focus = SLO_destruction_of_inferior_cultures }
+				swap_ideas = {
+					remove_idea = SLO_the_most_based_state_1_0
+					add_idea = SLO_the_most_based_state_1
+				}
+			}
+			else={
+				swap_ideas = {
+					remove_idea = SLO_the_most_based_state
+					add_idea = SLO_the_most_based_state_0_1
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_purification
+		icon = GFX_goal_SLO_cleanse_the_non_believers
+		x = -2
+		y = 1
+		relative_position_id = SLO_the_basedest_of_all_states
+		cost = 6
+		prerequisite = {
+			focus = SLO_the_basedest_of_all_states
+		}
+
+		available = {
+			any_state={
+				limit = { 
+					is_controlled_by = SLO 
+					NOT={
+						OR={
+							state = 909
+							state = 70
+							state = 71
+							state = 73
+							state = 664
+						}
+					}
+				}
+			}
+		}
+		
+
+		completion_reward = {
+			add_stability = -0.1
+			random_owned_controlled_state={
+				limit = {  
+					state_population > 200000
+					NOT={
+						OR={
+							state = 909
+							state = 70
+							state = 71
+							state = 73
+							state = 664
+						}
+					}
+				}
+				add_manpower = -150000
+			}
+			random_owned_controlled_state={
+				limit = {  
+					state_population > 200000
+					NOT={
+						OR={
+							state = 909
+							state = 70
+							state = 71
+							state = 73
+							state = 664
+						}
+					}
+				}
+				add_manpower = -150000
+			}
+			random_owned_controlled_state={
+				limit = {  
+					state_population > 200000
+					NOT={
+						OR={
+							state = 909
+							state = 70
+							state = 71
+							state = 73
+							state = 664
+						}
+					}
+				}
+				add_manpower = -150000
+			}
+			random_owned_controlled_state={
+				limit = {  
+					state_population > 200000
+					NOT={
+						OR={
+							state = 909
+							state = 70
+							state = 71
+							state = 73
+							state = 664
+						}
+					}
+				}
+				add_manpower = -150000
+			}
+			random_owned_controlled_state={
+				limit = {  
+					state_population > 200000
+					NOT={
+						OR={
+							state = 909
+							state = 70
+							state = 71
+							state = 73
+							state = 664
+						}
+					}
+				}
+				add_manpower = -150000
+			}
+			random_owned_controlled_state={
+				limit = {  
+					state_population > 200000
+					NOT={
+						OR={
+							state = 909
+							state = 70
+							state = 71
+							state = 73
+							state = 664
+						}
+					}
+				}
+				add_manpower = -150000
+			}
+			random_owned_controlled_state={
+				limit = {  
+					state_population > 200000
+					NOT={
+						OR={
+							state = 909
+							state = 70
+							state = 71
+							state = 73
+							state = 664
+						}
+					}
+				}
+				add_manpower = -150000
+			}
+			random_owned_controlled_state={
+				limit = {  
+					state_population > 200000
+					NOT={
+						OR={
+							state = 909
+							state = 70
+							state = 71
+							state = 73
+							state = 664
+						}
+					}
+				}
+				add_manpower = -150000
+			}
+			random_owned_controlled_state={
+				limit = {  
+					state_population > 200000
+					NOT={
+						OR={
+							state = 909
+							state = 70
+							state = 71
+							state = 73
+							state = 664
+						}
+					}
+				}
+				add_manpower = -150000
+			}
+			random_owned_controlled_state={
+				limit = {  
+					state_population > 200000
+					NOT={
+						OR={
+							state = 909
+							state = 70
+							state = 71
+							state = 73
+							state = 664
+						}
+					}
+				}
+				add_manpower = -150000
+			}
+			random_owned_controlled_state={
+				limit = {  
+					state_population > 200000
+					NOT={
+						OR={
+							state = 909
+							state = 70
+							state = 71
+							state = 73
+							state = 664
+						}
+					}
+				}
+				add_manpower = -150000
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_revere_him_he_is_your_god
+		icon = GFX_goal_SLO_mg_is_god
+		x = 0
+		y = 2
+		relative_position_id = SLO_a_based_curricula
+		cost = 10
+		prerequisite = {
+			focus = SLO_a_based_curricula
+		}
+		prerequisite = {
+			focus = SLO_purification
+		}
+		prerequisite = {
+			focus = SLO_destruction_of_inferior_cultures
+		}
+		
+		available = {
+		}
+		
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SLO_the_most_based_state_1
+				add_idea = SLO_the_most_based_state_2
+			}
+		}
+	}
+	
 	focus = {	
 		id = SLO_a_free_slovakia
 		icon = GFX_goal_support_democracy
@@ -3844,7 +4264,7 @@ focus_tree = {
 		y = 0
 		cost = 6
 		
-		mutually_exclusive = { focus = SLO_a_based_slovakia focus = SLO_the_slovakian_free_territory }
+		mutually_exclusive = { focus = SLO_a_based_slovakia focus = SLO_a_revolutionary_slovakia }
 
 		available = {
 			always = no
@@ -3854,7 +4274,7 @@ focus_tree = {
 			hidden_effect = {
 				add_popularity = {
 					ideology = democratic
-					popularity = 0.3
+					popularity = 0.25
 				}
 			}
 		}
@@ -4303,6 +4723,283 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SLO_austrian_economics
+		icon = GFX_goal_SLO_austrian_economics
+		x = -4
+		y = 1
+		relative_position_id = SLO_resolving_the_issues_of_the_great_war
+		cost = 7
+		mutually_exclusive = { focus = SLO_the_welfare_state }
+		prerequisite = {
+			focus = SLO_resolving_the_issues_of_the_great_war
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			if={
+				limit = { has_completed_focus = SLO_the_slovakian_economic_miracle }
+				custom_effect_tooltip = SLO_austrian_economics_tt_2
+			}
+			else={
+				custom_effect_tooltip = SLO_austrian_economics_tt
+			}
+			add_to_variable = { SLO_ec_consumer_goods_factor = -0.02 }
+		}
+	}
+	
+	focus = {
+		id = SLO_encourage_small_businesses
+		icon = GFX_goal_SLO_small_businesses
+		x = -1
+		y = 1
+		relative_position_id = SLO_austrian_economics
+		cost = 7
+		prerequisite = {
+			focus = SLO_austrian_economics
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			if={
+				limit = { has_completed_focus = SLO_the_slovakian_economic_miracle }
+				custom_effect_tooltip = SLO_encourage_small_businesses_tt_2
+			}
+			else={
+				custom_effect_tooltip = SLO_encourage_small_businesses_tt
+			}
+			add_to_variable = { SLO_ec_production_factory_efficiency_gain_factor = 0.2 }
+			add_to_variable = { SLO_ec_production_factory_max_efficiency_factor = 0.2 }
+			add_political_power = 75
+		}
+	}
+	
+	focus = {
+		id = SLO_ensure_the_right_to_land
+		icon = GFX_goal_focus_draw_line
+		x = 1
+		y = 1
+		relative_position_id = SLO_austrian_economics
+		cost = 7
+		prerequisite = {
+			focus = SLO_austrian_economics
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			if={
+				limit = { has_completed_focus = SLO_the_slovakian_economic_miracle }
+				custom_effect_tooltip = SLO_ensure_the_right_to_land_tt_2
+			}
+			else={
+				custom_effect_tooltip = SLO_ensure_the_right_to_land_tt
+			}
+			add_to_variable = { SLO_ec_global_building_slots_factor = 0.25 }
+		}
+	}
+	
+	focus = {
+		id = SLO_the_most_prosperous_country_in_europe
+		icon = GFX_goal_SLO_prosperity
+		x = -1
+		y = 1
+		relative_position_id = SLO_ensure_the_right_to_land
+		cost = 10
+		prerequisite = {
+			focus = SLO_encourage_small_businesses
+		}
+		prerequisite = {
+			focus = SLO_ensure_the_right_to_land
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_stability = 0.075
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			if={
+				limit = { has_completed_focus = SLO_the_slovakian_economic_miracle }
+				custom_effect_tooltip = SLO_the_most_prosperous_country_in_europe_tt_2
+			}
+			else={
+				custom_effect_tooltip = SLO_the_most_prosperous_country_in_europe_tt
+			}
+			add_to_variable = { SLO_ec_consumer_goods_factor = -0.04 }
+		}
+	}
+	
+	focus = {
+		id = SLO_the_welfare_state
+		icon = GFX_goal_SLO_healthcare
+		x = 4
+		y = 1
+		relative_position_id = SLO_resolving_the_issues_of_the_great_war
+		cost = 7
+		mutually_exclusive = { focus = SLO_austrian_economics }
+		prerequisite = {
+			focus = SLO_resolving_the_issues_of_the_great_war
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			if={
+				limit = { has_completed_focus = SLO_the_slovakian_economic_miracle }
+				custom_effect_tooltip = SLO_the_welfare_state_tt_2
+			}
+			else={
+				custom_effect_tooltip = SLO_the_welfare_state_tt
+			}
+			add_to_variable = { SLO_ec_consumer_goods_factor = 0.015 }
+			add_stability = 0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_increase_pensions
+		icon = GFX_goal_SLO_pensions
+		x = -1
+		y = 1
+		relative_position_id = SLO_the_welfare_state
+		cost = 7
+		prerequisite = {
+			focus = SLO_the_welfare_state
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			if={
+				limit = { has_completed_focus = SLO_the_slovakian_economic_miracle }
+				custom_effect_tooltip = SLO_the_welfare_state_tt_2
+			}
+			else={
+				custom_effect_tooltip = SLO_the_welfare_state_tt
+			}
+			add_to_variable = { SLO_ec_consumer_goods_factor = 0.015 }
+			add_stability = 0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_ensure_a_social_safety_net
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+		relative_position_id = SLO_the_welfare_state
+		cost = 7
+		prerequisite = {
+			focus = SLO_the_welfare_state
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			if={
+				limit = { has_completed_focus = SLO_the_slovakian_economic_miracle }
+				custom_effect_tooltip = SLO_the_welfare_state_tt_2
+			}
+			else={
+				custom_effect_tooltip = SLO_the_welfare_state_tt
+			}
+			add_to_variable = { SLO_ec_consumer_goods_factor = 0.015 }
+			add_stability = 0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_the_happiest_country_in_europe
+		icon = GFX_goal_mobilise_bratislava
+		x = -1
+		y = 1
+		relative_position_id = SLO_ensure_a_social_safety_net
+		cost = 10
+		prerequisite = {
+			focus = SLO_increase_pensions
+		}
+		prerequisite = {
+			focus = SLO_ensure_a_social_safety_net
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			if={
+				limit = { has_completed_focus = SLO_the_slovakian_economic_miracle }
+				custom_effect_tooltip = SLO_the_happiest_country_in_europe_tt_2
+			}
+			else={
+				custom_effect_tooltip = SLO_the_happiest_country_in_europe_tt
+			}
+			add_to_variable = { SLO_ec_consumer_goods_factor = -0.02 }
+			add_to_variable = { SLO_ec_industrial_capacity_factory = 0.1 }
+			add_to_variable = { SLO_ec_industrial_capacity_dockyard = 0.1 }
+			add_to_variable = { SLO_ec_production_speed_buildings_factor = 0.1 }
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
 		id = SLO_to_liberate_europe
 		icon = GFX_goal_SLO_liberate_europe
 		x = 0
@@ -4554,7 +5251,7 @@ focus_tree = {
 	focus = {
 		id = SLO_death_to_communism
 		icon = GFX_goal_SLO_death_to_communism
-		x = -16
+		x = -12
 		y = 1
 		relative_position_id = SLO_to_liberate_europe
 		cost = 2
@@ -5842,7 +6539,7 @@ focus_tree = {
 	focus = {
 		id = SLO_death_to_oligarchy
 		icon = GFX_goal_SLO_death_to_oligarchy
-		x = -8
+		x = -4
 		y = 1
 		relative_position_id = SLO_to_liberate_europe
 		cost = 2
@@ -6026,7 +6723,7 @@ focus_tree = {
 	focus = {
 		id = SLO_death_to_monarchy
 		icon = GFX_goal_SLO_death_to_monarchy
-		x = 8
+		x = 4
 		y = 1
 		relative_position_id = SLO_to_liberate_europe
 		cost = 2
@@ -6437,8 +7134,6 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = SLO_a_constitutional_monarchy_in_yugo
-		}
-		prerequisite = {
 			focus = SLO_a_yugoslav_republic
 		}
 
@@ -6484,7 +7179,7 @@ focus_tree = {
 	focus = {
 		id = SLO_death_to_fascism
 		icon = GFX_focus_focus_fra_fascist_threat
-		x = 16
+		x = 12
 		y = 1
 		relative_position_id = SLO_to_liberate_europe
 		cost = 2
@@ -6749,8 +7444,8 @@ focus_tree = {
 	}
 	
 	focus = {	
-		id = SLO_the_slovakian_free_territory
-		icon = GFX_goal_SLO_free_territory
+		id = SLO_a_revolutionary_slovakia
+#		icon = GFX_goal_SLO_free_territory
 		x = 100
 		y = 0
 		cost = 6
@@ -6762,42 +7457,52 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			hidden_effect = {
-				add_country_leader_role = {
-					character = SLO_mountain_general_anarchy
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = anarchism
-						traits = {
-							the_slovakian_napoleon
-							the_man_behind_the_mask 
-						}
-					}
-					promote_leader = yes
-				}
-				set_cosmetic_tag = SFT
-				add_ideas = closed_economy
-				add_ideas = volunteer_only
-				add_ideas = SLO_collectivized_society
-				SLO_update_leader_portrait = yes
-			}
+#			hidden_effect = {
+#				add_country_leader_role = {
+#					character = SLO_mountain_general_anarchy
+#					country_leader = {
+#						expire = "1965.1.1"
+#						ideology = anarchism
+#						traits = {
+#							the_slovakian_napoleon
+#							the_man_behind_the_mask 
+#						}
+#					}
+#					promote_leader = yes
+#				}
+#				set_cosmetic_tag = SFT
+#				add_ideas = closed_economy
+#				add_ideas = volunteer_only
+#				add_ideas = SLO_collectivized_society
+#				SLO_update_leader_portrait = yes
+#			}
 		}
 	}
 	
-	focus = {	
-		id = SLO_why_no_more_focuses
-		icon = GFX_goal_unknown
-		x = 100
+	focus = {
+		cancelable = no
+		id = SLO_the_establishment_of_a_socialist_state
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 0
 		y = 1
-		cost = 6
-		
-
+		relative_position_id = SLO_a_revolutionary_slovakia
+		cost = 5
+		prerequisite = {
+			focus = SLO_a_revolutionary_slovakia
+		}
 		available = {
-			always = no
 		}
 		
+		bypass = {
+		}
+	
+
 		completion_reward = {
-			
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
 		}
 	}
 }

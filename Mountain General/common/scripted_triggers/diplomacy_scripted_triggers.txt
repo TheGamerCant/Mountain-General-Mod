@@ -40,6 +40,22 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
 	}
 }
 
+DIPLOMACY_WAR_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			SLO = { has_completed_focus = SLO_mg_destroys_hungary }
+		}
+		custom_trigger_tooltip = {
+			tooltip = CANNOT_INVADE_WASTELAND
+			FROM = {
+				NOT = {
+					tag = HEX
+				}
+			}
+		}
+	}
+}
+
 DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
 	if = {
 		limit = {

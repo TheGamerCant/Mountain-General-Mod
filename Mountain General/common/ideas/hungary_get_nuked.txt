@@ -13,7 +13,7 @@ ideas ={
 			}
 			
 			modifier = {
-				research_speed_factor = -9999999
+				research_speed_factor = -10
 				consumer_goods_factor = 1
 				production_speed_industrial_complex_factor = -100
 				production_speed_arms_factory_factor = -99999999
@@ -29,7 +29,7 @@ ideas ={
 				communism_acceptance = -99999999
 				communism_drift = -1
 				neutrality_acceptance = -99999999
-				enemy_justify_war_goal_time = 999999999
+				enemy_justify_war_goal_time = 10
 			}
 		}
 	}

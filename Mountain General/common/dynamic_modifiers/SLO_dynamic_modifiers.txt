@@ -16,6 +16,7 @@ SLO_economic_chaos_dynamic_modifier = { #National spirit
 	local_resources_factor = SLO_ec_local_resources_factor
 	min_export = SLO_ec_min_export
 	research_speed_factor = SLO_ec_research_speed_factor
+	global_building_slots_factor = SLO_ec_global_building_slots_factor
 }
 
 SLO_economic_miracle_dynamic_modifier = { #Replaces above modifier through focus
@@ -36,6 +37,7 @@ SLO_economic_miracle_dynamic_modifier = { #Replaces above modifier through focus
 	local_resources_factor = SLO_ec_local_resources_factor
 	min_export = SLO_ec_min_export
 	research_speed_factor = SLO_ec_research_speed_factor
+	global_building_slots_factor = SLO_ec_global_building_slots_factor
 }
 
 SLO_captain_hindsight_dynamic_modifier = { #National spirit

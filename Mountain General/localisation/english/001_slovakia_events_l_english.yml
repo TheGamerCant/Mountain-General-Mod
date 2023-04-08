@@ -1,8 +1,14 @@
 ﻿l_english:
+ nuke_dropped.14.t:0 "Mountain General destroys Hungary!"
+ nuke_dropped.14.d:0 "In an incoherent and likely intoxicated state, Mountain General has announced the total destruction of the Hungarian state by nuclear hellfire! It would seem that over the past few years, the hermit state has been acquiring ultra-advanced nuclear capabilities, and has finally achieved them.\n\nThe world looks on with horror, as there is no telling what the madman will do next..."
+ nuke_dropped.14.a:0 "Oh God..."
+ nuke_dropped.14.b:0 "Based"
+
  news.500.t:0 "The Partition of Czechia"
  news.500.desc:0 "Earlier today, a secret pact between [GER.GetLeader] and [SLO.GetLeader] came into effect, where they submitted an ultimatium to the Czech government, demanding the surrender of it's territory.\n\n[CZE.GetLeader] backed down, and the Czech state is no more."
  news.500.a:0 "Slovakia is truely a new European power"
  news.500.b:0 "Oh God"
+
  news.501.t:0 "Slovak troops march into Prague!"
  news.501.desc:0 "After Germany's seizure of the Sudetenland, it was widely believed that Germany would gobble up the rest of the rump Czech state. However, it would seem that it was Slovakian leader [SLO.GetLeader] who took the initative and crossed the Czech border.\n\nSlovakia has expanded her borders, and the world wonders where she will look to next..."
  news.501.a:0 "Good riddance"
@@ -18,7 +24,7 @@
  slovakia.3.a:0 "Our victory is inevitable."
 
  slovakia.4.t:0 "What IS Mountain Generalism?"
- slovakia.4.desc:0 "Mountain General was approached in his Bratislava office by Josef Tiso.\n'My leader, you have lead all of Slovakia to never before seen heights, but there is one pressing matter - ideology.'\nMountain General snapped back - 'What about ideology!'\n'So far all you've said in terms of your ideological standing is repeatedly calling Hungary 'gay' and 'cringe', and while undoubtedly true, one cannot lead a state on just these beliefs alone.'\n\n Mountain General responded,"
+ slovakia.4.desc:0 "Mountain General was approached in his Bratislava office by Josef Tiso.\n'My leader, you have taken all of Slovakia to never before seen heights, but there is one pressing matter - ideology.'\nMountain General snapped back - 'What about ideology!'\n'So far all you've said in terms of your ideological standing is repeatedly calling Hungary 'gay' and 'cringe', and while undoubtedly true, one cannot lead a state on just these beliefs alone.'\n\n Mountain General responded,"
  slovakia.4.a:0 "My goal is to exterminate Hungary, and make Slovakia great while doing so."
  slovakia.4.b:0 "I'm only an ironic Fascist..."
  slovakia.4.c:0 "...I'm actually an Anarcho-Communist."
@@ -179,3 +185,11 @@
  slovakia.38.b:0 "And Upper Silesia"
  slovakia.38.c:0 "Push the border to the Oder-Neisse line"
  slovakia.38.d:0 "And give them Königsberg"
+
+ slovakia.39.t:0 "Dinner Time"
+ slovakia.39.desc:0 "It was a normal Bratislava night for the Holičes. They were eating dinner together in the dining room, when all of a sudden, their son, Tomáš, had something to announce.\n\n'Mama, Papa, look what we learnt in school today'. Tomáš pulled a Balaclava out of his pocket, before donning it at the table. 'Death to the Hungarians, glory to [SLO.GetLeader]! Don't I look Mountaineer as fuck? I got that Slovak-Záhorie ethnicity in me.'\n'That's great sweety' Helena responded, refraining from looking up from her plate. Her husband, Petr, was not so reserved.\n\n'Take that fucking mask off NOW!' he bellowed. Tomáš was taken back. 'NOW!' His fist slammed the table in rage. Tomáš took off the Balaclava, whimping like a scared dog.\n'You can play dictator at school all you like, but in this household, I will NOT tolerate that bastard!'"
+ slovakia.39.a:0 "The only things you could hear after that was the chewing of food."
+
+ slovakia.40.t:0 "3AM"
+ slovakia.40.desc:0 "It was another sleepless night for Helena. Although the incident was over a week ago, you always had to show a little bit of caution, which was something Petr had not done.\n'It's fine', she thought to herself, 'no-one cares.'\n\nKNOCK KNOCK\n\nShe woke up Petr, and together they ventured down the stairs, before opening the door. It was a man from the Hlinka.\n'Mr and Mrs Holič, you are under arrest for anti-[SLO.GetLeader] behaviour.'\n\nPetr was drunk as usual. He didn't seem to mind, let alone know, about the gravity of the situation. Helena was the opposite. She knew full well what was to heppen, yet know there was nothing she could do about it. Then, down the stairs, came Tomáš.\n'Oh Tomáš, please go back upstairs' Helena pleaded, but it was no use. Tomáš walked to the door and looked down Helena in the eyes.\n\n'Death to the Hungarians, glory to [SLO.GetLeader]!'"
+ slovakia.40.a:0 "Knowing he was no longer her son, she accepted whatever came next."

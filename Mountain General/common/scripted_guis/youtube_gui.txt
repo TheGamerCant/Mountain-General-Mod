@@ -1,0 +1,20 @@
+scripted_gui = {
+	youtube_topbar = {
+		window_name = "youtube_topbar"
+		context_type = player_context
+		parent_window_token = top_bar
+		
+		visible={
+			always = yes
+		}
+		
+		triggers={
+			
+		}
+		
+		effects={
+			
+		}
+	}
+	
+}

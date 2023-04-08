@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_youtube_icon"
+		texturefile = "gfx/interface/youtube.png"
+	}	
+}

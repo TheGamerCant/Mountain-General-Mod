@@ -31,6 +31,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_SLO_black_sun_idea"
+		texturefile = "gfx/interface/ideas/GER_Paganism_Endorsed.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_SLO_jozef_tiso"
 		texturefile = "gfx/interface/ideas/slo/advisors/idea_SLO_jozef_tiso.dds"
 	}

@@ -684,6 +684,7 @@ SLO_to_liberate_europe_decisions={
 
 		activation = {
 			has_completed_focus = SLO_to_liberate_europe
+			has_war = no
 		}
 
 		visible = {

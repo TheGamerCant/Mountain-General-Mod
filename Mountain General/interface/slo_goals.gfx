@@ -1,5 +1,4 @@
 spriteTypes = {	
-
 	SpriteType = {
 	name = "GFX_goal_speak_to_the_nation"
 	texturefile = "gfx/interface/goals/SLO_speak_to_the_nation.png"			
@@ -195,21 +194,41 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/SLO_shovels_only.png"			
 	}
 	
-
+	SpriteType = {
+	name = "GFX_goal_SLO_austrian_economics"
+	texturefile = "gfx/interface/goals/austrian_economics.png"			
+	}
 	
+	SpriteType = {
+	name = "GFX_goal_SLO_small_businesses"
+	texturefile = "gfx/interface/goals/small_businesses.png"			
+	}
 
+	SpriteType = {
+	name = "GFX_goal_SLO_prosperity"
+	texturefile = "gfx/interface/goals/SLO_prosperity.png"			
+	}
 
+	SpriteType = {
+	name = "GFX_goal_SLO_pensions"
+	texturefile = "gfx/interface/goals/SLO_pensions.png"			
+	}	
 
+	SpriteType = {
+	name = "GFX_goal_SLO_cult_of_personality"
+	texturefile = "gfx/interface/goals/SLO_cult_of_personality.png"			
+	}	
 
-
-
-
-
-
-
-
-
-
-
-
+	SpriteType = {
+	name = "GFX_goal_SLO_black_sun"
+	texturefile = "gfx/interface/goals/SLO_black_sun.png"			
+	}
+	SpriteType = {
+	name = "GFX_goal_SLO_based_education"
+	texturefile = "gfx/interface/goals/SLO_based_education.png"			
+	}
+	SpriteType = {
+	name = "GFX_goal_SLO_mg_is_god"
+	texturefile = "gfx/interface/goals/SLO_mg_is_god.png"			
+	}
 }

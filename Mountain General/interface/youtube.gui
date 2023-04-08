@@ -1,0 +1,23 @@
+guiTypes = {
+	containerWindowType = {
+		name = "youtube_topbar"
+		position = { x = 650 y = 4 }	
+		size = { width=100%% height=100%% }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = no
+		fade_type = linear
+		click_to_front = no
+		clipping = no	
+	
+		buttonType = {
+			name = "youtube_link"
+			position = { x= 0 y = 0 }
+			quadTextureSprite = "GFX_youtube_icon"
+			pdx_tooltip = "YT_button_TT"
+			web_link = "https://www.youtube.com/@mountaingeneral"
+		}		
+		
+	}
+}
