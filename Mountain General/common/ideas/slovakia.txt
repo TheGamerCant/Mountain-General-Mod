@@ -2168,5 +2168,47 @@ ideas ={
 				defense_bonus_against = 0.15
 			}
 		}
+		
+		SLO_revolutionary_society_commie = {
+			removal_cost = -1
+
+			picture = anti_hungarian_militias
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.025
+				weekly_manpower = 500
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				communism_drift = 0.1
+			}
+		}
+		
+		SLO_revolutionary_society_anarchy = {
+			removal_cost = -1
+
+			picture = anti_hungarian_militias
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.025
+				weekly_manpower = 500
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				neutrality_drift = 0.1
+			}
+		}
 	}
 }

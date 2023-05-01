@@ -158,6 +158,14 @@ country_event = {
 
 	}
 
+	option = { 
+		name = slovakia.4.c
+		ai_chance = {
+			base = 10
+		}
+		complete_national_focus = SLO_a_revolutionary_slovakia
+
+	}
 }
 
 #Get Czech debts
@@ -1429,7 +1437,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {		#I look mountaineer as fuck
 	id = slovakia.39
 	title = slovakia.39.t
 	desc = slovakia.39.desc
@@ -1449,7 +1457,7 @@ country_event = {
 }
 
 country_event = {
-	id = slovakia.40
+	id = slovakia.40		#Kill those who dissent
 	title = slovakia.40.t
 	desc = slovakia.40.desc
 	is_triggered_only = yes
@@ -1460,5 +1468,77 @@ country_event = {
 			base = 10
 		}
 		909={ add_manpower = -2 }
+	}
+}
+
+country_event = {		#Commie meeting
+	id = slovakia.41
+	title = slovakia.41.t
+	desc = slovakia.41.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_poland_rejects
+
+	option = { 
+		name = slovakia.41.a
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = 10
+	}
+}
+
+country_event = {				#Take your pills?
+	id = slovakia.42
+	title = slovakia.42.t
+	desc = slovakia.42.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_SLO_mg_pills
+
+	option = { 
+		name = slovakia.42.a
+		ai_chance = {
+			base = 10
+		}
+		set_country_flag = mg_has_taken_his_pills
+	}
+	
+	option = { 
+		name = slovakia.42.b
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {				#Anarchy or Stalinism?
+	id = slovakia.43
+	title = slovakia.43.t
+	desc = slovakia.43.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_poland_rejects
+
+	option = { 
+		name = slovakia.43.a
+		trigger={
+			has_country_flag = mg_has_taken_his_pills
+		}
+		ai_chance = {
+			base = 10
+		}
+		complete_national_focus = SLO_the_slovakian_free_territory
+	}
+	
+	option = { 
+		name = slovakia.43.b
+		trigger={
+			NOT = { has_country_flag = mg_has_taken_his_pills }
+		}
+		ai_chance = {
+			base = 10
+		}
+		complete_national_focus = SLO_the_slovak_soviet_republic
 	}
 }

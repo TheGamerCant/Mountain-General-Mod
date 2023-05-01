@@ -1,7 +1,10 @@
 ﻿l_english:
  WAR_NAME_SLO_CZE:0 "The Bratislavan Uprising"
  WAR_NAME_CZE_SLO:0 "The Bratislavan Uprising"
- mountain_general_leader_desc:0 "To many of his friends, he was a recluse, would spend most of his time indoors, playing Hoi4. This is only partly true. Mountain General spent his days in his room, building a time machine in order to go back and wipe out the ancestors to the modern Hungarian people. However, it all went terribly wrong, as one fatal miscalculation meant he landed in 1936 AD, as opposed to 1936 BC.\n\n Despite this unfortunate setback, Mountain General is not one to be deterred and has seized control of Bratislava, from where plans to bring his Hungarian-free utopian vision to life..."
+ mountain_general_leader_desc_democratic:0 ""
+ mountain_general_leader_desc_anarchist:0 ""
+ mountain_general_leader_desc_communist:0 ""
+ mountain_general_leader_desc_regular:0 "To many of his friends, he was a recluse, would spend most of his time indoors, playing Hoi4. This is only partly true. Mountain General spent his days in his room, building a time machine in order to go back and wipe out the ancestors to the modern Hungarian people. However, it all went terribly wrong, as one fatal miscalculation meant he landed in 1936 AD, as opposed to 1936 BC.\n\n Despite this unfortunate setback, Mountain General is not one to be deterred and has seized control of Bratislava, from where plans to bring his Hungarian-free utopian vision to life..."
  the_slovakian_napoleon:0 "The Slovakian Napoleon"
  the_slovakian_napoleon_healthcare:0 "The Slovakian Napoleon"
  the_slovakian_napoleon_desc:0 "§LMountain General's 4000 hours in Hoi4 and immense knowledge of niche European military history gives him an unfair advantage against his opponents in battle.§!"
@@ -66,3 +69,5 @@
  SLO_can_form_eu_2_tt:0 "Is in a faction with, or controls the capitals of at least 14 European countries"
  YT_button_TT:0 "Click to watch Mountain General!"
  CANNOT_INVADE_WASTELAND:0 "§RCannot invade a nuclear wasteland!§!"
+ the_second_makhno:0 "The Second Makhno"
+ the_second_lenin:0 "The Second Lenin"

@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader={
-			desc = "mountain_general_leader_desc"
+			desc = "mountain_general_leader_desc_regular"
 			ideology=despotism
 			traits={ the_slovakian_napoleon the_man_behind_the_mask warmonger }
 			expire="1965.1.1.1"
@@ -24,7 +24,7 @@ characters = {
 			}
 		}
 		country_leader={
-			desc = "mountain_general_leader_desc"
+			desc = "mountain_general_leader_desc_communist"
 			ideology=stalinism
 			traits={ the_slovakian_napoleon the_man_behind_the_mask warmonger }
 			expire="1965.1.1.1"
@@ -40,7 +40,7 @@ characters = {
 			}
 		}
 		country_leader={
-			desc = "mountain_general_leader_desc"
+			desc = "mountain_general_leader_desc_regular"
 			ideology=nazism
 			traits={ the_slovakian_napoleon the_man_behind_the_mask warmonger }
 			expire="1965.1.1.1"
@@ -56,7 +56,7 @@ characters = {
 			}
 		}
 		country_leader={
-			desc = "mountain_general_leader_desc"
+			desc = "mountain_general_leader_desc_democratic"
 			ideology=conservatism
 			traits={ the_slovakian_napoleon the_man_behind_the_mask warmonger }
 			expire="1965.1.1.1"
@@ -72,7 +72,7 @@ characters = {
 			}
 		}
 		country_leader={
-			desc = "mountain_general_leader_desc"
+			desc = "mountain_general_leader_desc_anarchist"
 			ideology=anarchist_communism
 			traits={ the_slovakian_napoleon the_man_behind_the_mask warmonger }
 			expire="1965.1.1.1"

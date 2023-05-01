@@ -73,8 +73,9 @@ focus_tree = {
 		
 
 		available = {
-			NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 		}
+		
+		bypass = { has_completed_focus = SLO_a_revolutionary_slovakia }
 		
 		prerequisite = {
 			focus = SLO_economic_modernisation
@@ -4042,16 +4043,14 @@ focus_tree = {
 
 		available = {
 			any_state={
-				limit = { 
-					is_controlled_by = SLO 
-					NOT={
-						OR={
-							state = 909
-							state = 70
-							state = 71
-							state = 73
-							state = 664
-						}
+				is_controlled_by = SLO 
+				NOT={
+					OR={
+						state = 909
+						state = 70
+						state = 71
+						state = 73
+						state = 664
 					}
 				}
 			}
@@ -4224,6 +4223,13 @@ focus_tree = {
 					}
 				}
 				add_manpower = -150000
+			}
+			every_state={
+				limit={
+					is_owned_and_controlled_by = SLO
+					NOT = { is_core_of = SLO }
+				}
+				add_compliance = 20
 			}
 		}
 	}
@@ -7445,7 +7451,7 @@ focus_tree = {
 	
 	focus = {	
 		id = SLO_a_revolutionary_slovakia
-#		icon = GFX_goal_SLO_free_territory
+		icon = GFX_goal_support_communism
 		x = 100
 		y = 0
 		cost = 6
@@ -7457,25 +7463,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-#			hidden_effect = {
-#				add_country_leader_role = {
-#					character = SLO_mountain_general_anarchy
-#					country_leader = {
-#						expire = "1965.1.1"
-#						ideology = anarchism
-#						traits = {
-#							the_slovakian_napoleon
-#							the_man_behind_the_mask 
-#						}
-#					}
-#					promote_leader = yes
-#				}
-#				set_cosmetic_tag = SFT
-#				add_ideas = closed_economy
-#				add_ideas = volunteer_only
-#				add_ideas = SLO_collectivized_society
-#				SLO_update_leader_portrait = yes
-#			}
 		}
 	}
 	
@@ -7486,7 +7473,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SLO_a_revolutionary_slovakia
-		cost = 5
+		cost = 8
 		prerequisite = {
 			focus = SLO_a_revolutionary_slovakia
 		}
@@ -7494,6 +7481,11 @@ focus_tree = {
 		}
 		
 		bypass = {
+		}
+		
+		select_effect={
+			country_event = { id = slovakia.41 days = 8 }
+			country_event = { id = slovakia.42 days = 30 }
 		}
 	
 
@@ -7503,6 +7495,219 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.1
 			}
+			country_event = { id = slovakia.43 }
+		}
+	}
+	
+	focus = {
+		id =  SLO_the_slovakian_free_territory
+		icon = GFX_goal_SLO_free_territory
+		x = -8
+		y = 1
+		relative_position_id = SLO_the_establishment_of_a_socialist_state
+		cost = 3
+		prerequisite = {
+			focus = SLO_the_establishment_of_a_socialist_state
+		}
+		mutually_exclusive = { focus = SLO_the_slovak_soviet_republic }
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			hidden_effect = {
+				add_country_leader_role = {
+					character = SLO_mountain_general_anarchy
+					country_leader = {
+						desc = "mountain_general_leader_desc_anarchist"
+						expire = "1965.1.1"
+						ideology = anarchism
+						traits = {
+							the_slovakian_napoleon
+							the_man_behind_the_mask 
+						}
+					}
+					promote_leader = yes
+				}
+				set_cosmetic_tag = SFT
+				add_ideas = closed_economy
+				add_ideas = volunteer_only
+				add_ideas = SLO_collectivized_society
+				SLO_update_leader_portrait = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_the_slovak_soviet_republic
+		icon = GFX_goal_SLO_mg_commie
+		x = 8
+		y = 1
+		relative_position_id = SLO_the_establishment_of_a_socialist_state
+		cost = 3
+		prerequisite = {
+			focus = SLO_the_establishment_of_a_socialist_state
+		}
+		mutually_exclusive = { focus =  SLO_the_slovakian_free_territory }
+		available = {
+			always = no
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			hidden_effect = {
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				SLO_update_leader_portrait = yes
+			}
+		}
+	}
+	
+	focus = {
+		id =  SLO_reject_our_debts
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 8
+		y = 1
+		relative_position_id = SLO_the_slovakian_free_territory
+		cost = 8
+		prerequisite = {
+			focus = SLO_the_slovakian_free_territory
+			focus = SLO_the_slovak_soviet_republic
+		}
+		available = {
+
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -100
+			add_to_variable = { SLO_ec_consumer_goods_factor = -0.25 }
+			custom_effect_tooltip = SLO_reject_our_debts_tt
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+				}
+				send_embargo = SLO
+			}
+		}
+	}
+	
+	focus = {
+		id =  SLO_revolutionary_politics
+		icon = GFX_focus_ETH_callout_to_the_world
+		x = -1
+		y = 1
+		relative_position_id = SLO_reject_our_debts
+		cost = 6
+		prerequisite = {
+			focus = SLO_reject_our_debts
+		}
+		available = {
+
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id =  SLO_revolutionary_society
+		icon = GFX_goal_SLO_revolutionary_society
+		x = 1
+		y = 1
+		relative_position_id = SLO_reject_our_debts
+		cost = 8
+		prerequisite = {
+			focus = SLO_reject_our_debts
+		}
+		available = {
+
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			if={
+				limit = { has_completed_focus = SLO_the_slovakian_free_territory }
+				add_ideas = SLO_revolutionary_society_anarchy
+			}
+			else={
+			
+				add_ideas = SLO_revolutionary_society_commie
+			}
+		}
+	}
+	
+	focus = {
+		id =  SLO_makhno_lives
+		icon = GFX_goal_SLO_raise_hell
+		x = 0
+		y = 1
+		relative_position_id = SLO_revolutionary_politics
+		cost = 8
+		prerequisite = { focus = SLO_revolutionary_politics }
+		prerequisite = { focus = SLO_revolutionary_society }
+		mutually_exclusive = { focus = SLO_lenin_is_young_once_again }
+		available = {
+			has_completed_focus = SLO_the_slovakian_free_territory
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_country_leader_trait = the_second_makhno
+		}
+	}
+	
+	focus = {
+		id =  SLO_lenin_is_young_once_again
+		icon = GFX_goal_SLO_mg_commie
+		x = 2
+		y = 1
+		relative_position_id = SLO_revolutionary_politics
+		cost = 8
+		prerequisite = { focus = SLO_revolutionary_politics }
+		prerequisite = { focus = SLO_revolutionary_society }
+		mutually_exclusive = { focus = SLO_makhno_lives }
+		available = {
+			has_completed_focus = SLO_the_slovak_soviet_republic
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_country_leader_trait = the_second_lenin
 		}
 	}
 }

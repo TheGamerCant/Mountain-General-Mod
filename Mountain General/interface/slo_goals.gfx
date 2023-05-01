@@ -223,12 +223,29 @@ spriteTypes = {
 	name = "GFX_goal_SLO_black_sun"
 	texturefile = "gfx/interface/goals/SLO_black_sun.png"			
 	}
+
 	SpriteType = {
 	name = "GFX_goal_SLO_based_education"
 	texturefile = "gfx/interface/goals/SLO_based_education.png"			
 	}
+
 	SpriteType = {
 	name = "GFX_goal_SLO_mg_is_god"
 	texturefile = "gfx/interface/goals/SLO_mg_is_god.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_mg_commie"
+	texturefile = "gfx/interface/goals/SLO_mg_commie.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_raise_hell"
+	texturefile = "gfx/interface/goals/SLO_raise_hell.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SLO_revolutionary_society"
+	texturefile = "gfx/interface/goals/SLO_revolutionary_society.png"			
 	}
 }

@@ -24,10 +24,10 @@
  slovakia.3.a:0 "Our victory is inevitable."
 
  slovakia.4.t:0 "What IS Mountain Generalism?"
- slovakia.4.desc:0 "Mountain General was approached in his Bratislava office by Josef Tiso.\n'My leader, you have taken all of Slovakia to never before seen heights, but there is one pressing matter - ideology.'\nMountain General snapped back - 'What about ideology!'\n'So far all you've said in terms of your ideological standing is repeatedly calling Hungary 'gay' and 'cringe', and while undoubtedly true, one cannot lead a state on just these beliefs alone.'\n\n Mountain General responded,"
+ slovakia.4.desc:0 "Mountain General was approached in his Bratislava office by Josef Tiso.\n\n'My leader, you have taken all of Slovakia to never before seen heights, but there is one pressing matter - ideology.'\n\nMountain General snapped back - 'What about ideology!'\n\n'So far all you've said in terms of your ideological standing is repeatedly calling Hungary 'gay' and 'cringe', and while undoubtedly true, one cannot lead a state on just these beliefs alone.'\n\nMountain General responded,"
  slovakia.4.a:0 "My goal is to exterminate Hungary, and make Slovakia great while doing so."
  slovakia.4.b:0 "I'm only an ironic Fascist..."
- slovakia.4.c:0 "...I'm actually an Anarcho-Communist."
+ slovakia.4.c:0 "...I am a man of the working classes. §R(WIP)§!"
 
  slovakia.5.t:0 "The matter of national debt"
  slovakia.5.desc:0 "As part of our agreement with Czechia, we have inherited a part of their national debt equal to our economic size within the prior union.\n\nWhile not exactly a massive sum of money, the fact that we have been saddled with it so soon after our newfound independence makes it quite the economic challenge."
@@ -92,7 +92,7 @@
  slovakia.18.a:0 ""
 
  slovakia.19.t:0 "Preparation for the election"
- slovakia.19.desc:0 "Mountain General's proclamation of elections has brought joy to many Slovakians, but a certain few - the bureaucrats - it could not be more of a nightmare.\n\nFor the next few months, they will be working night and day to ensure secure ballot counting, privacy, and creating the infrastructure for Slovakia's first election!"
+ slovakia.19.desc:0 "Mountain General's proclamation of elections has brought joy to many Slovakians, but a certain few - the bureaucrats - it could not be more of a nightmare.\n\nFor the next few months, they will be working night and day to ensure secure ballot counting, privacy, and expanding the pre-existing election infrastructure to give votes to all for our new, equal and democratic society."
  slovakia.19.a:0 "Exciting times!"
 
  slovakia.20.t:0 "Election day results!"
@@ -193,3 +193,17 @@
  slovakia.40.t:0 "3AM"
  slovakia.40.desc:0 "It was another sleepless night for Helena. Although the incident was over a week ago, you always had to show a little bit of caution, which was something Petr had not done.\n'It's fine', she thought to herself, 'no-one cares.'\n\nKNOCK KNOCK\n\nShe woke up Petr, and together they ventured down the stairs, before opening the door. It was a man from the Hlinka.\n'Mr and Mrs Holič, you are under arrest for anti-[SLO.GetLeader] behaviour.'\n\nPetr was drunk as usual. He didn't seem to mind, let alone know, about the gravity of the situation. Helena was the opposite. She knew full well what was to heppen, yet know there was nothing she could do about it. Then, down the stairs, came Tomáš.\n'Oh Tomáš, please go back upstairs' Helena pleaded, but it was no use. Tomáš walked to the door and looked down Helena in the eyes.\n\n'Death to the Hungarians, glory to [SLO.GetLeader]!'"
  slovakia.40.a:0 "Knowing he was no longer her son, she accepted whatever came next."
+
+ slovakia.41.t:0 "The Congress of the Slovak Soviets"
+ slovakia.41.desc:0 "At Mountain General's request, delegations from trade unions and intellectuals have gathered in Bratislava to discuss the future of Slovakia as a socialist state."
+ slovakia.41.a:0 "Exciting times!"
+
+ slovakia.42.t:0 "Bratislava nights"
+ slovakia.42.desc:0 "Josef Tiso couldn't sleep. He had been lying awake for hours, trying to force himself to go to sleep, but Mountain General's leftward swing caused him great distress.\n'It's fine,' he thought to himself, 'He knows more than we ever could.'Unable to get to sleep, he took himself for a walk.\n\nWhile walking the streets of Bratislava, Tiso came across Mountain General, intoxicated and pissing in the river.\n\n'What are you doing,' he enquired.\n\n'Pissing in the Danube so it flows down to Budapest,' Mountain General responded.\n\n'Genius - but anyways, why are you also up?'\n\n'You see, I forgot to take my crazy pills yesterday, and as such I have been beside myself and extremely energetic.'"
+ slovakia.42.a:0 "'Perhaps I should take them.'"
+ slovakia.42.b:0 "And I like it!"
+
+ slovakia.43.t:0 "The final decision"
+ slovakia.43.desc:0 "After month of debating over the route our new socialist utopia shall take, the final decision has come down to Mountain General. all eyes in the hall are on him, as he rises to the podium.\n\n'Socialism will be achieved through...'"
+ slovakia.43.a:0 "'Liberty and decentralisation!'"
+ slovakia.43.b:0 "'A firm and guiding hand!'"
