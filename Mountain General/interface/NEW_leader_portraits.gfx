@@ -1,0 +1,57 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_portrait_mg_normal"
+		texturefile = "gfx/leaders/SLO/SLO_mountain_general.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mg_anime"
+		texturefile = "gfx/leaders/SLO/SLO_mountain_general_anime.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mg_confederate"
+		texturefile = "gfx/leaders/SLO/SLO_mountain_general_confederate.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mg_wojak"
+		texturefile = "gfx/leaders/SLO/SLO_mountain_general_wojak.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mg_history_matters"
+		texturefile = "gfx/leaders/SLO/SLO_mountain_general_history_matters.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mg_gone"
+		texturefile = "gfx/leaders/SLO/SLO_mountain_general_gone.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mg_with_n_word"
+		texturefile = "gfx/leaders/SLO/SLO_mountain_general_with_n_word.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mg_cat"
+		texturefile = "gfx/leaders/SLO/SLO_mountain_general_cat.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mg_anime_2"
+		texturefile = "gfx/leaders/SLO/SLO_mountain_general_anime_2.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mg_hentai"
+		texturefile = "gfx/leaders/SLO/SLO_mountain_general_hentai.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mg_tno"
+		texturefile = "gfx/leaders/SLO/SLO_mountain_general_goes_mad.png"
+	}
+}

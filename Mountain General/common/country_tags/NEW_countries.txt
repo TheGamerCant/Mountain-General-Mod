@@ -1,0 +1,2 @@
+HEX = "countries/HEX.txt"
+

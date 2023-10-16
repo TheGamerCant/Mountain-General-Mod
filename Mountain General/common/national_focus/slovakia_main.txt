@@ -114,7 +114,7 @@ focus_tree = {
 			}
 			unlock_decision_category_tooltip = SLO_captain_hindsight_decisions
 			add_research_slot = 1	
-			909={
+			935={
 				add_extra_state_shared_building_slots = 1
 			}
 			add_timed_idea={
@@ -191,7 +191,7 @@ focus_tree = {
 				uses = 2
 				category = infantry_weapons
 			}
-			909 = {
+			935 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -351,7 +351,7 @@ focus_tree = {
 		}
 		
 		available = {
-			SLO = { has_full_control_of_state = 909 }
+			SLO = { has_full_control_of_state = 935 }
 			SLO = { has_full_control_of_state = 664 }
 		}
 		
@@ -386,7 +386,7 @@ focus_tree = {
 		}
 		
 		available = {
-			SLO = { has_full_control_of_state = 909 }
+			SLO = { has_full_control_of_state = 935 }
 			SLO = { has_full_control_of_state = 664 }
 		}
 		
@@ -471,7 +471,7 @@ focus_tree = {
 		relative_position_id = SLO_slovakian_nuclear_program
 		
 		available = {
-			SLO = { has_full_control_of_state = 909 }
+			SLO = { has_full_control_of_state = 935 }
 			has_tech = atomic_research
 			NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 		}
@@ -491,7 +491,7 @@ focus_tree = {
 			custom_effect_tooltip = SLO_gotta_get_dem_nukes_boi_tt
 			hidden_effect = {
 				remove_ideas = SLO_get_nukes
-				909 = {
+				935 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = nuclear_reactor
@@ -806,7 +806,7 @@ focus_tree = {
 		}
 		
 		available = {
-			SLO = { has_full_control_of_state = 909 }
+			SLO = { has_full_control_of_state = 935 }
 			SLO = { has_full_control_of_state = 71 }
 			SLO = { has_full_control_of_state = 664 }
 		}
@@ -835,7 +835,7 @@ focus_tree = {
 				category = synth_resources
 			}
 			
-			909 = { 
+			935 = { 
 				add_resource = { 
 					type = chromium
 					amount = 9
@@ -3005,7 +3005,7 @@ focus_tree = {
 
 
 		available = {
-			SLO = { has_full_control_of_state = 909 }
+			SLO = { has_full_control_of_state = 935 }
 			SLO = { has_full_control_of_state = 70 }
 			SLO = { has_full_control_of_state = 9 }
 			SLO = { has_full_control_of_state = 75 }
@@ -3042,7 +3042,7 @@ focus_tree = {
 
 
 		available = {
-			SLO = { has_full_control_of_state = 909 }
+			SLO = { has_full_control_of_state = 935 }
 			SLO = { has_full_control_of_state = 70 }
 			SLO = { has_full_control_of_state = 9 }
 			SLO = { has_full_control_of_state = 75 }
@@ -3103,7 +3103,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SLO_the_holy_slavic_empire } 
 
 		available = {
-			SLO = { has_full_control_of_state = 909 }
+			SLO = { has_full_control_of_state = 935 }
 			SLO = { has_full_control_of_state = 70 }
 			SLO = { has_full_control_of_state = 71 }
 			SLO = { has_full_control_of_state = 664 }
@@ -3714,7 +3714,7 @@ focus_tree = {
 		available = {
 			has_country_flag = SLO_gave_ruthenia_autonomy
 			has_completed_focus = SLO_liberator_of_the_slavs
-			909 = {
+			935 = {
 				CONTROLLER = {
 					OR = {
 						tag = SLO
@@ -4046,7 +4046,7 @@ focus_tree = {
 				is_controlled_by = SLO 
 				NOT={
 					OR={
-						state = 909
+						state = 935
 						state = 70
 						state = 71
 						state = 73
@@ -4064,7 +4064,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 909
+							state = 935
 							state = 70
 							state = 71
 							state = 73
@@ -4079,7 +4079,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 909
+							state = 935
 							state = 70
 							state = 71
 							state = 73
@@ -4094,7 +4094,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 909
+							state = 935
 							state = 70
 							state = 71
 							state = 73
@@ -4109,7 +4109,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 909
+							state = 935
 							state = 70
 							state = 71
 							state = 73
@@ -4124,7 +4124,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 909
+							state = 935
 							state = 70
 							state = 71
 							state = 73
@@ -4139,7 +4139,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 909
+							state = 935
 							state = 70
 							state = 71
 							state = 73
@@ -4154,7 +4154,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 909
+							state = 935
 							state = 70
 							state = 71
 							state = 73
@@ -4169,7 +4169,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 909
+							state = 935
 							state = 70
 							state = 71
 							state = 73
@@ -4184,7 +4184,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 909
+							state = 935
 							state = 70
 							state = 71
 							state = 73
@@ -4199,7 +4199,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 909
+							state = 935
 							state = 70
 							state = 71
 							state = 73
@@ -4214,7 +4214,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 909
+							state = 935
 							state = 70
 							state = 71
 							state = 73

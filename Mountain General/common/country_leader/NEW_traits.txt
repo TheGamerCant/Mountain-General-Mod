@@ -1,0 +1,197 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+@experience_gain_low = 0.03
+@experience_gain_medium = 0.06
+@experience_gain_high = 0.08
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
+###Todo remove commented advisor experience gains
+
+leader_traits = {
+	all_gone = {
+		custom_modifier_tooltip = all_gone_desc
+	}
+	
+	the_slovakian_napoleon = {
+		random = no
+		command_power_gain_mult = 0.2
+		army_attack_factor = 0.15
+		army_defence_factor = 0.15
+		army_speed_factor = 0.08
+		org_loss_when_moving = -0.1
+		land_doctrine_cost_factor = -0.1
+
+		custom_modifier_tooltip = the_slovakian_napoleon_desc
+	}
+	
+	the_slovakian_napoleon_healthcare = {
+		random = no
+		command_power_gain_mult = 0.2
+		army_attack_factor = 0.2
+		army_defence_factor = 0.2
+		army_speed_factor = 0.1
+		org_loss_when_moving = -0.15
+		experience_loss_factor = -0.3
+		land_doctrine_cost_factor = -0.1
+
+		custom_modifier_tooltip = the_slovakian_napoleon_desc
+	}
+	
+	the_man_behind_the_mask = {
+		random = no
+		stability_factor = -0.15
+		political_power_factor = -0.05
+
+		custom_modifier_tooltip = the_man_behind_the_mask_desc
+	}
+
+	mg_cult_of_personality = {
+		random = no
+		political_power_factor = 0.05
+		war_stability_factor = 0.15
+		party_popularity_stability_factor = 0.1
+		war_support_factor = 0.05
+	}
+	
+	protector_of_slovak_democracy = {
+		random = no
+		political_power_factor = -0.2
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		democratic_drift = 0.1
+		weekly_casualties_war_support = 0.001
+		hidden_modifier={
+			political_advisor_cost_factor = 0.2
+			trade_laws_cost_factor = 0.2
+			mobilization_laws_cost_factor = 0.2
+			economy_cost_factor = 0.2
+			high_command_cost_factor = 0.2
+			air_chief_cost_factor = 0.2
+			army_chief_cost_factor = 0.2
+			navy_chief_cost_factor = 0.2
+		}
+		custom_modifier_tooltip = mg_change_laws_and_high_command_tt_2
+		
+	}
+	
+	protector_of_european_democracy = {
+		random = no
+		
+		political_power_factor = -0.2
+		stability_factor = 0.1
+		war_support_factor = 0.3
+		democratic_drift = 0.1
+		war_stability_factor = 0.3
+		weekly_casualties_war_support = 0.002
+		hidden_modifier={
+			political_advisor_cost_factor = 0.2
+			trade_laws_cost_factor = 0.2
+			mobilization_laws_cost_factor = 0.2
+			economy_cost_factor = 0.2
+			high_command_cost_factor = 0.2
+			air_chief_cost_factor = 0.2
+			army_chief_cost_factor = 0.2
+			navy_chief_cost_factor = 0.2
+		}
+		custom_modifier_tooltip = mg_change_laws_and_high_command_tt_2
+	}
+	
+	gods_representative_on_earth = {
+		random = no
+		political_power_factor = 0.1
+		war_stability_factor = 0.2
+		party_popularity_stability_factor = 0.15
+		war_support_factor = 0.05
+		fascism_drift = 0.05
+		conscription_factor = 0.05
+		hidden_modifier={
+			political_advisor_cost_factor = -0.25
+			trade_laws_cost_factor = -0.25
+			mobilization_laws_cost_factor = -0.25
+			economy_cost_factor = -0.25
+			high_command_cost_factor = -0.25
+			air_chief_cost_factor = -0.25
+			army_chief_cost_factor = -0.25
+			navy_chief_cost_factor = -0.25
+		}
+		custom_modifier_tooltip = mg_change_laws_and_high_command_tt
+		
+		custom_modifier_tooltip = gods_representative_on_earth_desc
+	}
+	
+	liberator_of_slavs = {
+		random = no
+		political_power_factor = 0.15
+		war_stability_factor = 0.25
+		party_popularity_stability_factor = 0.15
+		war_support_factor = 0.2
+		fascism_drift = 0.1
+		conscription_factor = 0.1
+		compliance_gain = 0.025
+		justify_war_goal_time = -0.25
+		hidden_modifier={
+			political_advisor_cost_factor = -0.25
+			trade_laws_cost_factor = -0.25
+			mobilization_laws_cost_factor = -0.25
+			economy_cost_factor = -0.25
+			high_command_cost_factor = -0.25
+			air_chief_cost_factor = -0.25
+			army_chief_cost_factor = -0.25
+			navy_chief_cost_factor = -0.25
+		}
+		custom_modifier_tooltip = mg_change_laws_and_high_command_tt
+	}
+	
+	conqueror_of_eurasia_king_of_orthodox_realms = {
+		random = no
+		political_power_factor = 0.25
+		war_stability_factor = 0.25
+		party_popularity_stability_factor = 0.15
+		war_support_factor = 0.2
+		fascism_drift = 0.3
+		conscription_factor = 0.1
+		compliance_gain = 0.025
+		justify_war_goal_time = -0.5
+		hidden_modifier={
+			political_advisor_cost_factor = -0.25
+			trade_laws_cost_factor = -0.25
+			mobilization_laws_cost_factor = -0.25
+			economy_cost_factor = -0.25
+			high_command_cost_factor = -0.25
+			air_chief_cost_factor = -0.25
+			army_chief_cost_factor = -0.25
+			navy_chief_cost_factor = -0.25
+		}
+		custom_modifier_tooltip = mg_change_laws_and_high_command_tt
+	}
+	
+	the_second_makhno = {	
+		random = no
+		justify_war_goal_time = -0.3
+		neutrality_drift = 0.1
+		consumer_goods_factor = -0.02
+		compliance_gain = 0.1
+	}
+	
+	the_second_lenin = {	
+		random = no
+		political_power_gain = 0.05
+		justify_war_goal_time = -0.3
+		communism_drift = 0.1
+		resistance_growth = -0.15
+		conscription = 0.03
+	}
+	
+	mg_loyalist = {
+		sprite = 13
+		
+		random = no
+		political_power_factor = 0.1
+		party_popularity_stability_factor = 0.1
+	}
+}

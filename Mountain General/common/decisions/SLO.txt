@@ -942,7 +942,7 @@ SLO_to_liberate_europe_decisions={
 				
 				if={
 					limit = { 
-						909 = {
+						935 = {
 							OWNER = {
 								OR = {
 									tag = SLO
@@ -951,7 +951,7 @@ SLO_to_liberate_europe_decisions={
 							}
 						}
 					}
-					909	={
+					935	={
 						add_building_construction = {
 							type = bunker
 							level = 4

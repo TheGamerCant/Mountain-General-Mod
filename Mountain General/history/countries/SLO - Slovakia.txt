@@ -1,4 +1,4 @@
-﻿capital = 909
+﻿capital = 935
 
 set_research_slots = 3
 
@@ -33,6 +33,7 @@ set_technology = {
 	tech_recon = 1
 	tech_mountaineers = 1
 	tech_engineers = 1
+	tech_trucks = 1
 }
 
 
