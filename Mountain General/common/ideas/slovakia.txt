@@ -2210,5 +2210,27 @@ ideas ={
 				neutrality_drift = 0.1
 			}
 		}
+		
+		SLO_economic_self_sufficiency = {
+			removal_cost = -1
+
+			picture = eng_tackle_capitalism
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.15
+				production_speed_synthetic_refinery_factor = 0.35
+				production_speed_fuel_silo_factor = 0.35
+			}
+		}
 	}
 }

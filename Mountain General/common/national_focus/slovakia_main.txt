@@ -1991,7 +1991,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SLO_a_free_slovakia focus = SLO_a_revolutionary_slovakia }
 
 		available = {
-			always = no
+			hidden_trigger = { always = no }
 		}
 		
 		completion_reward = {
@@ -4273,7 +4273,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SLO_a_based_slovakia focus = SLO_a_revolutionary_slovakia }
 
 		available = {
-			always = no
+			hidden_trigger = { always = no }
 		}
 		
 		completion_reward = {
@@ -7459,7 +7459,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SLO_a_based_slovakia focus = SLO_a_free_slovakia }
 
 		available = {
-			always = no
+			hidden_trigger = { always = no }
 		}
 		
 		completion_reward = {
@@ -7511,7 +7511,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = SLO_the_slovak_soviet_republic }
 		available = {
-			always = no
+			hidden_trigger = { always = no }
 		}
 		
 		bypass = {
@@ -7554,7 +7554,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus =  SLO_the_slovakian_free_territory }
 		available = {
-			always = no
+			hidden_trigger = { always = no }
 		}
 		
 		bypass = {
@@ -7615,7 +7615,7 @@ focus_tree = {
 	focus = {
 		id =  SLO_revolutionary_politics
 		icon = GFX_focus_ETH_callout_to_the_world
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = SLO_reject_our_debts
 		cost = 6
@@ -7636,12 +7636,53 @@ focus_tree = {
 	}
 	
 	focus = {
-		id =  SLO_revolutionary_society
-		icon = GFX_goal_SLO_revolutionary_society
-		x = 1
+		id =  SLO_revolutionary_economy
+		icon = GFX_focus_generic_communist_industry
+		x = 0
 		y = 1
 		relative_position_id = SLO_reject_our_debts
 		cost = 8
+		prerequisite = {
+			focus = SLO_reject_our_debts
+		}
+		available = {
+
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_ideas = SLO_economic_self_sufficiency
+			
+			random_owned_controlled_state={
+				add_resource = { 
+					type = steel
+					amount = 15
+				}
+				add_resource = { 
+					type = aluminium
+					amount = 6
+				}
+				add_resource = { 
+					type = oil
+					amount = 20
+				}
+			}
+
+			set_technology = { fuel_silos = 1 }			
+			set_technology = { synth_oil_experiments = 1 }
+		}
+	}
+	
+	focus = {
+		id =  SLO_revolutionary_society
+		icon = GFX_goal_SLO_revolutionary_society
+		x = 2
+		y = 1
+		relative_position_id = SLO_reject_our_debts
+		cost = 6
 		prerequisite = {
 			focus = SLO_reject_our_debts
 		}
@@ -7668,12 +7709,13 @@ focus_tree = {
 	focus = {
 		id =  SLO_makhno_lives
 		icon = GFX_goal_SLO_raise_hell
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = SLO_revolutionary_politics
 		cost = 8
 		prerequisite = { focus = SLO_revolutionary_politics }
 		prerequisite = { focus = SLO_revolutionary_society }
+		prerequisite = { focus = SLO_revolutionary_economy }
 		mutually_exclusive = { focus = SLO_lenin_is_young_once_again }
 		available = {
 			has_completed_focus = SLO_the_slovakian_free_territory
@@ -7691,12 +7733,13 @@ focus_tree = {
 	focus = {
 		id =  SLO_lenin_is_young_once_again
 		icon = GFX_goal_SLO_mg_commie
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = SLO_revolutionary_politics
 		cost = 8
 		prerequisite = { focus = SLO_revolutionary_politics }
 		prerequisite = { focus = SLO_revolutionary_society }
+		prerequisite = { focus = SLO_revolutionary_economy }
 		mutually_exclusive = { focus = SLO_makhno_lives }
 		available = {
 			has_completed_focus = SLO_the_slovak_soviet_republic
