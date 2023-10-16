@@ -144,7 +144,7 @@ SLO_captain_hindsight_decisions = {
 		remove_effect = {
 			clr_country_flag = SLO_doing_ch_decision
 			add_to_variable = { SLO_ch_research_speed_factor = 0.1 }
-			add_to_variable = { SLO_ec_consumer_goods_factor = 0.01 }
+			add_to_variable = { SLO_ec_consumer_goods_expected_value = 0.01 }
 			custom_effect_tooltip = SLO_meet_with_scientists_tt
 		}
 	}
@@ -281,7 +281,7 @@ SLO_captain_hindsight_decisions = {
 
 		remove_effect = {
 			clr_country_flag = SLO_doing_ch_decision
-			add_to_variable = { SLO_ec_consumer_goods_factor = -0.02 }
+			add_to_variable = { SLO_ec_consumer_goods_expected_value = -0.02 }
 			custom_effect_tooltip = SLO_stock_market_investments_tt
 		}
 	}
@@ -478,7 +478,7 @@ SLO_the_final_solution_decisions = {
 		cost = 100
 
 		modifier = {
-			consumer_goods_factor = -0.02
+			consumer_goods_expected_value = -0.02
 			industrial_capacity_factory = 0.1
 		}
 		

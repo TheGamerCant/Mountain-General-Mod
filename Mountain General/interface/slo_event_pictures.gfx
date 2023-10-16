@@ -9,5 +9,9 @@ spriteTypes = {
 		name = "GFX_report_event_SLO_mg_pills"
 		texturefile = "gfx/event_pictures/report_event_SLO_mg_pills.png"
 	}
-	
+
+	spriteType = {
+		name = "GFX_report_event_SLO_great_purge"
+		texturefile = "gfx/event_pictures/report_event_SLO_great_purge.png"
+	}	
 }

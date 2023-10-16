@@ -1,0 +1,71 @@
+﻿#Slovakia split czechia with germany and poland
+news_event = {
+	id = news.500
+	title = news.500.t
+	desc = news.500.desc
+	picture = GFX_news_event_german_inspect_troops
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.500.a
+		trigger = {
+			OR = {
+				TAG = SLO
+				is_in_faction_with = SLO
+				has_government = fascism
+			}
+		}
+	}
+	option = {
+		name = news.500.b
+		trigger = {
+			not={
+				OR = {
+					TAG = SLO
+					is_in_faction_with = SLO
+					has_government = fascism
+				}	
+			}
+		}
+	}
+}
+
+#Slovakia marches into rump czechia
+news_event = {
+	id = news.501
+	title = news.501.t
+	desc = news.501.desc
+	picture = GFX_news_event_german_inspect_troops
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.501.a
+		trigger = {
+			OR = {
+				TAG = SLO
+				is_in_faction_with = SLO
+				has_government = fascism
+			}
+		}
+	}
+	option = {
+		name = news.501.b
+		trigger = {
+			not={
+				OR = {
+					TAG = SLO
+					is_in_faction_with = SLO
+					has_government = fascism
+				}	
+			}
+		}
+	}
+}
+
+

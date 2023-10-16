@@ -174,14 +174,13 @@ leader_traits = {
 		random = no
 		justify_war_goal_time = -0.3
 		neutrality_drift = 0.1
-		consumer_goods_factor = -0.02
+		consumer_goods_expected_value = -0.02
 		compliance_gain = 0.1
 	}
 	
 	the_second_lenin = {	
 		random = no
-		political_power_gain = 0.05
-		justify_war_goal_time = -0.3
+		political_power_gain = 0.1
 		communism_drift = 0.1
 		resistance_growth = -0.15
 		conscription = 0.03

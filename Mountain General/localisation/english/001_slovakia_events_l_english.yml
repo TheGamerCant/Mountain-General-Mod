@@ -32,7 +32,7 @@
  slovakia.5.t:0 "The matter of national debt"
  slovakia.5.desc:0 "As part of our agreement with Czechia, we have inherited a part of their national debt equal to our economic size within the prior union.\n\nWhile not exactly a massive sum of money, the fact that we have been saddled with it so soon after our newfound independence makes it quite the economic challenge."
  slovakia.5.a:0 "Great. More financial troubles."
- slovakia.5.tt:0 "Modify §YEconomic chaos§! by \nConsumer Goods Factories: §Y+25.0%§!"
+ slovakia.5.tt:0 "Modify §YEconomic chaos§! by \nExpected number of factires put on Consumer Goods: §Y+25.0%§!"
 
  slovakia.6.t:0 "The hard choice"
  slovakia.6.desc:0 "In order to maintain a budgetary surplus, we must decide what are the least important benificiaries of our government's expenditure."
@@ -60,7 +60,7 @@
  slovakia.11.t:0 "Economic benefits from infrastructre"
  slovakia.11.desc:0 "Our investments in the country's infrastructure has allowed parts of our industry to become better integrated, allowing for smoother production of goods and specialisation in certain industries."
  slovakia.11.a:0 "Excellent!"
- slovakia.11.tt:0 "Modify §YEconomic chaos§! by \nConsumer Goods Factories: §Y-5.0%§!\nProduction Efficiency Retention:  §G+25.00%§!"
+ slovakia.11.tt:0 "Modify §YEconomic chaos§! by \nExpected number of factires put on Consumer Goods: §Y-5.0%§!\nProduction Efficiency Retention:  §G+25.00%§!"
 
  slovakia.12.t:0 "[SLO.GetLeader] offers to split Czechia"
  slovakia.12.desc:0 ""
@@ -81,7 +81,7 @@
  slovakia.16.t:0 "Booming Arms Industry"
  slovakia.16.desc:0 "Our liberal polices on private gun ownership have caused our domestic arms industry, already quite substantial from the old union, to explode in size.\n\nSlovakia is home to cutting edge military research and our factories churn out more guns day by day."
  slovakia.16.a:0 "Excellent"
- slovakia.16.tt:0 "Modify §YEconomic chaos§! by \nConsumer Goods Factories: §Y-5.0%§!\n\nModify §YDemocratic constitution§! by\nFactory output:  §G+10.00%§!"
+ slovakia.16.tt:0 "Modify §YEconomic chaos§! by \nExpected number of factires put on Consumer Goods: §Y-5.0%§!\n\nModify §YDemocratic constitution§! by\nFactory output:  §G+10.00%§!"
 
  slovakia.17.t:0 "[CZE.GetLeader] accepts co-operation!"
  slovakia.17.desc:0 "Despite our troubled beggining, it would seem that [CZE.GetLeader] was convinced of our adherance to democratic values, and has agreed that we shall put our past grievences behind us, and go forward stronger together."
@@ -199,7 +199,7 @@
  slovakia.41.a:0 "Exciting times!"
 
  slovakia.42.t:0 "Bratislava nights"
- slovakia.42.desc:0 "Josef Tiso couldn't sleep. He had been lying awake for hours, trying to force himself to go to sleep, but Mountain General's leftward swing caused him great distress.\n'It's fine,' he thought to himself, 'He knows more than we ever could.'Unable to get to sleep, he took himself for a walk.\n\nWhile walking the streets of Bratislava, Tiso came across Mountain General, intoxicated and pissing in the river.\n\n'What are you doing,' he enquired.\n\n'Pissing in the Danube so it flows down to Budapest,' Mountain General responded.\n\n'Genius - but anyways, why are you also up?'\n\n'You see, I forgot to take my crazy pills yesterday, and as such I have been beside myself and extremely energetic.'"
+ slovakia.42.desc:0 "Josef Tiso couldn't sleep. He had been lying awake for hours, trying to force himself to go to sleep, but Mountain General's leftward swing caused him great distress.\n\n'It's fine,' he thought to himself, 'He knows more than we ever could.'Unable to get to sleep, he took himself for a walk.\n\nWhile walking the streets of Bratislava, Tiso came across Mountain General, intoxicated and pissing in the river.\n\n'What are you doing,' he enquired.\n\n'Pissing in the Danube so it flows down to Budapest,' Mountain General responded.\n\n'Genius - but anyways, why are you also up?'\n\n'You see, I forgot to take my crazy pills yesterday, and as such I have been beside myself and extremely energetic.'"
  slovakia.42.a:0 "'Perhaps I should take them.'"
  slovakia.42.b:0 "And I like it!"
 
@@ -207,3 +207,7 @@
  slovakia.43.desc:0 "After month of debating over the route our new socialist utopia shall take, the final decision has come down to Mountain General. all eyes in the hall are on him, as he rises to the podium.\n\n'Socialism will be achieved through...'"
  slovakia.43.a:0 "'Liberty and decentralisation!'"
  slovakia.43.b:0 "'A firm and guiding hand!'"
+
+ slovakia.44.t:0 "The purge begins"
+ slovakia.44.desc:0 "Since Mountain General's announcement of a Soviet regime in Slovakia, there have been some doubts about his genius and brilliant leadership among both the public and intelligentsia. Well no more - from today, Mountain General has ordered his security services, the StB, to take any actions neccessary in order to secure utmost loyalty to Mountain General in the country."
+ slovakia.44.a:0 "I will make Stalin look like a bitch!"

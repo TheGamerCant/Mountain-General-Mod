@@ -146,6 +146,7 @@ country_event = {
 			base = 10
 		}
 		complete_national_focus = SLO_a_based_slovakia
+		mark_focus_tree_layout_dirty = yes
 
 	}
 	
@@ -155,6 +156,7 @@ country_event = {
 			base = 10
 		}
 		complete_national_focus = SLO_a_free_slovakia
+		mark_focus_tree_layout_dirty = yes
 
 	}
 
@@ -164,6 +166,7 @@ country_event = {
 			base = 10
 		}
 		complete_national_focus = SLO_a_revolutionary_slovakia
+		mark_focus_tree_layout_dirty = yes
 
 	}
 }
@@ -180,7 +183,7 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-		add_to_variable = { SLO_ec_consumer_goods_factor = 0.25 }
+		add_to_variable = { SLO_ec_consumer_goods_expected_value = 0.25 }
 		custom_effect_tooltip = slovakia.5.tt
 	}
 }
@@ -197,7 +200,7 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-		add_to_variable = { SLO_ec_consumer_goods_factor = -0.2 }
+		add_to_variable = { SLO_ec_consumer_goods_expected_value = -0.2 }
 		add_war_support = -0.1
 		add_timed_idea = {
 			idea = SLO_mil_debt_repayment
@@ -210,7 +213,7 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-		add_to_variable = { SLO_ec_consumer_goods_factor = -0.2 }
+		add_to_variable = { SLO_ec_consumer_goods_expected_value = -0.2 }
 		add_stability = -0.2
 		add_timed_idea = {
 			idea = SLO_civ_debt_repayment
@@ -323,7 +326,7 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-		add_to_variable = { SLO_ec_consumer_goods_factor = -0.05 }
+		add_to_variable = { SLO_ec_consumer_goods_expected_value = -0.05 }
 		add_to_variable = { SLO_ec_line_change_production_efficiency_factor = 0.25 }
 		custom_effect_tooltip = slovakia.11.tt
 		set_country_flag = SLO_benefits_from_roads
@@ -448,7 +451,7 @@ country_event = {
 			}
 		}
 		
-		add_to_variable = { SLO_ec_consumer_goods_factor = -0.05 }
+		add_to_variable = { SLO_ec_consumer_goods_expected_value = -0.05 }
 		add_to_variable = { SLO_dc_industrial_capacity_factory = 0.1 } 
 		custom_effect_tooltip = slovakia.16.tt
 	}
@@ -1523,7 +1526,7 @@ country_event = {				#Anarchy or Stalinism?
 	option = { 
 		name = slovakia.43.a
 		trigger={
-			has_country_flag = mg_has_taken_his_pills
+			NOT = { has_country_flag = mg_has_taken_his_pills }
 		}
 		ai_chance = {
 			base = 10
@@ -1534,11 +1537,32 @@ country_event = {				#Anarchy or Stalinism?
 	option = { 
 		name = slovakia.43.b
 		trigger={
-			NOT = { has_country_flag = mg_has_taken_his_pills }
+			has_country_flag = mg_has_taken_his_pills
 		}
 		ai_chance = {
 			base = 10
 		}
 		complete_national_focus = SLO_the_slovak_soviet_republic
+	}
+}
+
+country_event = {				#Great purge
+	id = slovakia.44
+	title = slovakia.44.t
+	desc = slovakia.44.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_SLO_great_purge
+
+	option = { 
+		name = slovakia.44.a
+		ai_chance = {
+			base = 10
+		}
+		every_owned_state={
+			add_manpower = -100000
+		}
+		add_stability = -0.05
+		add_political_power = 150
 	}
 }

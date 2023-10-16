@@ -5,7 +5,7 @@ SLO_economic_chaos_dynamic_modifier = { #National spirit
 
 	production_factory_efficiency_gain_factor = SLO_ec_production_factory_efficiency_gain_factor 
 	production_factory_max_efficiency_factor = SLO_ec_production_factory_max_efficiency_factor
-	consumer_goods_factor = SLO_ec_consumer_goods_factor
+	consumer_goods_expected_value = SLO_ec_consumer_goods_expected_value
 	production_speed_industrial_complex_factor = SLO_ec_production_speed_industrial_complex_factor 
 	line_change_production_efficiency_factor = SLO_ec_line_change_production_efficiency_factor
 	industrial_capacity_factory  = SLO_ec_industrial_capacity_factory 
@@ -26,7 +26,7 @@ SLO_economic_miracle_dynamic_modifier = { #Replaces above modifier through focus
 
 	production_factory_efficiency_gain_factor = SLO_ec_production_factory_efficiency_gain_factor 
 	production_factory_max_efficiency_factor = SLO_ec_production_factory_max_efficiency_factor
-	consumer_goods_factor = SLO_ec_consumer_goods_factor
+	consumer_goods_expected_value = SLO_ec_consumer_goods_expected_value
 	production_speed_industrial_complex_factor = SLO_ec_production_speed_industrial_complex_factor 
 	line_change_production_efficiency_factor = SLO_ec_line_change_production_efficiency_factor
 	industrial_capacity_factory  = SLO_ec_industrial_capacity_factory 
