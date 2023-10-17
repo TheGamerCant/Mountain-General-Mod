@@ -7941,6 +7941,36 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SLO_achieve_socialism
+		icon = GFX_goal_SLO_achieve_socialism
+		x = 2
+		y = 1
+		relative_position_id = SLO_collectivisation
+		cost = 7
+		prerequisite = {
+			focus = SLO_collectivisation
+		}
+		available = {
+			has_completed_focus = SLO_lenin_is_young_once_again
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			custom_effect_tooltip = SLO_achieve_socialism_tt
+			add_to_variable = { SLO_ec_research_speed_factor = 0.05 }
+			add_to_variable = { SLO_ec_consumer_goods_factor = -0.05 }
+			add_to_variable = { SLO_ec_global_building_slots_factor = 0.15 }
+			hidden_effect={
+				remove_dynamic_modifier = { modifier = SLO_economic_chaos_dynamic_modifier }
+				add_dynamic_modifier = { modifier = SLO_to_achieve_socialism_dynamic_modifier }
+			}
+		}
+	}
+	
+	focus = {
 		id = SLO_the_european_soviet_socialist_republic
 		icon = GFX_goal_SLO_the_european_soviet_socialist_republic
 		x = 0

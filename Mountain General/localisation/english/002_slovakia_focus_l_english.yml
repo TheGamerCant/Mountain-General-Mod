@@ -410,3 +410,6 @@
  SLO_censor_the_press_desc:0 "We don't want the people to be taken in by Capitalist propaganda, so it is thus neccessary to introduce measures to limit what they can see. For their own good, of course."
  SLO_the_european_soviet_socialist_republic:0 "The European Soviet Socialist Republic"
  SLO_the_european_soviet_socialist_republic_desc:0 "Through Mountain General's brilliant genius, we have secured a paradise for workers in central Europe.\n\nNow, a spectre is haunting Europe, the spectre of Communism."
+ SLO_achieve_socialism:0 "To Achieve Socialism"
+ SLO_achieve_socialism_desc:0 "The path to our Socialist utopia must have all of us work together, and there is no better man to lead us down that road than Mountain General"
+ SLO_achieve_socialism_tt:0 "Replace §YEconomic chaos§! with §YTo Achieve Socialism§!\nEffective change:\nConsumer Goods factor: §Y-5.0%§!\nResearch Speed: §G+5.00%§!\nMax Factories in a State: §G+15%§!"
