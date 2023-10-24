@@ -7648,6 +7648,35 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SLO_the_peoples_economy
+		icon = GFX_goal_
+		x = 1
+		y = 1
+		relative_position_id = SLO_the_slovakian_free_territory
+		cost = 7
+		prerequisite = {
+			focus = SLO_the_slovakian_free_territory
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			custom_effect_tooltip = SLO_the_peoples_economy_tt
+			add_to_variable = { SLO_ec_consumer_goods_factor = -0.15 }
+			add_to_variable = { SLO_ec_global_building_slots_factor = 0.1 }
+			add_to_variable = { SLO_ec_line_change_production_efficiency_factor = 0.2 }
+			hidden_effect={
+				remove_dynamic_modifier = { modifier = SLO_economic_chaos_dynamic_modifier }
+				add_dynamic_modifier = { modifier = SLO_anarchist_economics_dynamic_modifier }
+			}
+		}
+	}
+	
+	focus = {
 		id = SLO_the_slovak_soviet_republic
 		icon = GFX_goal_SLO_mg_commie
 		x = 8

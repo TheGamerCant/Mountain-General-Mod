@@ -64,6 +64,29 @@ SLO_to_achieve_socialism_dynamic_modifier = { #Replaces above modifier through f
 	consumer_goods_factor = SLO_ec_consumer_goods_factor
 }
 
+SLO_anarchist_economics_dynamic_modifier = { #Replaces above modifier through focus
+	enable = { always = yes }
+
+	icon = GFX_idea_SLO_to_achieve_socialism
+
+	production_factory_efficiency_gain_factor = SLO_ec_production_factory_efficiency_gain_factor 
+	production_factory_max_efficiency_factor = SLO_ec_production_factory_max_efficiency_factor
+	consumer_goods_expected_value = SLO_ec_consumer_goods_expected_value
+	production_speed_industrial_complex_factor = SLO_ec_production_speed_industrial_complex_factor 
+	line_change_production_efficiency_factor = SLO_ec_line_change_production_efficiency_factor
+	industrial_capacity_factory  = SLO_ec_industrial_capacity_factory 
+	industrial_capacity_dockyard  = SLO_ec_industrial_capacity_dockyard 
+	production_speed_infrastructure_factor = SLO_ec_production_speed_infrastructure_factor
+	production_speed_rail_way_factor = SLO_ec_production_speed_rail_way_factor
+	production_speed_buildings_factor = SLO_ec_production_speed_buildings_factor 
+	local_resources_factor = SLO_ec_local_resources_factor
+	min_export = SLO_ec_min_export
+	research_speed_factor = SLO_ec_research_speed_factor
+	global_building_slots_factor = SLO_ec_global_building_slots_factor
+	consumer_goods_factor = SLO_ec_consumer_goods_factor
+}
+
+
 SLO_captain_hindsight_dynamic_modifier = { #National spirit
 	enable = { always = yes }
 

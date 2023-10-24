@@ -436,3 +436,6 @@
  SLO_decentralised_communes_desc:0 "The first step towards Anarcho-Communism is the total decentralisation of society, placing the keys of power in the hands of each man and woman in our territories."
  SLO_the_new_black_army:0 "The Slovak Black Army"
  SLO_the_new_black_army_desc:0 "In order to protect Slovakia from reaction, creating a black army in order to defend our lifestyle will deter any outside force."
+ SLO_the_peoples_economy:0 "The People's Economy"
+ SLO_the_peoples_economy_desc:0 "Modern economies serve the interests of the few, not the many. By decentralising the economy and redistributing wealth, we can create a healthy economy that serves the Slovak people above all."
+ SLO_the_peoples_economy_tt:0 "Replace §YEconomic chaos§! with §YAnarchist Economics§!\nEffective change:\nConsumer Goods factor: §Y-15.0%§!\nProduction Efficiency Retention: §G+20.00%§!\nMax Factories in a State: §G+10%§!"

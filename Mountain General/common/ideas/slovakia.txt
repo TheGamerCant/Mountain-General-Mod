@@ -2325,7 +2325,7 @@ ideas ={
 			}
 			
 			modifier = {
-				army_speed_factor = 0.15
+				army_speed_factor = 0.05
 				org_loss_when_moving = -0.12
 				army_strength_factor = 0.06
 				conscription_factor = 0.1

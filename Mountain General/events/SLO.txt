@@ -1515,7 +1515,7 @@ country_event = {				#Take your pills?
 	}
 }
 
-country_event = {				#Anarchy or Stalinism?
+country_event = {				#Anarchism or Stalinism?
 	id = slovakia.43
 	title = slovakia.43.t
 	desc = slovakia.43.desc
