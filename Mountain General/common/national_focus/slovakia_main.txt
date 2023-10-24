@@ -7604,6 +7604,50 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SLO_decentralised_communes
+		icon = GFX_goal_
+		x = -1
+		y = 1
+		relative_position_id = SLO_the_slovakian_free_territory
+		cost = 7
+		prerequisite = {
+			focus = SLO_the_slovakian_free_territory
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_ideas = SLO_decentralised_communes_idea
+		}
+	}
+	
+	focus = {
+		id = SLO_the_new_black_army
+		icon = GFX_goal_
+		x = 1
+		y = 1
+		relative_position_id = SLO_the_slovakian_free_territory
+		cost = 7
+		prerequisite = {
+			focus = SLO_the_slovakian_free_territory
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_ideas = SLO_the_new_black_army_idea
+		}
+	}
+	
+	focus = {
 		id = SLO_the_slovak_soviet_republic
 		icon = GFX_goal_SLO_mg_commie
 		x = 8
@@ -7943,7 +7987,7 @@ focus_tree = {
 	focus = {
 		id = SLO_achieve_socialism
 		icon = GFX_goal_SLO_achieve_socialism
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = SLO_collectivisation
 		cost = 7
@@ -7951,7 +7995,7 @@ focus_tree = {
 			focus = SLO_collectivisation
 		}
 		available = {
-			has_completed_focus = SLO_lenin_is_young_once_again
+			has_completed_focus = SLO_reject_our_debts
 		}
 		
 		bypass = {
@@ -7967,6 +8011,124 @@ focus_tree = {
 				remove_dynamic_modifier = { modifier = SLO_economic_chaos_dynamic_modifier }
 				add_dynamic_modifier = { modifier = SLO_to_achieve_socialism_dynamic_modifier }
 			}
+		}
+	}
+	
+	focus = {
+		id = SLO_the_power_of_our_industry
+		icon = GFX_focus_NORDIC_com_civilian
+		x = 1
+		y = 1
+		relative_position_id = SLO_achieve_socialism
+		cost = 8
+		prerequisite = {
+			focus = SLO_achieve_socialism
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			custom_effect_tooltip = SLO_the_power_of_our_industry_tt
+			add_to_variable = { SLO_ec_production_factory_efficiency_gain_factor = 0.25 }
+			add_to_variable = { SLO_ec_production_factory_max_efficiency_factor = 0.25 }
+			
+			random_owned_controlled_state = {
+				limit = { is_core_of = SLO }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_core_of = SLO }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_socialist_innovations
+		icon = GFX_focus_NORDIC_com_research
+		x = 0
+		y = 1
+		relative_position_id = SLO_the_power_of_our_industry
+		cost = 8
+		prerequisite = {
+			focus = SLO_the_power_of_our_industry
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			custom_effect_tooltip = SLO_socialist_innovations_tt
+			add_to_variable = { SLO_ec_research_speed_factor = 0.12 }
+		}
+	}
+	
+	focus = {
+		id = SLO_resources_of_socialism
+		icon = GFX_focus_NORDIC_com_selector_material
+		x = -1
+		y = 1
+		relative_position_id = SLO_achieve_socialism
+		cost = 8
+		prerequisite = {
+			focus = SLO_achieve_socialism
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			custom_effect_tooltip = SLO_resources_of_socialism_tt
+			add_to_variable = { SLO_ec_production_speed_buildings_factor = 0.16 }
+			add_to_variable = { SLO_ec_local_resources_factor = 0.2 }
+			add_to_variable = { SLO_ec_production_speed_infrastructure_factor = 0.1 }
+			add_to_variable = { SLO_ec_line_change_production_efficiency_factor = 0.1 }
+		}
+	}
+	
+	focus = {
+		id = SLO_all_for_one_one_for_all
+		icon = GFX_focus_NORDIC_com_institution_1
+		x = 0
+		y = 1
+		relative_position_id = SLO_resources_of_socialism
+		cost = 8
+		prerequisite = {
+			focus = SLO_resources_of_socialism
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			custom_effect_tooltip = SLO_all_for_one_one_for_all_tt
+			add_to_variable = { SLO_ec_consumer_goods_expected_value = -0.06 }
+			add_to_variable = { SLO_ec_global_building_slots_factor = 0.2 }
+			add_to_variable = { SLO_ec_industrial_capacity_factory = 0.15 }
+			add_to_variable = { SLO_ec_industrial_capacity_dockyard = 0.15 }
 		}
 	}
 	
@@ -8013,6 +8175,125 @@ focus_tree = {
 				limit = { is_puppet_of = ROOT capital_scope = { is_on_continent = europe } }
 				SLO = { annex_country = { target = PREV transfer_troops = yes } }
 			}
+			
+			every_country={
+				limit = { capital_scope = { is_on_continent = europe } }
+				SLO={
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+						expire = 0
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_the_european_red_army
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		x = 0
+		y = 1
+		relative_position_id = SLO_the_european_soviet_socialist_republic
+		cost = 10
+		prerequisite = {
+			focus = SLO_the_european_soviet_socialist_republic
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_ideas = SLO_the_european_red_army_idea
+		}
+	}
+	
+	focus = {
+		id = SLO_political_dominance
+		icon = GFX_focus_generic_soviet_politics
+		x = -2
+		y = 1
+		relative_position_id = SLO_the_european_soviet_socialist_republic
+		cost = 7
+		prerequisite = {
+			focus = SLO_the_european_soviet_socialist_republic
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency  = {
+						name = "Štátna Bezpecnosť"
+						icon = GFX_intelligence_agency_logo_generic_9
+					}
+				}
+				upgrade_intelligence_agency = upgrade_passive_defense 
+				upgrade_intelligence_agency = upgrade_passive_defense
+				upgrade_intelligence_agency = upgrade_interrogation_techniques
+				upgrade_intelligence_agency = upgrade_anti_partisan
+			}
+			else = {
+				add_political_power = 100
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_mgs_cult_of_personality
+		icon = GFX_goal_SLO_mgs_cult_of_personality
+		x = 2
+		y = 1
+		relative_position_id = SLO_the_european_soviet_socialist_republic
+		cost = 7
+		prerequisite = {
+			focus = SLO_the_european_soviet_socialist_republic
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_country_leader_trait = mg_cult_of_personality
+			if = {
+				limit = { has_government = fascism }
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+			}
+			if = {
+				limit = { has_government = communism }
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+			}	
+			
+			country_event = { id = slovakia.45 hours = 3 }
 		}
 	}
 	

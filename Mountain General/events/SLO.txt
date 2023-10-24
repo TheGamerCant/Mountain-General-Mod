@@ -1566,3 +1566,20 @@ country_event = {				#Great purge
 		add_political_power = 150
 	}
 }
+
+country_event = {				#MG's little red book
+	id = slovakia.45
+	title = slovakia.45.t
+	desc = slovakia.45.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_SLO_little_red_book
+
+	option = { 
+		name = slovakia.45.a
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = 25
+	}
+}

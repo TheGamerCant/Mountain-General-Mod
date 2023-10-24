@@ -4,7 +4,7 @@ tags={
 	"Gameplay"
 	"Alternative History"
 }
-name="Mountain General"
+name="Mountain General DEV VERSION"
 picture="thumbnail.png"
 supported_version="1.13.*"
 remote_file_id="2937652407"

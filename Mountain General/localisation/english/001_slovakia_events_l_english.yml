@@ -27,7 +27,7 @@
  slovakia.4.desc:0 "Mountain General was approached in his Bratislava office by Josef Tiso.\n\n'My leader, you have taken all of Slovakia to never before seen heights, but there is one pressing matter - ideology.'\n\nMountain General snapped back - 'What about ideology!'\n\n'So far all you've said in terms of your ideological standing is repeatedly calling Hungary 'gay' and 'cringe', and while undoubtedly true, one cannot lead a state on just these beliefs alone.'\n\nMountain General responded,"
  slovakia.4.a:0 "My goal is to exterminate Hungary, and make Slovakia great while doing so."
  slovakia.4.b:0 "I'm only an ironic Fascist..."
- slovakia.4.c:0 "...I am a man of the working classes. §R(WIP)§!"
+ slovakia.4.c:0 "...I am a man of the working classes."
 
  slovakia.5.t:0 "The matter of national debt"
  slovakia.5.desc:0 "As part of our agreement with Czechia, we have inherited a part of their national debt equal to our economic size within the prior union.\n\nWhile not exactly a massive sum of money, the fact that we have been saddled with it so soon after our newfound independence makes it quite the economic challenge."
@@ -211,3 +211,7 @@
  slovakia.44.t:0 "The purge begins"
  slovakia.44.desc:0 "Since Mountain General's announcement of a Soviet regime in Slovakia, there have been some doubts about his genius and brilliant leadership among both the public and intelligentsia. Well no more - from today, Mountain General has ordered his security services, the StB, to take any actions neccessary in order to secure utmost loyalty to Mountain General in the country."
  slovakia.44.a:0 "I will make Stalin look like a bitch!"
+
+ slovakia.45.t:0 "Mountain General's little red book"
+ slovakia.45.desc:0 "As part of our campaigns to bring the glory of Socialism to the people of Europe, Mountain General has decreed that all citizens of the Union are to carry with them at all times 'Mountain General's little red book'. This book gives our subjects insights into Mountain General's brilliant mind, with quotes that can only be described as 'really fucking schizophrenic'."
+ slovakia.45.a:0 "An excellent read."

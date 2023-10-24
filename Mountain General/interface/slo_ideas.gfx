@@ -1,6 +1,16 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_idea_SLO_autonomous_communes"
+		texturefile = "gfx/interface/ideas/SLO_autonomous_communes.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SLO_black_army"
+		texturefile = "gfx/interface/ideas/SLO_black_army.png"
+	}
+
+	spriteType = {
 		name = "GFX_idea_SLO_to_achieve_socialism"
 		texturefile = "gfx/interface/ideas/SLO_to_achieve_socialism.png"
 	}

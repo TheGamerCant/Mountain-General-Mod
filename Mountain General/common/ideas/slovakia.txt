@@ -2182,7 +2182,7 @@ ideas ={
 			}
 			
 			modifier = {
-				conscription = 0.025
+				conscription = 0.01
 				weekly_manpower = 500
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
@@ -2203,7 +2203,7 @@ ideas ={
 			}
 			
 			modifier = {
-				conscription = 0.025
+				conscription = 0.01
 				weekly_manpower = 500
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
@@ -2268,6 +2268,67 @@ ideas ={
 			modifier = {
 				production_speed_buildings_factor = 0.1
 				consumer_goods_expected_value = -0.05
+			}
+		}
+		
+		SLO_the_european_red_army_idea = {
+			removal_cost = -1
+
+			picture = SOV_soviet_hegemony
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.025
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_morale_factor = 0.08
+				army_speed_factor = 0.1
+			}
+		}
+		
+		SLO_decentralised_communes_idea = {
+			removal_cost = -1
+
+			picture = SLO_autonomous_communes
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_cost = 0.2
+				army_core_defence_factor = 0.06
+				global_building_slots_factor = 0.15
+				consumer_goods_factor = -0.075
+			}
+		}
+		
+		SLO_the_new_black_army_idea = {
+			removal_cost = -1
+
+			picture = SLO_black_army
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				army_speed_factor = 0.15
+				org_loss_when_moving = -0.12
+				army_strength_factor = 0.06
+				conscription_factor = 0.1
 			}
 		}
 	}
