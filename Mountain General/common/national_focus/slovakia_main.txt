@@ -7606,7 +7606,7 @@ focus_tree = {
 	focus = {
 		id = SLO_decentralised_communes
 		icon = GFX_goal_
-		x = -1
+		x = 2
 		y = 1
 		relative_position_id = SLO_the_slovakian_free_territory
 		cost = 7
@@ -7650,7 +7650,7 @@ focus_tree = {
 	focus = {
 		id = SLO_the_peoples_economy
 		icon = GFX_goal_
-		x = 1
+		x = -4
 		y = 1
 		relative_position_id = SLO_the_slovakian_free_territory
 		cost = 7
@@ -7673,6 +7673,152 @@ focus_tree = {
 				remove_dynamic_modifier = { modifier = SLO_economic_chaos_dynamic_modifier }
 				add_dynamic_modifier = { modifier = SLO_anarchist_economics_dynamic_modifier }
 			}
+		}
+	}
+	
+	focus = {
+		id = SLO_collective_ownership
+		icon = GFX_goal_
+		x = 2
+		y = 1
+		relative_position_id = SLO_the_peoples_economy
+		cost = 10
+		prerequisite = {
+			focus = SLO_the_peoples_economy
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			every_owned_state = {
+				limit = { is_core_of = SLO }
+				add_extra_state_shared_building_slots = 1
+				random_select_amount = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			custom_effect_tooltip = SLO_collective_ownership_tt
+			add_to_variable = { SLO_ec_global_building_slots_factor = 0.1 }
+		}
+	}
+	
+	focus = {
+		id = SLO_shared_knowledge
+		icon = GFX_goal_
+		x = 0
+		y = 1
+		relative_position_id = SLO_collective_ownership
+		cost = 10
+		prerequisite = {
+			focus = SLO_collective_ownership
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_research_slot = 1
+			add_to_variable = { SLO_ec_research_speed_factor = 0.05 }
+			custom_effect_tooltip = SLO_shared_knowledge_tt
+		}
+	}
+	
+	focus = {
+		id = SLO_wealth_redistribution
+		icon = GFX_goal_
+		x = 0
+		y = 1
+		relative_position_id = SLO_the_peoples_economy
+		cost = 5
+		prerequisite = {
+			focus = SLO_the_peoples_economy
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_stability = -0.02
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			custom_effect_tooltip = SLO_the_peoples_economy_tt
+			add_to_variable = { SLO_ec_consumer_goods_expected_value = -0.035 }
+			add_to_variable = { SLO_ec_min_export = -0.1 }
+		}
+	}
+	
+	focus = {
+		id = SLO_collective_management
+		icon = GFX_goal_
+		x = 0
+		y = 1
+		relative_position_id = SLO_wealth_redistribution
+		cost = 8
+		prerequisite = {
+			focus = SLO_wealth_redistribution
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			every_owned_state = {
+				limit = { is_core_of = SLO }
+				add_extra_state_shared_building_slots = 1
+				random_select_amount = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			add_to_variable = { SLO_ec_industrial_capacity_factory = 0.1 }
+			add_to_variable = { SLO_ec_industrial_capacity_dockyard = 0.1 }
+			custom_effect_tooltip = SLO_collective_management_tt
+		}
+	}
+
+	focus = {
+		id = SLO_shared_expertise
+		icon = GFX_goal_
+		x = -2
+		y = 1
+		relative_position_id = SLO_the_peoples_economy
+		cost = 5
+		prerequisite = {
+			focus = SLO_the_peoples_economy
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			custom_effect_tooltip = SLO_shared_expertise_tt
+			add_to_variable = { SLO_ec_production_factory_efficiency_gain_factor = 0.25 }
+			add_to_variable = { SLO_ec_production_factory_max_efficiency_factor = 0.25 }
 		}
 	}
 	
@@ -8188,7 +8334,7 @@ focus_tree = {
 			10 = { is_controlled_by = ROOT }
 			9 = { is_controlled_by = ROOT }
 			4 = { is_controlled_by = ROOT }
-			42 = { is_controlled_by = ROOT }
+			43 = { is_controlled_by = ROOT }
 		}
 		
 		bypass = {
