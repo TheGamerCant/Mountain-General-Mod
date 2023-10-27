@@ -2834,7 +2834,7 @@ focus_tree = {
 				remove_dynamic_modifier = { modifier = depopulated_1 }
 			}
 			hidden_effect = {
-				country_event = { id = slovakia.24 days = 754 }
+				country_event = { id = slovakia.24 days = 627 }
 			}
 		}
 	}
@@ -7672,6 +7672,139 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SLO_preparing_for_new_communes
+		icon = GFX_goal_
+		x = 1
+		y = 1
+		relative_position_id = SLO_the_new_black_army
+		cost = 10
+		prerequisite = {
+			focus = SLO_the_new_black_army
+		}
+		prerequisite = {
+			focus = SLO_no_gods_no_masters
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			swap_ideas={
+				remove_idea = SLO_decentralised_communes_idea
+				add_idea = SLO_decentralised_communes_idea_2
+			}
+			
+			unlock_decision_category_tooltip = SLO_state_integration_decisions
+		}
+	}
+	
+	focus = {
+		id = SLO_raise_the_black_banners
+		icon = GFX_goal_
+		x = 0
+		y = 1
+		relative_position_id = SLO_preparing_for_new_communes
+		cost = 8
+		prerequisite = {
+			focus = SLO_preparing_for_new_communes
+		}
+		prerequisite = {
+			focus = SLO_makhno_lives
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			every_country={
+				limit = { capital_scope = { is_on_continent = europe } }
+				SLO={
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+						expire = 0
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_a_federal_army
+		icon = GFX_goal_
+		x = -1
+		y = 1
+		relative_position_id = SLO_raise_the_black_banners
+		cost = 8
+		prerequisite = {
+			focus = SLO_raise_the_black_banners
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			swap_ideas={
+				remove_idea = SLO_the_new_black_army_idea
+				add_idea = SLO_the_new_black_army_idea_2
+			}
+		}
+	}
+	
+	focus = {
+		id = SLO_the_peoples_hero
+		icon = GFX_goal_
+		x = 1
+		y = 1
+		relative_position_id = SLO_raise_the_black_banners
+		cost = 8
+		prerequisite = {
+			focus = SLO_raise_the_black_banners
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			swap_ruler_traits = { remove = the_second_makhno add = the_second_makhno_2 }
+		}
+	}
+	
+	focus = {
+		id = SLO_commander_of_the_workers
+		icon = GFX_goal_
+		x = 0
+		y = 1
+		relative_position_id = SLO_the_peoples_hero
+		cost = 8
+		prerequisite = {
+			focus = SLO_the_peoples_hero
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			swap_ruler_traits = { remove = the_slovakian_napoleon add = the_slovakian_napoleon_anarchist }
+		}
+	}
+	
+	focus = {
 		id = SLO_the_peoples_economy
 		icon = GFX_goal_
 		x = -4
@@ -8421,6 +8554,8 @@ focus_tree = {
 					}
 				}
 			}
+			
+			set_cosmetic_tag = COMMIE_EUROPE
 		}
 	}
 	

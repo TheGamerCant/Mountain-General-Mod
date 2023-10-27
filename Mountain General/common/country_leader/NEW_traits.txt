@@ -20,8 +20,8 @@ leader_traits = {
 	the_slovakian_napoleon = {
 		random = no
 		command_power_gain_mult = 0.2
-		army_attack_factor = 0.15
-		army_defence_factor = 0.15
+		army_attack_factor = 0.12
+		army_defence_factor = 0.12
 		army_speed_factor = 0.08
 		org_loss_when_moving = -0.1
 		land_doctrine_cost_factor = -0.1
@@ -32,11 +32,24 @@ leader_traits = {
 	the_slovakian_napoleon_healthcare = {
 		random = no
 		command_power_gain_mult = 0.2
-		army_attack_factor = 0.2
-		army_defence_factor = 0.2
+		army_attack_factor = 0.18
+		army_defence_factor = 0.18
 		army_speed_factor = 0.1
 		org_loss_when_moving = -0.15
 		experience_loss_factor = -0.3
+		land_doctrine_cost_factor = -0.1
+
+		custom_modifier_tooltip = the_slovakian_napoleon_desc
+	}
+	
+	the_slovakian_napoleon_anarchist = {
+		random = no
+		command_power_gain_mult = 0.2
+		army_attack_factor = 0.15
+		army_defence_factor = 0.15
+		army_speed_factor = 0.1
+		org_loss_when_moving = -0.1
+		army_org_factor = 0.08
 		land_doctrine_cost_factor = -0.1
 
 		custom_modifier_tooltip = the_slovakian_napoleon_desc
@@ -172,10 +185,18 @@ leader_traits = {
 	
 	the_second_makhno = {	
 		random = no
-		justify_war_goal_time = -0.3
+		justify_war_goal_time = -0.2
 		neutrality_drift = 0.1
-		consumer_goods_expected_value = -0.02
-		compliance_gain = 0.1
+		consumer_goods_expected_value = -0.05
+	}
+	
+	the_second_makhno_2 = {	
+		random = no
+		justify_war_goal_time = -0.2
+		neutrality_drift = 0.1
+		consumer_goods_expected_value = -0.05
+		starting_compliance = 0.05
+		stability_weekly = 0.001
 	}
 	
 	the_second_lenin = {	
@@ -183,7 +204,7 @@ leader_traits = {
 		political_power_gain = 0.1
 		communism_drift = 0.1
 		resistance_growth = -0.15
-		conscription = 0.03
+		conscription = 0.01
 	}
 	
 	mg_loyalist = {

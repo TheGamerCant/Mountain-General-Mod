@@ -23,3 +23,10 @@ SLO_to_liberate_europe_decisions = {
 	picture = GFX_decision_cat_picture_SLO_death_of_a_fascist_bastard
 	icon = saf_anti_colonialist_crusade
 }
+
+SLO_state_integration_decisions = {
+	priority = 100
+	visible = {
+		has_completed_focus = SLO_preparing_for_new_communes
+	}
+}

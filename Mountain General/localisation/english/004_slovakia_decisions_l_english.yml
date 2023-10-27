@@ -55,3 +55,8 @@
  SLO_fortify_the_border_with_germany_desc:0 "We shall not give one inch of our countries to the Fascist invaders!"
  SLO_fortify_the_border_with_germany_tt:0 "§YBuilds level 2 land forts along our faction's entire border with Germany§!"
  SLO_fortified_the_border:0 "Has taken the §YFortify the border with Germany§! decision."
+
+ SLO_state_integration_decisions:0 "Integrating our new communes"
+ SLO_state_integration_decisions_desc:0 ""
+ SLO_integrate_state:0 "Integrate [FROM.GetName]"
+ SLO_integrate_state_desc:0 "The workers of [FROM.GetName] have made their desires to join the free territory clear, we are obliged to help our fellow workers with a smooth transition into our communal system."

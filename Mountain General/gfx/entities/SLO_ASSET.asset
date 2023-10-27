@@ -43,7 +43,7 @@ entity = {
 }
 
 entity = {
-	clone = "infantry_2_entity"
+	clone = "SLO_infantry_entity"
 	name = "SLO_infantry_2_entity"
 	pdxmesh = "SLO_infantry_mg_mesh"
 
