@@ -7626,6 +7626,30 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SLO_no_gods_no_masters
+		icon = GFX_goal_
+		x = 0
+		y = 1
+		relative_position_id = SLO_decentralised_communes
+		cost = 7
+		prerequisite = {
+			focus = SLO_decentralised_communes
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_stability = -0.03
+			add_war_support = 0.1
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
 		id = SLO_the_new_black_army
 		icon = GFX_goal_
 		x = 0
@@ -7711,12 +7735,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SLO_shared_knowledge
+		id = SLO_collective_management
 		icon = GFX_goal_
 		x = 0
 		y = 1
 		relative_position_id = SLO_collective_ownership
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = SLO_collective_ownership
 		}
@@ -7728,9 +7752,20 @@ focus_tree = {
 	
 
 		completion_reward = {
-			add_research_slot = 1
-			add_to_variable = { SLO_ec_research_speed_factor = 0.05 }
-			custom_effect_tooltip = SLO_shared_knowledge_tt
+			every_owned_state = {
+				limit = { is_core_of = SLO }
+				add_extra_state_shared_building_slots = 1
+				random_select_amount = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			add_to_variable = { SLO_ec_industrial_capacity_factory = 0.1 }
+			add_to_variable = { SLO_ec_industrial_capacity_dockyard = 0.1 }
+			custom_effect_tooltip = SLO_collective_management_tt
 		}
 	}
 	
@@ -7764,12 +7799,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SLO_collective_management
+		id = SLO_common_transport
 		icon = GFX_goal_
 		x = 0
 		y = 1
 		relative_position_id = SLO_wealth_redistribution
-		cost = 8
+		cost = 5
 		prerequisite = {
 			focus = SLO_wealth_redistribution
 		}
@@ -7781,20 +7816,21 @@ focus_tree = {
 	
 
 		completion_reward = {
+			add_to_variable = { SLO_ec_production_speed_infrastructure_factor = 0.2 }
+			add_to_variable = { SLO_ec_production_speed_rail_way_factor = 0.2 }
+			custom_effect_tooltip = SLO_common_transport_tt	
+			
 			every_owned_state = {
-				limit = { is_core_of = SLO }
-				add_extra_state_shared_building_slots = 1
-				random_select_amount = 2
+				limit = {
+					infrastructure < 5
+				}
+				random_select_amount = 5
 				add_building_construction = {
-					type = arms_factory
+					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			
-			add_to_variable = { SLO_ec_industrial_capacity_factory = 0.1 }
-			add_to_variable = { SLO_ec_industrial_capacity_dockyard = 0.1 }
-			custom_effect_tooltip = SLO_collective_management_tt
 		}
 	}
 
@@ -7819,6 +7855,30 @@ focus_tree = {
 			custom_effect_tooltip = SLO_shared_expertise_tt
 			add_to_variable = { SLO_ec_production_factory_efficiency_gain_factor = 0.25 }
 			add_to_variable = { SLO_ec_production_factory_max_efficiency_factor = 0.25 }
+		}
+	}
+	
+	focus = {
+		id = SLO_shared_knowledge
+		icon = GFX_goal_
+		x = 0
+		y = 1
+		relative_position_id = SLO_shared_expertise
+		cost = 10
+		prerequisite = {
+			focus = SLO_shared_expertise
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_research_slot = 1
+			add_to_variable = { SLO_ec_research_speed_factor = 0.05 }
+			custom_effect_tooltip = SLO_shared_knowledge_tt
 		}
 	}
 	

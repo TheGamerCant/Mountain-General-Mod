@@ -434,6 +434,8 @@
 
  SLO_decentralised_communes:0 "Decentralised Communes"
  SLO_decentralised_communes_desc:0 "The first step towards Anarcho-Communism is the total decentralisation of society, placing the keys of power in the hands of each man and woman in our territories."
+ SLO_no_gods_no_masters:0 "No Gods, No Masters!"
+ SLO_no_gods_no_masters_desc:0 "Religion is the opiate of the masses and has been used to keep the Slovakian people docile and exploititive - but no more. We are to throw off such superstitions and subservience, and have each man be his own master."
  SLO_the_new_black_army:0 "The Slovak Black Army"
  SLO_the_new_black_army_desc:0 "In order to protect Slovakia from reaction, creating a black army in order to defend our lifestyle will deter any outside force."
  SLO_the_peoples_economy:0 "The People's Economy"
@@ -454,3 +456,6 @@
  SLO_collective_management:0 "Collective Management"
  SLO_collective_management_desc:0 "The workers own the means of production, and knowing this will only incentivise them to work harder."
  SLO_collective_management_tt:0 "Modify §YAnarchist Economics§! by\nFactory Output: §G+10.00%§!\nDockyard Output: §G+10.00%§!"
+ SLO_common_transport:0 "Common Transport"
+ SLO_common_transport_desc:0 "High-quality infrastructure is nececssary for modern economies, and should thus be our top priority."
+ SLO_common_transport_tt:0 "Modify §YAnarchist Economics§! by\n§Y$infrastructure$§! construction speed: §G+20.00%§!\n§Y$rail_way$§! construction speed: §G+20.00%§!"
