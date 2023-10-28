@@ -7605,7 +7605,7 @@ focus_tree = {
 	
 	focus = {
 		id = SLO_decentralised_communes
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_decentralised_communes
 		x = 2
 		y = 1
 		relative_position_id = SLO_the_slovakian_free_territory
@@ -7622,12 +7622,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SLO_decentralised_communes_idea
+			add_stability = 0.075
 		}
 	}
 	
 	focus = {
 		id = SLO_no_gods_no_masters
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_no_gods_no_masters
 		x = 0
 		y = 1
 		relative_position_id = SLO_decentralised_communes
@@ -7644,14 +7645,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.03
-			add_war_support = 0.1
 			add_political_power = 100
 		}
 	}
 	
 	focus = {
 		id = SLO_the_new_black_army
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_the_new_black_army
 		x = 0
 		y = 2
 		relative_position_id = SLO_the_slovakian_free_territory
@@ -7673,7 +7673,7 @@ focus_tree = {
 	
 	focus = {
 		id = SLO_preparing_for_new_communes
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_preparing_for_new_communes
 		x = 1
 		y = 1
 		relative_position_id = SLO_the_new_black_army
@@ -7696,14 +7696,14 @@ focus_tree = {
 				remove_idea = SLO_decentralised_communes_idea
 				add_idea = SLO_decentralised_communes_idea_2
 			}
-			
+			add_war_support = 0.1
 			unlock_decision_category_tooltip = SLO_state_integration_decisions
 		}
 	}
 	
 	focus = {
 		id = SLO_raise_the_black_banners
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_raise_hell
 		x = 0
 		y = 1
 		relative_position_id = SLO_preparing_for_new_communes
@@ -7737,7 +7737,7 @@ focus_tree = {
 	
 	focus = {
 		id = SLO_a_federal_army
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_a_federal_army
 		x = -1
 		y = 1
 		relative_position_id = SLO_raise_the_black_banners
@@ -7761,8 +7761,33 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SLO_local_management
+		icon = GFX_goal_SLO_decentralised_communes
+		x = 0
+		y = 1
+		relative_position_id = SLO_a_federal_army
+		cost = 8
+		prerequisite = {
+			focus = SLO_a_federal_army
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			swap_ideas={
+				remove_idea = SLO_decentralised_communes_idea_2
+				add_idea = SLO_decentralised_communes_idea_3
+			}
+		}
+	}
+	
+	focus = {
 		id = SLO_the_peoples_hero
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_the_peoples_hero
 		x = 1
 		y = 1
 		relative_position_id = SLO_raise_the_black_banners
@@ -7784,7 +7809,7 @@ focus_tree = {
 	
 	focus = {
 		id = SLO_commander_of_the_workers
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_the_peoples_hero
 		x = 0
 		y = 1
 		relative_position_id = SLO_the_peoples_hero
@@ -7805,8 +7830,36 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SLO_anarchia_mama_synov_sveikh_lyubit
+		icon = GFX_goal_SLO_raise_hell
+		x = -1
+		y = 1
+		relative_position_id = SLO_commander_of_the_workers
+		cost = 8
+		prerequisite = {
+			focus = SLO_commander_of_the_workers
+		}
+		prerequisite = {
+			focus = SLO_local_management
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			swap_ideas={
+				remove_idea = SLO_the_new_black_army_idea_2
+				add_idea = SLO_the_new_black_army_idea_3
+			}
+		}
+	}
+	
+	focus = {
 		id = SLO_the_peoples_economy
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_shared_expertise
 		x = -4
 		y = 1
 		relative_position_id = SLO_the_slovakian_free_territory
@@ -7835,7 +7888,7 @@ focus_tree = {
 	
 	focus = {
 		id = SLO_collective_ownership
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_collective_ownership
 		x = 2
 		y = 1
 		relative_position_id = SLO_the_peoples_economy
@@ -7869,7 +7922,7 @@ focus_tree = {
 	
 	focus = {
 		id = SLO_collective_management
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_collective_management
 		x = 0
 		y = 1
 		relative_position_id = SLO_collective_ownership
@@ -7904,7 +7957,7 @@ focus_tree = {
 	
 	focus = {
 		id = SLO_wealth_redistribution
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_wealth_redistribution
 		x = 0
 		y = 1
 		relative_position_id = SLO_the_peoples_economy
@@ -7933,7 +7986,7 @@ focus_tree = {
 	
 	focus = {
 		id = SLO_common_transport
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_common_transport
 		x = 0
 		y = 1
 		relative_position_id = SLO_wealth_redistribution
@@ -7969,7 +8022,7 @@ focus_tree = {
 
 	focus = {
 		id = SLO_shared_expertise
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_shared_expertise
 		x = -2
 		y = 1
 		relative_position_id = SLO_the_peoples_economy
@@ -7993,7 +8046,7 @@ focus_tree = {
 	
 	focus = {
 		id = SLO_shared_knowledge
-		icon = GFX_goal_
+		icon = GFX_goal_SLO_shared_knowledge
 		x = 0
 		y = 1
 		relative_position_id = SLO_shared_expertise
@@ -8563,7 +8616,7 @@ focus_tree = {
 		id = SLO_the_european_red_army
 		icon = GFX_focus_SOV_builder_of_the_red_army
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = SLO_the_european_soviet_socialist_republic
 		cost = 10
 		prerequisite = {
@@ -8586,7 +8639,7 @@ focus_tree = {
 	focus = {
 		id = SLO_political_dominance
 		icon = GFX_focus_generic_soviet_politics
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = SLO_the_european_soviet_socialist_republic
 		cost = 7
@@ -8628,9 +8681,38 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SLO_strengthen_the_party
+		icon = GFX_focus_generic_soviet_politics
+		x = 0
+		y = 2
+		relative_position_id = SLO_political_dominance
+		cost = 7
+		prerequisite = {
+			focus = SLO_political_dominance
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
 		id = SLO_mgs_cult_of_personality
 		icon = GFX_goal_SLO_mgs_cult_of_personality
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = SLO_the_european_soviet_socialist_republic
 		cost = 7
@@ -8664,6 +8746,45 @@ focus_tree = {
 			}	
 			
 			country_event = { id = slovakia.45 hours = 3 }
+		}
+	}
+	
+	focus = {
+		id = SLO_a_portrait_on_every_wall
+		icon = GFX_goal_SLO_a_portrait_on_every_wall
+		x = 0
+		y = 2
+		relative_position_id = SLO_mgs_cult_of_personality
+		cost = 7
+		prerequisite = {
+			focus = SLO_mgs_cult_of_personality
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+		}
+	
+
+		completion_reward = {
+			swap_ruler_traits = { remove = mg_cult_of_personality add = mg_cult_of_personality_commie }
+			if = {
+				limit = { has_government = fascism }
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+			}
+			if = {
+				limit = { has_government = communism }
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+			}	
+			
 		}
 	}
 	

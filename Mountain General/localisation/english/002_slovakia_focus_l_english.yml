@@ -431,6 +431,10 @@
  SLO_the_european_red_army_desc:0 "Our armed forces have expanded rapidle since Mountain General's ascendancy to power, reforming the army to allow for more men and of higher quality is needed if we are to bring about international Socialism."
  SLO_political_dominance:0 "Political Dominance"
  SLO_political_dominance_desc:0 "Despite many of our newfound subjects being loyal subordinated of Mountain General, there are a few who resist. We need to expand our security services to sufficiently deal with these reactionary threats."
+ SLO_strengthen_the_party:0 "Strengthen Party Unity"
+ SLO_strengthen_the_party_desc:0 "Some within the Socialist party believe there are ways to achieve Socialism that do not require Mountain General to be our leader. The cure for this mental illness is a bullet to the skull."
+ SLO_a_portrait_on_every_wall:0 "A Portrait on Every Wall"
+ SLO_a_portrait_on_every_wall_desc:0 "MOUNTAIN GENERAL IS WATCHING YOU."
 
  SLO_decentralised_communes:0 "Decentralised Communes"
  SLO_decentralised_communes_desc:0 "The first step towards Anarcho-Communism is the total decentralisation of society, placing the keys of power in the hands of each man and woman in our territories."
@@ -469,3 +473,7 @@
  SLO_the_peoples_hero_desc:0 "Although cults of personality are usually top-down and thus to be avoided, the same cannot be said for our leader Mountain General. He is beloved by people to world over and we can use this to our advantage when it comes to our goals of global liberation."
  SLO_commander_of_the_workers:0 "Commander of the Workers"
  SLO_commander_of_the_workers_desc:0 "Mountain General's military successes have not only come because of his military genius, but because the working man is willing to follow him into battle."
+ SLO_local_management:0 "Local Management"
+ SLO_local_management_desc:0 "By allowing our newfound communes to operate with the same level of independence and autonomy as our more established communes do, they will be more willing to come into the fold."
+ SLO_anarchia_mama_synov_sveikh_lyubit:0 "Anarchia-Mama, Synov Sveikh Lyubit!"
+ SLO_anarchia_mama_synov_sveikh_lyubit_desc:0 "Let our friends and our enemies know, that no matter how outnumbered we may seem, we will always prevail with Mother Anarchy on our side!"

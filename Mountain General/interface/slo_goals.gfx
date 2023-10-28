@@ -2090,4 +2090,498 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_shared_knowledge"
+		texturefile = "gfx/interface/goals/SLO_shared_knowledge.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_shared_knowledge_shine"
+		texturefile = "gfx/interface/goals/SLO_shared_knowledge.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_shared_knowledge.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_shared_knowledge.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_shared_expertise"
+		texturefile = "gfx/interface/goals/SLO_shared_expertise.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_shared_expertise_shine"
+		texturefile = "gfx/interface/goals/SLO_shared_expertise.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_shared_expertise.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_shared_expertise.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_preparing_for_new_communes"
+		texturefile = "gfx/interface/goals/SLO_preparing_for_new_communes.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_preparing_for_new_communes_shine"
+		texturefile = "gfx/interface/goals/SLO_preparing_for_new_communes.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_preparing_for_new_communes.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_preparing_for_new_communes.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_decentralised_communes"
+		texturefile = "gfx/interface/goals/SLO_decentralised_communes.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_decentralised_communes_shine"
+		texturefile = "gfx/interface/goals/SLO_decentralised_communes.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_decentralised_communes.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_decentralised_communes.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_no_gods_no_masters"
+		texturefile = "gfx/interface/goals/SLO_no_gods_no_masters.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_no_gods_no_masters_shine"
+		texturefile = "gfx/interface/goals/SLO_no_gods_no_masters.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_no_gods_no_masters.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_no_gods_no_masters.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_collective_ownership"
+		texturefile = "gfx/interface/goals/SLO_collective_ownership.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_collective_ownership_shine"
+		texturefile = "gfx/interface/goals/SLO_collective_ownership.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_collective_ownership.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_collective_ownership.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_the_new_black_army"
+		texturefile = "gfx/interface/goals/SLO_the_new_black_army.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_the_new_black_army_shine"
+		texturefile = "gfx/interface/goals/SLO_the_new_black_army.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_the_new_black_army.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_the_new_black_army.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_a_federal_army"
+		texturefile = "gfx/interface/goals/SLO_a_federal_army.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_a_federal_army_shine"
+		texturefile = "gfx/interface/goals/SLO_a_federal_army.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_a_federal_army.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_a_federal_army.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_the_peoples_hero"
+		texturefile = "gfx/interface/goals/SLO_the_peoples_hero.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_the_peoples_hero_shine"
+		texturefile = "gfx/interface/goals/SLO_the_peoples_hero.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_the_peoples_hero.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_the_peoples_hero.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_wealth_redistribution"
+		texturefile = "gfx/interface/goals/SLO_wealth_redistribution.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_wealth_redistribution_shine"
+		texturefile = "gfx/interface/goals/SLO_wealth_redistribution.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_wealth_redistribution.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_wealth_redistribution.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_a_portrait_on_every_wall"
+		texturefile = "gfx/interface/goals/SLO_a_portrait_on_every_wall.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_a_portrait_on_every_wall_shine"
+		texturefile = "gfx/interface/goals/SLO_a_portrait_on_every_wall.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_a_portrait_on_every_wall.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_a_portrait_on_every_wall.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_collective_management"
+		texturefile = "gfx/interface/goals/SLO_collective_management.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_collective_management_shine"
+		texturefile = "gfx/interface/goals/SLO_collective_management.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_collective_management.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_collective_management.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SLO_common_transport"
+		texturefile = "gfx/interface/goals/SLO_common_transport.png"			
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_SLO_common_transport_shine"
+		texturefile = "gfx/interface/goals/SLO_common_transport.png"		
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_common_transport.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = -90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SLO_common_transport.png"		
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	
+			animationrotation = 90.0		
+			animationlooping = no			
+			animationtime = 0.75				
+			animationdelay = 0			
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
 }

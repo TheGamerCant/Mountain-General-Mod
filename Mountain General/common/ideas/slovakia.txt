@@ -2335,6 +2335,32 @@ ideas ={
 			}
 		}
 		
+		SLO_decentralised_communes_idea_3 = {
+			removal_cost = -1
+
+			picture = SLO_autonomous_communes
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_cost = 0.2
+				army_core_defence_factor = 0.06
+				army_morale_factor = 0.02
+				global_building_slots_factor = 0.15
+				consumer_goods_factor = -0.075
+				subversive_activites_upkeep = -0.4
+				compliance_gain = 0.1
+				stability_factor = 0.05
+				required_garrison_factor = -0.2
+			}
+		}
+		
+		
 		SLO_the_new_black_army_idea = {
 			removal_cost = -1
 
@@ -2375,6 +2401,31 @@ ideas ={
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
 				breakthrough_factor = 0.1
+			}
+		}
+		
+		SLO_the_new_black_army_idea_3 = {
+			removal_cost = -1
+
+			picture = SLO_black_army
+				
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				army_speed_factor = 0.15
+				org_loss_when_moving = -0.12
+				army_strength_factor = 0.1
+				conscription_factor = 0.25
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				breakthrough_factor = 0.15
+				political_power_factor = 0.1
+				stability_weekly = 0.001
 			}
 		}
 	}
