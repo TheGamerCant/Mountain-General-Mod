@@ -120,6 +120,12 @@ SLO_clear_portrait_flags={
 		}
 		clr_country_flag = SLO_mg_portrait_tno
 	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_animated
+		}
+		clr_country_flag = SLO_mg_portrait_animated
+	}
 }
 
 SLO_update_leader_portrait={	#Used for when you change ideologies
@@ -209,6 +215,14 @@ SLO_update_leader_portrait={	#Used for when you change ideologies
 		}
 		set_country_leader_portrait = {
 			portrait = "gfx/leaders/SLO/SLO_mountain_general_goes_mad.png"
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SLO_mg_portrait_animated
+		}
+		set_country_leader_portrait = {
+			portrait = GFX_Portrait_Mountain_General_animated
 		}
 	}
 }

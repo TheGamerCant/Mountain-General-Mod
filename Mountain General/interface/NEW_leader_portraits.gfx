@@ -54,4 +54,13 @@ spriteTypes = {
 		name = "GFX_portrait_mg_tno"
 		texturefile = "gfx/leaders/SLO/SLO_mountain_general_goes_mad.png"
 	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_Portrait_Mountain_General_animated"
+		texturefile = "gfx/leaders/SLO/mg_anim.png"
+		noOfFrames = 60
+		animation_rate_fps = 16
+		looping = yes
+		play_on_show = yes  
+	}
 }

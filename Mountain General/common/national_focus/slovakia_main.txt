@@ -3102,7 +3102,7 @@ focus_tree = {
 	
 	focus = {
 		id = SLO_declare_greater_slovakia
-		icon = GFX_goal_mobilise_bratislava
+		icon = GFX_goal_SLO_declare_greater_slovakia
 		x = 0
 		y = 2
 		relative_position_id = SLO_claim_the_sudetenland

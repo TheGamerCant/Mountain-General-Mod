@@ -227,6 +227,44 @@ country_event = {
 		ai_chance = {
 			factor = 20
 		}
+		country_event = { id = portrait_picker.4 }
+	}
+}
+
+
+country_event = { 
+	id = portrait_picker.4
+	title = portrait_picker.4.t 
+	desc = portrait_picker.4.desc
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portrait_picker.4.a
+		ai_chance = {
+			factor = 20
+		}
+		if = {	
+			limit = { has_country_leader = { name = "Mountain General" ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = GFX_Portrait_Mountain_General_animated
+			}
+			hidden_effect={
+				SLO_clear_portrait_flags = yes
+				set_country_flag = SLO_mg_portrait_animated
+				every_unit_leader = {
+					limit = { has_id = 69420 }
+					set_leader_portrait = GFX_Portrait_Mountain_General_animated		
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = portrait_picker.4.b
+		ai_chance = {
+			factor = 20
+		}
 		if = {	
 			limit = { has_country_leader = { name = "Mountain General" ruling_only = yes } }
 			set_country_leader_portrait = {
