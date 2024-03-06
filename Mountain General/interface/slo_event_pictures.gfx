@@ -17,5 +17,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_SLO_little_red_book"
 		texturefile = "gfx/event_pictures/report_event_SLO_little_red_book.png"
-	}	
+	}
+
+	spriteType = {
+		name = "GFX_report_event_SLO_black_army"
+		texturefile = "gfx/event_pictures/report_event_SLO_black_army.png"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_SLO_mg_gun"
+		texturefile = "gfx/event_pictures/report_event_SLO_mg_gun.png"
+	}
 }

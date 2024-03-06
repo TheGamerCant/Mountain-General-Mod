@@ -4024,9 +4024,7 @@ focus_tree = {
 		
 
 		completion_reward = {
-			hidden_effect={
-				country_event = { id = slovakia.39 days = 30 }
-			}
+			country_event = { id = slovakia.39 days = 10 random_days = 25 }
 			if={
 				limit = { has_completed_focus = SLO_destruction_of_inferior_cultures }
 				swap_ideas = {
@@ -4117,7 +4115,7 @@ focus_tree = {
 				}
 				add_manpower = -150000
 			}
-			random_owned_controlled_state={
+			every_state={
 				limit = {  
 					state_population > 200000
 					NOT={
@@ -4129,112 +4127,9 @@ focus_tree = {
 							state = 664
 						}
 					}
+					is_owned_and_controlled_by = ROOT
 				}
-				add_manpower = -150000
-			}
-			random_owned_controlled_state={
-				limit = {  
-					state_population > 200000
-					NOT={
-						OR={
-							state = 935
-							state = 70
-							state = 71
-							state = 73
-							state = 664
-						}
-					}
-				}
-				add_manpower = -150000
-			}
-			random_owned_controlled_state={
-				limit = {  
-					state_population > 200000
-					NOT={
-						OR={
-							state = 935
-							state = 70
-							state = 71
-							state = 73
-							state = 664
-						}
-					}
-				}
-				add_manpower = -150000
-			}
-			random_owned_controlled_state={
-				limit = {  
-					state_population > 200000
-					NOT={
-						OR={
-							state = 935
-							state = 70
-							state = 71
-							state = 73
-							state = 664
-						}
-					}
-				}
-				add_manpower = -150000
-			}
-			random_owned_controlled_state={
-				limit = {  
-					state_population > 200000
-					NOT={
-						OR={
-							state = 935
-							state = 70
-							state = 71
-							state = 73
-							state = 664
-						}
-					}
-				}
-				add_manpower = -150000
-			}
-			random_owned_controlled_state={
-				limit = {  
-					state_population > 200000
-					NOT={
-						OR={
-							state = 935
-							state = 70
-							state = 71
-							state = 73
-							state = 664
-						}
-					}
-				}
-				add_manpower = -150000
-			}
-			random_owned_controlled_state={
-				limit = {  
-					state_population > 200000
-					NOT={
-						OR={
-							state = 935
-							state = 70
-							state = 71
-							state = 73
-							state = 664
-						}
-					}
-				}
-				add_manpower = -150000
-			}
-			random_owned_controlled_state={
-				limit = {  
-					state_population > 200000
-					NOT={
-						OR={
-							state = 935
-							state = 70
-							state = 71
-							state = 73
-							state = 664
-						}
-					}
-				}
+				random_select_amount = 6
 				add_manpower = -150000
 			}
 			every_state={
@@ -4242,7 +4137,7 @@ focus_tree = {
 					is_owned_and_controlled_by = SLO
 					NOT = { is_core_of = SLO }
 				}
-				add_compliance = 20
+				add_compliance = 10
 			}
 		}
 	}
@@ -5004,7 +4899,7 @@ focus_tree = {
 	
 	focus = {
 		id = SLO_the_happiest_country_in_europe
-		icon = GFX_goal_mobilise_bratislava
+		icon = GFX_goal_SLO_declare_greater_slovakia
 		x = -1
 		y = 1
 		relative_position_id = SLO_ensure_a_social_safety_net
@@ -7698,6 +7593,8 @@ focus_tree = {
 			}
 			add_war_support = 0.1
 			unlock_decision_category_tooltip = SLO_state_integration_decisions
+			
+			country_event = { id = slovakia.46 days = 2 random_days = 6 }
 		}
 	}
 	

@@ -1583,3 +1583,55 @@ country_event = {				#MG's little red book
 		add_political_power = 25
 	}
 }
+
+country_event = {				#New black army
+	id = slovakia.46
+	title = slovakia.46.t
+	desc = slovakia.46.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_SLO_black_army
+
+	option = { 
+		name = slovakia.46.a
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = 25
+		
+		every_other_country={
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_decrease
+			}
+		}
+	}
+}
+
+country_event = {				#Startup event
+	id = slovakia.47
+	title = slovakia.47.t
+	desc = slovakia.47.desc
+	is_triggered_only = yes
+	
+	picture = GFX_report_event_SLO_mg_gun
+
+	option = { 
+		name = slovakia.47.a
+		ai_chance = {
+			base = 10
+		}
+
+	}
+	
+	option = { 
+		name = slovakia.47.b
+		ai_chance = {
+			base = 0
+		}
+		effect_tooltip={
+			add_manpower = -1
+			custom_effect_tooltip = slovakia.47.tt
+		}
+	}
+}
