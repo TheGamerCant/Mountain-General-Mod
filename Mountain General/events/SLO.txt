@@ -36,7 +36,7 @@ country_event = {
 			remove_state_core = 71
 			remove_state_core = 664
 			remove_state_core = 73
-			remove_state_core = 935
+			remove_state_core = 970
 		}
 	}
 }
@@ -92,7 +92,7 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-		935 = {
+		970 = {
 			create_unit = {
 				division = "name = \"4.Pesi Divize\"division_template = \"Pesi Divize\" start_experience_factor = 0.06 start_equipment_factor = 1 start_manpower_factor = 1"
 				owner = ROOT
@@ -1470,7 +1470,7 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-		935={ add_manpower = -2 }
+		970={ add_manpower = -2 }
 	}
 }
 

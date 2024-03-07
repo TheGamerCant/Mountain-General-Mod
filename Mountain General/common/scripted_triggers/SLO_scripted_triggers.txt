@@ -11,7 +11,7 @@ SLO_can_take_radio_equipment_focus = {
 SLO_can_form_eu_1 = {
 	count_triggers = {
 		amount > 9
-		935 = {
+		970 = {
 			OWNER = {
 				OR = {
 					tag = SLO
@@ -233,7 +233,7 @@ SLO_can_form_eu_1 = {
 SLO_can_form_eu_2 = {
 	count_triggers = {
 		amount > 14
-		935 = {
+		970 = {
 			OWNER = {
 				OR = {
 					tag = SLO

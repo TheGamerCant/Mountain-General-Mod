@@ -304,7 +304,7 @@
  SLO_increase_pensions_desc:0 "We must never forget about the elderly. While some claim that they are a drag on the economy, descrimination against them is similar to fascist rhetoric - it ignores the human being at the other end and will eventually be levelled against you."
  SLO_ensure_a_social_safety_net:0 "Ensure a Social Safety Net"
  SLO_ensure_a_social_safety_net_desc:0 "In thse trying times, it is common for families to go under. Protecting them will allow them to recover quicker."
- SLO_ensure_a_social_safety_net:0 "\nConstruction Speed: §G+10.00%§!\nFactory Output: §G+5.00%§!\nDockyard Output: §G+5.00%§!"
+ SLO_ensure_a_social_safety_net_tt:0 "\nConstruction Speed: §G+10.00%§!\nFactory Output: §G+5.00%§!\nDockyard Output: §G+5.00%§!"
  SLO_the_happiest_country_in_europe:0 "The Happiest Country in Europe"
  SLO_the_happiest_country_in_europe_desc:0 "While other countries were bickering amongst eachother and turning their backs on the people, Slovakia has done the opposite! We have kept our people fed, well educated, and above all - happy."
  SLO_the_happiest_country_in_europe_tt:0 "$SLO_modify_economic_chaos_modifier$ \nExpected number of factires put on Consumer Goods: §Y-2.0%§!\nFactory Output: §G+10.00%§!\nDockyard Output: §G+10.00%§!\nConstruction Speed: §G+10.00%§!"

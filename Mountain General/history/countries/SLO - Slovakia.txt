@@ -1,6 +1,8 @@
 ﻿capital = 935
 
 set_research_slots = 3
+set_stability = 0.53
+set_war_support = 0.50
 
 ### STOCKPILE ###
 add_equipment_to_stockpile = {
@@ -156,7 +158,7 @@ set_variable = { SLO_ec_production_speed_rail_way_factor = -0.1 }
 set_variable = { SLO_ec_production_speed_buildings_factor = -0.2 }
 set_variable = { SLO_ec_local_resources_factor = 0 }
 set_variable = { SLO_ec_min_export = -0.1 }
-set_variable = { SLO_ec_research_speed_factor = -0.1 }
+set_variable = { SLO_ec_research_speed_factor = -0.15 }
 set_variable = { SLO_ec_global_building_slots_factor = 0 }
 set_variable = { SLO_ec_consumer_goods_factor = 0 }
 

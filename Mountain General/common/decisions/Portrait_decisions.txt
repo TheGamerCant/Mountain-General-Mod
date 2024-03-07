@@ -4,6 +4,7 @@ political_actions = {
 	SLO_portrait_picker = {
 		icon = generic_civil_support
 		allowed = { tag = SLO }
+		priority = 999
 		visible = {
 			NOT = {
 			}

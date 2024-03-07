@@ -114,7 +114,7 @@ focus_tree = {
 			}
 			unlock_decision_category_tooltip = SLO_captain_hindsight_decisions
 			add_research_slot = 1	
-			935={
+			970={
 				add_extra_state_shared_building_slots = 1
 			}
 			add_timed_idea={
@@ -191,7 +191,7 @@ focus_tree = {
 				uses = 2
 				category = infantry_weapons
 			}
-			935 = {
+			970 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -351,7 +351,7 @@ focus_tree = {
 		}
 		
 		available = {
-			SLO = { has_full_control_of_state = 935 }
+			SLO = { has_full_control_of_state = 970 }
 			SLO = { has_full_control_of_state = 664 }
 		}
 		
@@ -386,7 +386,7 @@ focus_tree = {
 		}
 		
 		available = {
-			SLO = { has_full_control_of_state = 935 }
+			SLO = { has_full_control_of_state = 970 }
 			SLO = { has_full_control_of_state = 664 }
 		}
 		
@@ -471,7 +471,7 @@ focus_tree = {
 		relative_position_id = SLO_slovakian_nuclear_program
 		
 		available = {
-			SLO = { has_full_control_of_state = 935 }
+			SLO = { has_full_control_of_state = 970 }
 			has_tech = atomic_research
 			NOT = { has_completed_focus = SLO_a_revolutionary_slovakia }
 		}
@@ -491,7 +491,7 @@ focus_tree = {
 			custom_effect_tooltip = SLO_gotta_get_dem_nukes_boi_tt
 			hidden_effect = {
 				remove_ideas = SLO_get_nukes
-				935 = {
+				970 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = nuclear_reactor
@@ -806,7 +806,7 @@ focus_tree = {
 		}
 		
 		available = {
-			SLO = { has_full_control_of_state = 935 }
+			SLO = { has_full_control_of_state = 970 }
 			SLO = { has_full_control_of_state = 71 }
 			SLO = { has_full_control_of_state = 664 }
 		}
@@ -835,7 +835,7 @@ focus_tree = {
 				category = synth_resources
 			}
 			
-			935 = { 
+			970 = { 
 				add_resource = { 
 					type = chromium
 					amount = 9
@@ -2206,7 +2206,7 @@ focus_tree = {
 			add_political_power = -60
 			add_stability = -0.05
 			664={
-				add_manpower = -369358
+				add_manpower = -369708
 			}
 			73={
 				add_manpower = -178140
@@ -3018,7 +3018,7 @@ focus_tree = {
 
 
 		available = {
-			SLO = { has_full_control_of_state = 935 }
+			SLO = { has_full_control_of_state = 970 }
 			SLO = { has_full_control_of_state = 70 }
 			SLO = { has_full_control_of_state = 9 }
 			SLO = { has_full_control_of_state = 75 }
@@ -3055,7 +3055,7 @@ focus_tree = {
 
 
 		available = {
-			SLO = { has_full_control_of_state = 935 }
+			SLO = { has_full_control_of_state = 970 }
 			SLO = { has_full_control_of_state = 70 }
 			SLO = { has_full_control_of_state = 9 }
 			SLO = { has_full_control_of_state = 75 }
@@ -3116,7 +3116,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SLO_the_holy_slavic_empire } 
 
 		available = {
-			SLO = { has_full_control_of_state = 935 }
+			SLO = { has_full_control_of_state = 970 }
 			SLO = { has_full_control_of_state = 70 }
 			SLO = { has_full_control_of_state = 71 }
 			SLO = { has_full_control_of_state = 664 }
@@ -3727,7 +3727,7 @@ focus_tree = {
 		available = {
 			has_country_flag = SLO_gave_ruthenia_autonomy
 			has_completed_focus = SLO_liberator_of_the_slavs
-			935 = {
+			970 = {
 				CONTROLLER = {
 					OR = {
 						tag = SLO
@@ -4057,7 +4057,7 @@ focus_tree = {
 				is_controlled_by = SLO 
 				NOT={
 					OR={
-						state = 935
+						state = 970
 						state = 70
 						state = 71
 						state = 73
@@ -4075,7 +4075,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 935
+							state = 970
 							state = 70
 							state = 71
 							state = 73
@@ -4090,7 +4090,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 935
+							state = 970
 							state = 70
 							state = 71
 							state = 73
@@ -4105,7 +4105,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 935
+							state = 970
 							state = 70
 							state = 71
 							state = 73
@@ -4120,7 +4120,7 @@ focus_tree = {
 					state_population > 200000
 					NOT={
 						OR={
-							state = 935
+							state = 970
 							state = 70
 							state = 71
 							state = 73
@@ -4224,7 +4224,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SLO_a_free_slovakia
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = SLO_a_free_slovakia
 		}
@@ -4249,7 +4249,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SLO_create_a_constitution
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = SLO_create_a_constitution
 		}
@@ -4273,7 +4273,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SLO_create_a_constitution
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = SLO_create_a_constitution
 		}
@@ -4302,7 +4302,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SLO_create_a_constitution
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = SLO_create_a_constitution
 		}
@@ -4330,7 +4330,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SLO_refuge_to_those_fleeing_tyranny
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = SLO_refuge_to_those_fleeing_tyranny
 		}
@@ -4373,7 +4373,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SLO_our_own_second_amendment
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = SLO_anti_descrimination_laws
 		}
@@ -4386,7 +4386,7 @@ focus_tree = {
 		
 
 		completion_reward = {
-			add_political_power = 75
+			add_political_power = 25
 			add_state_core = 73
 			add_to_variable = { SLO_dc_political_power_factor = -0.05 }
 			add_to_variable = { SLO_dc_stability_weekly = 0.001 }
@@ -4400,7 +4400,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SLO_defence_of_democracy
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = SLO_local_autonomy
 		}
@@ -5273,7 +5273,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SLO_the_red_imperialists
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SLO_the_red_imperialists
 		}
@@ -5290,7 +5290,7 @@ focus_tree = {
 	
 
 		completion_reward = {	
-			add_political_power = 150
+			add_political_power = 50
 			add_stability = 0.05
 			custom_effect_tooltip = SLO_the_liberation_of_ethnic_minorities_tt
 			hidden_effect={
@@ -6369,7 +6369,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SLO_the_liberation_of_ethnic_minorities
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SLO_the_liberation_of_ethnic_minorities
 		}
@@ -8478,7 +8478,7 @@ focus_tree = {
 			focus = SLO_liberate_the_polish_workers
 		}
 		available = {
-			935 = { is_controlled_by = ROOT }
+			970 = { is_controlled_by = ROOT }
 			10 = { is_controlled_by = ROOT }
 			9 = { is_controlled_by = ROOT }
 			4 = { is_controlled_by = ROOT }

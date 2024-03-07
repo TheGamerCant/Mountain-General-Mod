@@ -166,7 +166,7 @@ focus_tree = {
 					}
 				}			
 			}
-			935 = {
+			970 = {
 				create_unit = {
 					division = "name = \"1. Slovenská Milícia\" division_template = \"Milície\" start_experience_factor = 0.02 start_equipment_factor = 0.4 start_manpower_factor = 1" 
 					owner = SLO

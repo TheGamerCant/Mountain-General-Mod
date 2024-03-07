@@ -217,13 +217,19 @@ on_actions={
 				}
 				news_event = { id = country_capitulated.0 days = 0 }
 				ROOT = {
-					white_peace = SLO
+					every_enemy_country={
+						ROOT = { white_peace = PREV }
+					}
 					hidden_effect = {
 						set_politics = {
 							ruling_party = democratic
 							elections_allowed = yes
 						}
 						load_focus_tree = generic_focus
+						add_popularity = {
+							ideology = democratic
+							popularity = 0.6
+						}
 					}
 				}
 				SLO = { 
@@ -243,6 +249,36 @@ on_actions={
 							is_owned_by = SOV
 						}
 						UKR = { transfer_state = PREV }
+					}
+				}
+				
+				if={
+					limit = { ROOT = { original_tag = GER } }
+					if={
+						limit = { any_state = { is_controlled_by = ROOT is_core_of = AUS } }
+						GER={ release = AUS }
+						AUS = {
+							hidden_effect = {
+								set_politics = {
+									ruling_party = democratic
+									last_election = "1935.11.14"
+									election_frequency = 48
+									elections_allowed = yes
+								}
+								set_popularities = {
+									democratic = 80
+									fascism = 6
+									communism = 2
+									neutrality = 12
+								}
+							}
+						}
+						SLO= { add_to_faction = AUS }
+					}
+					
+					if={
+						limit ={ 188 = { is_controlled_by = ROOT country_exists = LIT} }
+						LIT = { transfer_state = 188 }
 					}
 				}
 			}
@@ -289,7 +325,9 @@ on_actions={
 						}			
 					}
 					else={
-						white_peace = SLO
+						every_enemy_country={
+							ROOT = { white_peace = PREV }
+						}
 						hidden_effect = {
 							set_politics = {
 								ruling_party = democratic
