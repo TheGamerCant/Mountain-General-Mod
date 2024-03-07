@@ -1312,15 +1312,16 @@ ideas ={
 			}
 			
 			modifier = {
-				war_support_factor = 0.25
+				war_support_factor = 0.1
 				stability_factor = 0.25
 				conscription = 0.1
 				land_reinforce_rate = 0.03
 			}
 			targeted_modifier = {
 				tag = CZE
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.12
+				defense_bonus_against = 0.12
+				defense_bonus_against = 0.04
 			}
 		}
 		
@@ -1893,8 +1894,8 @@ ideas ={
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = -0.05
-				political_power_factor = -0.15
+				consumer_goods_expected_value = -0.02
+				political_power_factor = -0.05
 				trade_opinion_factor = -0.2
 				min_export = -0.1
 				army_core_defence_factor = 0.1
@@ -1915,7 +1916,7 @@ ideas ={
 			
 			modifier = {
 				political_power_factor = -0.05
-				consumer_goods_expected_value = -0.02
+				consumer_goods_expected_value = -0.05
 				stability_factor = 0.15
 				war_support_factor = -0.15
 				trade_opinion_factor = 0.5
@@ -1937,8 +1938,8 @@ ideas ={
 			
 			modifier = {
 				consumer_goods_expected_value = 0.04
-				political_power_factor = 0.05
-				stability_factor = 0.2
+				political_power_factor = -0.05
+				stability_factor = 0.15
 				army_core_defence_factor = 0.02
 				conscription = 0.005
 			}

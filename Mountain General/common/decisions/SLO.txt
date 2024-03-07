@@ -677,16 +677,19 @@ SLO_to_liberate_europe_decisions={
 		icon = generic_form_nation
 
 		available = {
-			NOT = { has_completed_focus = SLO_to_liberate_europe }
+#			NOT = { has_completed_focus = SLO_to_liberate_europe }
+#			has_war = yes
+			always = yes
 		}
 
 		days_mission_timeout = 180
 
 		activation = {
-			has_completed_focus = SLO_to_liberate_europe
-			has_war = no
-		}
+#			has_completed_focus = SLO_to_liberate_europe
+#			has_war = no
 
+			always = no
+		}
 		visible = {
 			
 		}		

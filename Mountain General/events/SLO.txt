@@ -1629,9 +1629,7 @@ country_event = {				#Startup event
 		ai_chance = {
 			base = 0
 		}
-		effect_tooltip={
-			add_manpower = -1
-			custom_effect_tooltip = slovakia.47.tt
-		}
+		add_manpower = -1
+		custom_effect_tooltip = slovakia.47.tt
 	}
 }

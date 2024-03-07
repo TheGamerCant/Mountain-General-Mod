@@ -4238,7 +4238,7 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = SLO_democratic_constitution_dynamic_modifier }
 			}
 			add_political_power = 75
-			add_stability = 0.2
+			add_stability = 0.1
 			custom_effect_tooltip = SLO_create_a_constitution_tt	
 		}
 	}
@@ -4358,8 +4358,6 @@ focus_tree = {
 					}
 				}
 				upgrade_intelligence_agency = upgrade_passive_defense 
-				upgrade_intelligence_agency = upgrade_passive_defense
-				upgrade_intelligence_agency = upgrade_interrogation_techniques
 				upgrade_intelligence_agency = upgrade_form_department
 				upgrade_intelligence_agency = upgrade_crypto_strength
 			}
@@ -4552,7 +4550,7 @@ focus_tree = {
 				can_create_factions = yes
 			}
 			add_political_power = 50
-			add_war_support = 0.01
+			add_war_support = 0.05
 			create_faction = "Central European Defence Pact"
 			if={
 				limit = { 
@@ -4568,7 +4566,10 @@ focus_tree = {
 				limit = { 
 					POL = { 
 						exists = yes 
-						has_government = democratic
+						OR={
+							has_government = democratic
+							has_completed_focus = POL_the_sanation_left
+						}
 					} 
 				
 				}
@@ -4889,6 +4890,10 @@ focus_tree = {
 				custom_effect_tooltip = SLO_the_welfare_state_tt
 			}
 			add_to_variable = { SLO_ec_consumer_goods_expected_value = 0.015 }
+			add_to_variable = { SLO_ec_production_speed_buildings_factor = 0.1 }
+			add_to_variable = { SLO_ec_industrial_capacity_factory = 0.05 }
+			add_to_variable = { SLO_ec_industrial_capacity_dockyard = 0.05 }
+			custom_effect_tooltip = SLO_ensure_a_social_safety_net_tt
 			add_stability = 0.05
 			add_popularity = {
 				ideology = democratic
